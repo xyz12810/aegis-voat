@@ -16,6 +16,7 @@ echo.
 
 echo disable ceip/gwx/skydrive/spynet/telemetry/wifisense ...
 echo.
+echo.
 
 taskkill /f /im gwx.exe /t >nul 2>nul
 
