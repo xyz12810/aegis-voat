@@ -29,25 +29,19 @@ echo block a23-218-212-69.deploy.static.akamaitechnologies.com
 route -p add 23.218.212.69/32 0.0.0.0 >nul 2>nul
 
 echo block a.ads1.msn.com
-route -p add 198.78.206.253/32 0.0.0.0 >nul 2>nul
 route -p add 4.27.253.126/32 0.0.0.0 >nul 2>nul
-route -p add 4.27.254.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.12.223.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.254.58.254/32 0.0.0.0 >nul 2>nul
+route -p add 4.27.253.253/32 0.0.0.0 >nul 2>nul
+route -p add 8.254.233.126/32 0.0.0.0 >nul 2>nul
+route -p add 8.254.248.254/32 0.0.0.0 >nul 2>nul
+route -p add 8.26.210.126/32 0.0.0.0 >nul 2>nul
 
 echo block a.ads2.msads.net
 route -p add 72.21.81.200/32 0.0.0.0 >nul 2>nul
 
 echo block a.ads2.msn.com
-route -p add 198.78.206.253/32 0.0.0.0 >nul 2>nul
 route -p add 4.27.253.253/32 0.0.0.0 >nul 2>nul
-route -p add 4.27.254.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.12.223.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.254.233.126/32 0.0.0.0 >nul 2>nul
 route -p add 8.254.240.126/32 0.0.0.0 >nul 2>nul
 route -p add 8.254.248.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.26.207.126/32 0.0.0.0 >nul 2>nul
-route -p add 8.26.207.254/32 0.0.0.0 >nul 2>nul
 
 echo block ac3.msn.com
 route -p add 131.253.14.76/32 0.0.0.0 >nul 2>nul
@@ -60,28 +54,26 @@ route -p add 74.125.21.148/32 0.0.0.0 >nul 2>nul
 route -p add 74.125.21.149/32 0.0.0.0 >nul 2>nul
 
 echo block ads1.msads.net
-route -p add 184.84.141.139/32 0.0.0.0 >nul 2>nul
-route -p add 23.79.145.110/32 0.0.0.0 >nul 2>nul
+route -p add 23.55.247.156/32 0.0.0.0 >nul 2>nul
+route -p add 96.6.57.18/32 0.0.0.0 >nul 2>nul
 
 echo block ads1.msn.com
-route -p add 198.78.206.253/32 0.0.0.0 >nul 2>nul
-route -p add 4.27.253.253/32 0.0.0.0 >nul 2>nul
-route -p add 4.27.254.254/32 0.0.0.0 >nul 2>nul
 route -p add 8.12.223.254/32 0.0.0.0 >nul 2>nul
+route -p add 8.254.248.254/32 0.0.0.0 >nul 2>nul
 route -p add 8.254.58.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.26.207.126/32 0.0.0.0 >nul 2>nul
 
 echo block adsmockarc.azurewebsites.net
 route -p add 191.236.16.12/32 0.0.0.0 >nul 2>nul
 
 echo block ads.msn.com
 route -p add 157.56.23.91/32 0.0.0.0 >nul 2>nul
+route -p add 65.55.128.80/32 0.0.0.0 >nul 2>nul
 
 echo block adsyndication.msn.com
 route -p add 65.55.227.188/32 0.0.0.0 >nul 2>nul
 
 echo block aidps.atdmt.com
-route -p add 131.253.40.44/32 0.0.0.0 >nul 2>nul
+route -p add 131.253.14.121/32 0.0.0.0 >nul 2>nul
 route -p add 65.52.108.3/32 0.0.0.0 >nul 2>nul
 
 echo block ajax.aspnetcdn.com
@@ -90,8 +82,6 @@ route -p add 72.21.81.200/32 0.0.0.0 >nul 2>nul
 echo block aka-cdn-ns.adtech.de
 route -p add 107.14.45.49/32 0.0.0.0 >nul 2>nul
 route -p add 107.14.45.67/32 0.0.0.0 >nul 2>nul
-route -p add 67.131.44.19/32 0.0.0.0 >nul 2>nul
-route -p add 67.131.44.43/32 0.0.0.0 >nul 2>nul
 
 echo block a-msedge.net
 
@@ -108,7 +98,6 @@ route -p add 13.107.4.50/32 0.0.0.0 >nul 2>nul
 
 echo block auth.gfx.ms
 route -p add 23.52.88.70/32 0.0.0.0 >nul 2>nul
-route -p add 23.7.136.70/32 0.0.0.0 >nul 2>nul
 
 echo block az361816.vo.msecnd.net
 route -p add 72.21.81.200/32 0.0.0.0 >nul 2>nul
@@ -117,27 +106,25 @@ echo block az512334.vo.msecnd.net
 route -p add 72.21.81.200/32 0.0.0.0 >nul 2>nul
 
 echo block b.ads1.msn.com
-route -p add 198.78.206.253/32 0.0.0.0 >nul 2>nul
+route -p add 4.27.253.126/32 0.0.0.0 >nul 2>nul
 route -p add 4.27.253.253/32 0.0.0.0 >nul 2>nul
 route -p add 4.27.254.254/32 0.0.0.0 >nul 2>nul
 route -p add 8.254.233.126/32 0.0.0.0 >nul 2>nul
 route -p add 8.254.248.254/32 0.0.0.0 >nul 2>nul
 route -p add 8.254.56.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.254.58.254/32 0.0.0.0 >nul 2>nul
-route -p add 8.26.207.126/32 0.0.0.0 >nul 2>nul
-route -p add 8.26.209.126/32 0.0.0.0 >nul 2>nul
+route -p add 8.26.206.252/32 0.0.0.0 >nul 2>nul
+route -p add 8.26.207.254/32 0.0.0.0 >nul 2>nul
 
 echo block b.ads2.msads.net
 route -p add 72.21.81.200/32 0.0.0.0 >nul 2>nul
 
 echo block bingads.microsoft.com
-route -p add 66.119.152.205/32 0.0.0.0 >nul 2>nul
+route -p add 66.119.152.204/32 0.0.0.0 >nul 2>nul
 
 echo block b.rad.msn.com
 route -p add 65.52.108.251/32 0.0.0.0 >nul 2>nul
 
 echo block bs.serving-sys.com
-route -p add 12.129.210.13/32 0.0.0.0 >nul 2>nul
 route -p add 63.241.108.103/32 0.0.0.0 >nul 2>nul
 route -p add 63.241.108.104/32 0.0.0.0 >nul 2>nul
 
@@ -150,8 +137,8 @@ route -p add 65.52.108.11/32 0.0.0.0 >nul 2>nul
 echo block cdn.atdmt.com
 
 echo block cdn.content.prod.cms.msn.com
-route -p add 168.143.241.146/32 0.0.0.0 >nul 2>nul
-route -p add 168.143.241.169/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.89/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.96/32 0.0.0.0 >nul 2>nul
 
 echo block cdp1.public-trust.com
 route -p add 72.21.91.8/32 0.0.0.0 >nul 2>nul
@@ -165,21 +152,19 @@ echo block choice.microsoft.com.nsatc.net
 route -p add 65.55.128.81/32 0.0.0.0 >nul 2>nul
 
 echo block c.microsoft.com
-route -p add 134.170.185.125/32 0.0.0.0 >nul 2>nul
+route -p add 134.170.188.140/32 0.0.0.0 >nul 2>nul
 
 echo block c.msn.com
 route -p add 65.52.108.11/32 0.0.0.0 >nul 2>nul
 
 echo block cmsresources.windowsphone.com
-route -p add 184.84.136.165/32 0.0.0.0 >nul 2>nul
-route -p add 2.16.110.122/32 0.0.0.0 >nul 2>nul
+route -p add 23.55.135.132/32 0.0.0.0 >nul 2>nul
 
 echo block compatexchange.cloudapp.net
-route -p add 23.99.10.11/32 0.0.0.0 >nul 2>nul
 
 echo block content.windows.microsoft.com
-route -p add 168.143.241.145/32 0.0.0.0 >nul 2>nul
-route -p add 168.143.241.169/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.129/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.131/32 0.0.0.0 >nul 2>nul
 
 echo block corpext.msitadfs.glbdns2.microsoft.com
 route -p add 131.107.113.238/32 0.0.0.0 >nul 2>nul
@@ -187,13 +172,13 @@ route -p add 131.107.113.238/32 0.0.0.0 >nul 2>nul
 timeout 1 >nul
 
 echo block corp.sts.microsoft.com
-route -p add 131.107.113.238/32 0.0.0.0 >nul 2>nul
 route -p add 65.55.29.238/32 0.0.0.0 >nul 2>nul
 
 echo block cs1.wpc.v0cdn.net
 route -p add 93.184.215.200/32 0.0.0.0 >nul 2>nul
 
 echo block c.s-microsoft.com
+route -p add 104.70.227.189/32 0.0.0.0 >nul 2>nul
 route -p add 172.232.80.214/32 0.0.0.0 >nul 2>nul
 
 echo block db3aqu.atdmt.com
@@ -203,19 +188,19 @@ route -p add 94.245.121.178/32 0.0.0.0 >nul 2>nul
 route -p add 94.245.121.179/32 0.0.0.0 >nul 2>nul
 
 echo block dc.services.visualstudio.com
-route -p add 40.84.189.107/32 0.0.0.0 >nul 2>nul
+route -p add 104.45.136.42/32 0.0.0.0 >nul 2>nul
 
 echo block dev.virtualearth.net
+route -p add 131.253.14.8/32 0.0.0.0 >nul 2>nul
 route -p add 65.52.108.59/32 0.0.0.0 >nul 2>nul
 
 echo block df.telemetry.microsoft.com
 route -p add 65.52.100.7/32 0.0.0.0 >nul 2>nul
 
 echo block diagnostics.support.microsoft.com
-route -p add 134.170.52.151/32 0.0.0.0 >nul 2>nul
-route -p add 66.119.147.131/32 0.0.0.0 >nul 2>nul
 
 echo block displaycatalog.md.mp.microsoft.com
+route -p add 64.4.54.50/32 0.0.0.0 >nul 2>nul
 route -p add 65.52.108.92/32 0.0.0.0 >nul 2>nul
 
 echo block dl.delivery.mp.microsoft.com
@@ -228,7 +213,6 @@ route -p add 65.55.113.12/32 0.0.0.0 >nul 2>nul
 route -p add 65.55.113.13/32 0.0.0.0 >nul 2>nul
 
 echo block download-ssl.msgamestudios.com
-route -p add 104.70.210.203/32 0.0.0.0 >nul 2>nul
 route -p add 172.232.53.80/32 0.0.0.0 >nul 2>nul
 
 echo block ec.atdmt.com
@@ -238,10 +222,8 @@ echo block ecn.dev.virtualearth.net
 route -p add 172.232.60.127/32 0.0.0.0 >nul 2>nul
 
 echo block en-us.appex-rf.msn.com
-route -p add 168.143.241.154/32 0.0.0.0 >nul 2>nul
-route -p add 168.143.241.170/32 0.0.0.0 >nul 2>nul
-route -p add 184.86.240.75/32 0.0.0.0 >nul 2>nul
-route -p add 184.86.240.83/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.130/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.89/32 0.0.0.0 >nul 2>nul
 
 echo block fe2.update.microsoft.com.akadns.net
 route -p add 134.170.115.62/32 0.0.0.0 >nul 2>nul
@@ -271,7 +253,7 @@ echo block flex.msn.com
 route -p add 131.253.40.47/32 0.0.0.0 >nul 2>nul
 
 echo block geo-prod.do.dsp.mp.microsoft.com
-route -p add 64.4.54.117/32 0.0.0.0 >nul 2>nul
+route -p add 65.52.108.135/32 0.0.0.0 >nul 2>nul
 
 echo block g.live.com
 route -p add 65.52.108.27/32 0.0.0.0 >nul 2>nul
@@ -282,18 +264,17 @@ route -p add 65.52.108.27/32 0.0.0.0 >nul 2>nul
 timeout 1 >nul
 
 echo block h1.msn.com
-route -p add 184.84.129.235/32 0.0.0.0 >nul 2>nul
+route -p add 23.63.246.144/32 0.0.0.0 >nul 2>nul
 
 echo block h2.msn.com
-route -p add 184.84.129.235/32 0.0.0.0 >nul 2>nul
-route -p add 2.21.17.72/32 0.0.0.0 >nul 2>nul
+route -p add 23.63.246.144/32 0.0.0.0 >nul 2>nul
+route -p add 96.6.61.146/32 0.0.0.0 >nul 2>nul
 
 echo block help.bingads.microsoft.com
 route -p add 207.46.202.114/32 0.0.0.0 >nul 2>nul
 
 echo block i1.services.social.microsoft.com
-route -p add 184.84.170.70/32 0.0.0.0 >nul 2>nul
-route -p add 92.123.54.120/32 0.0.0.0 >nul 2>nul
+route -p add 23.63.228.11/32 0.0.0.0 >nul 2>nul
 
 echo block i1.services.social.microsoft.com.nsatc.net
 
@@ -304,23 +285,25 @@ echo block ieonline.microsoft.com
 route -p add 204.79.197.200/32 0.0.0.0 >nul 2>nul
 
 echo block img-s-msn-com.akamaized.net
-route -p add 184.86.240.80/32 0.0.0.0 >nul 2>nul
-route -p add 184.86.240.81/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.107/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.115/32 0.0.0.0 >nul 2>nul
 route -p add 96.17.68.107/32 0.0.0.0 >nul 2>nul
 route -p add 96.17.68.113/32 0.0.0.0 >nul 2>nul
 
 echo block inference.location.live.net
 route -p add 40.117.230.39/32 0.0.0.0 >nul 2>nul
-route -p add 40.118.253.233/32 0.0.0.0 >nul 2>nul
 
 echo block js.microsoft.com
-route -p add 184.84.170.239/32 0.0.0.0 >nul 2>nul
+route -p add 23.63.242.3/32 0.0.0.0 >nul 2>nul
+route -p add 72.247.139.242/32 0.0.0.0 >nul 2>nul
+route -p add 96.17.193.129/32 0.0.0.0 >nul 2>nul
 
 echo block lb1.www.ms.akadns.net
-route -p add 134.170.188.84/32 0.0.0.0 >nul 2>nul
+route -p add 65.55.57.27/32 0.0.0.0 >nul 2>nul
 
 echo block licensing.md.mp.microsoft.com
 route -p add 64.4.54.36/32 0.0.0.0 >nul 2>nul
+route -p add 65.52.108.33/32 0.0.0.0 >nul 2>nul
 
 echo block live.rads.msn.com
 route -p add 137.117.100.176/32 0.0.0.0 >nul 2>nul
@@ -334,7 +317,9 @@ route -p add 134.170.119.140/32 0.0.0.0 >nul 2>nul
 echo block m.adnxs.com
 route -p add 68.67.152.103/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.110/32 0.0.0.0 >nul 2>nul
+route -p add 68.67.152.120/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.131/32 0.0.0.0 >nul 2>nul
+route -p add 68.67.152.132/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.172/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.173/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.174/32 0.0.0.0 >nul 2>nul
@@ -342,13 +327,11 @@ route -p add 68.67.152.94/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.97/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.153.37/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.153.40/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.153.44/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.153.87/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.153.89/32 0.0.0.0 >nul 2>nul
 
 echo block mediadiscovery.microsoft.com
 route -p add 23.196.137.181/32 0.0.0.0 >nul 2>nul
-route -p add 96.7.219.222/32 0.0.0.0 >nul 2>nul
 
 echo block msedge.net
 route -p add 204.79.197.197/32 0.0.0.0 >nul 2>nul
@@ -376,7 +359,7 @@ route -p add 107.14.45.57/32 0.0.0.0 >nul 2>nul
 route -p add 107.14.45.58/32 0.0.0.0 >nul 2>nul
 
 echo block oca.telemetry.microsoft.com
-route -p add 65.55.252.63/32 0.0.0.0 >nul 2>nul
+route -p add 64.4.54.153/32 0.0.0.0 >nul 2>nul
 
 echo block oca.telemetry.microsoft.com.nsatc.net
 route -p add 65.55.252.63/32 0.0.0.0 >nul 2>nul
@@ -414,42 +397,40 @@ echo block rad.msn.com
 route -p add 65.52.108.251/32 0.0.0.0 >nul 2>nul
 
 echo block redir.metaservices.microsoft.com
-route -p add 168.143.241.185/32 0.0.0.0 >nul 2>nul
-route -p add 168.143.241.202/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.105/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.123/32 0.0.0.0 >nul 2>nul
+route -p add 96.17.68.106/32 0.0.0.0 >nul 2>nul
+route -p add 96.17.70.235/32 0.0.0.0 >nul 2>nul
 
 echo block reports.wes.df.telemetry.microsoft.com
 route -p add 65.52.100.91/32 0.0.0.0 >nul 2>nul
 
 echo block sb.scorecardresearch.com
-route -p add 172.225.251.82/32 0.0.0.0 >nul 2>nul
 route -p add 172.232.221.65/32 0.0.0.0 >nul 2>nul
+route -p add 23.198.227.115/32 0.0.0.0 >nul 2>nul
+route -p add 23.6.136.82/32 0.0.0.0 >nul 2>nul
 
 echo block schemas.microsoft.akadns.net
 route -p add 65.54.226.187/32 0.0.0.0 >nul 2>nul
 
 echo block secure.adnxs.com
 route -p add 68.67.152.1/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.152.167/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.152.3/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.6/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.152.7/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.8/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.152.90/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.91/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.152.92/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.176.128/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.176.129/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.176.145/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.176.146/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.176.40/32 0.0.0.0 >nul 2>nul
-route -p add 68.67.176.41/32 0.0.0.0 >nul 2>nul
+route -p add 68.67.176.42/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.176.44/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.176.46/32 0.0.0.0 >nul 2>nul
+route -p add 68.67.176.48/32 0.0.0.0 >nul 2>nul
+route -p add 68.67.176.49/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.176.50/32 0.0.0.0 >nul 2>nul
+route -p add 68.67.176.51/32 0.0.0.0 >nul 2>nul
 route -p add 68.67.176.52/32 0.0.0.0 >nul 2>nul
 
 echo block secure.flashtalking.com
-route -p add 23.47.87.76/32 0.0.0.0 >nul 2>nul
+route -p add 104.107.40.244/32 0.0.0.0 >nul 2>nul
 route -p add 96.16.144.23/32 0.0.0.0 >nul 2>nul
 
 echo block services.wes.df.telemetry.microsoft.com
@@ -475,13 +456,11 @@ echo block sgmetrics.cloudapp.net
 route -p add 168.62.11.145/32 0.0.0.0 >nul 2>nul
 
 echo block shell.windows.com
-route -p add 168.143.241.168/32 0.0.0.0 >nul 2>nul
-route -p add 168.143.241.208/32 0.0.0.0 >nul 2>nul
-route -p add 96.17.68.107/32 0.0.0.0 >nul 2>nul
-route -p add 96.17.70.243/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.121/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.91/32 0.0.0.0 >nul 2>nul
 
 echo block sls.update.microsoft.com
-route -p add 157.55.240.220/32 0.0.0.0 >nul 2>nul
+route -p add 157.56.77.138/32 0.0.0.0 >nul 2>nul
 route -p add 157.56.96.54/32 0.0.0.0 >nul 2>nul
 
 echo block sls.update.microsoft.com.akadns.net
@@ -521,14 +500,13 @@ route -p add 74.125.21.148/32 0.0.0.0 >nul 2>nul
 route -p add 74.125.21.149/32 0.0.0.0 >nul 2>nul
 
 echo block statsfe1.ws.microsoft.com
-route -p add 134.170.115.60/32 0.0.0.0 >nul 2>nul
+route -p add 65.55.138.110/32 0.0.0.0 >nul 2>nul
 
 echo block statsfe2.update.microsoft.com.akadns.net
 route -p add 64.4.54.22/32 0.0.0.0 >nul 2>nul
 
 echo block statsfe2.ws.microsoft.com
-route -p add 134.170.115.60/32 0.0.0.0 >nul 2>nul
-route -p add 65.55.138.110/32 0.0.0.0 >nul 2>nul
+route -p add 64.4.54.22/32 0.0.0.0 >nul 2>nul
 
 echo block storeedgefd.dsx.mp.microsoft.com
 route -p add 104.70.69.88/32 0.0.0.0 >nul 2>nul
@@ -538,19 +516,16 @@ echo block survey.watson.microsoft.com
 route -p add 207.68.166.254/32 0.0.0.0 >nul 2>nul
 
 echo block t0.ssl.ak.dynamic.tiles.virtualearth.net
-route -p add 184.84.141.92/32 0.0.0.0 >nul 2>nul
-route -p add 23.221.41.242/32 0.0.0.0 >nul 2>nul
+route -p add 23.55.247.43/32 0.0.0.0 >nul 2>nul
 
 echo block t0.ssl.ak.tiles.virtualearth.net
-route -p add 184.84.139.153/32 0.0.0.0 >nul 2>nul
-route -p add 92.123.55.223/32 0.0.0.0 >nul 2>nul
+route -p add 23.55.246.86/32 0.0.0.0 >nul 2>nul
 
 echo block telecommand.telemetry.microsoft.com
 route -p add 65.55.252.190/32 0.0.0.0 >nul 2>nul
-route -p add 65.55.252.92/32 0.0.0.0 >nul 2>nul
 
 echo block telecommand.telemetry.microsoft.com.nsatc.net
-route -p add 65.55.252.92/32 0.0.0.0 >nul 2>nul
+route -p add 65.55.252.190/32 0.0.0.0 >nul 2>nul
 
 echo block telemetry.appex.bing.net
 route -p add 168.62.187.13/32 0.0.0.0 >nul 2>nul
@@ -559,24 +534,23 @@ echo block telemetry.microsoft.com
 route -p add 65.52.100.9/32 0.0.0.0 >nul 2>nul
 
 echo block telemetry.urs.microsoft.com
-route -p add 131.253.40.109/32 0.0.0.0 >nul 2>nul
 route -p add 65.55.44.85/32 0.0.0.0 >nul 2>nul
 
 echo block tile-service.weather.microsoft.com
-route -p add 184.84.129.216/32 0.0.0.0 >nul 2>nul
-route -p add 2.21.17.41/32 0.0.0.0 >nul 2>nul
+route -p add 23.63.246.114/32 0.0.0.0 >nul 2>nul
 
 echo block tlu.dl.delivery.mp.microsoft.com
 route -p add 204.79.197.221/32 0.0.0.0 >nul 2>nul
 
 echo block urs.microsoft.com
+route -p add 64.4.54.165/32 0.0.0.0 >nul 2>nul
 route -p add 65.52.108.163/32 0.0.0.0 >nul 2>nul
 
 echo block vassg141.ocsp.omniroot.com
-route -p add 63.233.110.67/32 0.0.0.0 >nul 2>nul
-route -p add 63.233.110.83/32 0.0.0.0 >nul 2>nul
-route -p add 96.17.10.56/32 0.0.0.0 >nul 2>nul
-route -p add 96.17.10.82/32 0.0.0.0 >nul 2>nul
+route -p add 173.205.28.178/32 0.0.0.0 >nul 2>nul
+route -p add 173.205.28.186/32 0.0.0.0 >nul 2>nul
+route -p add 72.246.56.146/32 0.0.0.0 >nul 2>nul
+route -p add 72.246.56.168/32 0.0.0.0 >nul 2>nul
 
 echo block version.hybrid.api.here.com
 route -p add 107.20.234.199/32 0.0.0.0 >nul 2>nul
@@ -585,9 +559,7 @@ route -p add 54.243.135.126/32 0.0.0.0 >nul 2>nul
 route -p add 54.243.53.207/32 0.0.0.0 >nul 2>nul
 
 echo block view.atdmt.com
-route -p add 31.13.66.2/32 0.0.0.0 >nul 2>nul
 route -p add 31.13.73.2/32 0.0.0.0 >nul 2>nul
-route -p add 31.13.74.2/32 0.0.0.0 >nul 2>nul
 
 timeout 1 >nul
 
@@ -598,14 +570,15 @@ echo block vortex-cy2.metron.live.com.nsatc.net
 route -p add 64.4.54.254/32 0.0.0.0 >nul 2>nul
 
 echo block vortex.data.microsoft.com
+route -p add 111.221.29.254/32 0.0.0.0 >nul 2>nul
 route -p add 64.4.54.254/32 0.0.0.0 >nul 2>nul
 
 echo block vortex-sandbox.data.microsoft.com
 route -p add 64.4.54.32/32 0.0.0.0 >nul 2>nul
 
 echo block vortex-win.data.microsoft.com
+route -p add 111.221.29.254/32 0.0.0.0 >nul 2>nul
 route -p add 64.4.54.254/32 0.0.0.0 >nul 2>nul
-route -p add 65.55.44.109/32 0.0.0.0 >nul 2>nul
 
 echo block watson.live.com
 route -p add 207.46.223.94/32 0.0.0.0 >nul 2>nul
@@ -618,7 +591,7 @@ echo block watson.ppe.telemetry.microsoft.com
 route -p add 65.52.100.11/32 0.0.0.0 >nul 2>nul
 
 echo block watson.telemetry.microsoft.com
-route -p add 65.55.252.43/32 0.0.0.0 >nul 2>nul
+route -p add 65.52.108.29/32 0.0.0.0 >nul 2>nul
 
 echo block watson.telemetry.microsoft.com.nsatc.net
 route -p add 65.52.108.29/32 0.0.0.0 >nul 2>nul
@@ -630,8 +603,8 @@ echo block www.modern.ie
 route -p add 168.62.21.207/32 0.0.0.0 >nul 2>nul
 
 echo block www.msftncsi.com
-route -p add 184.86.240.82/32 0.0.0.0 >nul 2>nul
-route -p add 184.86.240.88/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.106/32 0.0.0.0 >nul 2>nul
+route -p add 63.235.36.130/32 0.0.0.0 >nul 2>nul
 
 echo.
 echo done

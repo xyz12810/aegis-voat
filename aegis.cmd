@@ -3,7 +3,7 @@
 echo -/- aegis v1.10 by https://voat.co/u/thepower (https://tiny.cc/aegis-voat)
 echo.
 
-echo create system restore point ...
+echo * create system restore point ...
 echo.
 
 start /b /i /wait wscript.exe "%~dp0rpoint.vbs"
@@ -14,7 +14,7 @@ pause >nul
 echo.
 echo.
 
-echo disable ceip/gwx/skydrive/spynet/telemetry/wifisense ...
+echo * disable ceip/gwx/skydrive/spynet/telemetry/wifisense ...
 echo.
 echo.
 
@@ -55,7 +55,7 @@ reg delete "hkey_local_machine\system\currentcontrolset\control\wmi\autologger\a
 
 regedit /S "%~dp0aegis.reg" >nul 2>nul
 
-echo sync time to pool.ntp.org ...
+echo * sync time to pool.ntp.org ...
 echo.
 
 w32tm /config /syncfromflags:manual /manualpeerlist:"pool.ntp.org" /update /reliable:yes >nul 2>nul
@@ -64,7 +64,7 @@ w32tm /resync >nul 2>nul
 timeout 2 >nul
 echo.
 
-echo disable windows 10 download directory ...
+echo * disable windows 10 download directory ...
 echo.
 
 "%~dp0setacl.exe" -on "%systemdrive%\$windows.~bt" -ot file -actn setprot -op dacl:np;sacl:nc -rec cont_obj -actn setowner -ownr n:administrators >nul 2>nul
@@ -76,7 +76,7 @@ attrib +h "%systemdrive%\$windows.~bt" >nul 2>nul
 timeout 2 >nul
 echo.
 
-echo uninstall updates ...
+echo * uninstall updates ...
 echo.
 
 echo uninstall 971033  (https://support.microsoft.com/en-us/kb/971033)
@@ -181,7 +181,7 @@ echo.
 timeout 2 >nul
 echo.
 
-echo hide updates (this may take a while, be patient) ...
+echo * hide updates (this may take a while, be patient) ...
 echo.
 
 start /b /wait cscript.exe "%~dp0hide.vbs" 971033 2882822 2902907 2922324 2952664 2976978 2977759 2990214 2999226 3012973 3014460 3015249 3021917 3022345 3035583 3042058 3044374 3046480 3050265 3050267 3064683 3065987 3065988 3068708 3072318 3074677 3075249 3075851 3075853 3080149 3081437 3081454 3081954 3083324 3083325 3083710 3083711 3086255 3088195 3090045 3093983 3102810 3102812 3112343 3112336 3123862 3135445 3135449
@@ -190,7 +190,7 @@ echo.
 timeout 2 >nul
 echo.
 
-echo disable scheduled tasks ...
+echo * disable scheduled tasks ...
 echo.
 
 schtasks /change /disable /tn "\microsoft\windows\application experience\aitagent" >nul 2>nul
@@ -229,7 +229,7 @@ echo.
 
 timeout 2 >nul
 
-echo remove diagtrack ...
+echo * remove diagtrack ...
 echo.
 
 sc stop diagtrack >nul 2>nul
@@ -238,7 +238,7 @@ sc delete diagtrack >nul 2>nul
 timeout 2 >nul
 echo.
 
-echo disable remote registry ...
+echo * disable remote registry ...
 echo.
 
 sc config remoteregistry start= disabled >nul 2>nul
@@ -247,7 +247,7 @@ echo.
 
 timeout 2 >nul
 
-echo block hosts ...
+echo * block hosts ...
 timeout 1 >nul
 echo.
 
