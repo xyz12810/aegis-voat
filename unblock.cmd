@@ -632,3 +632,8 @@ route delete 168.62.21.207 >nul 2>nul
 echo unblock www.msftncsi.com
 route delete 184.86.240.82 >nul 2>nul
 route delete 184.86.240.88 >nul 2>nul
+
+echo.
+echo done
+echo.
+pause >nul

@@ -632,3 +632,8 @@ route -p add 168.62.21.207/32 0.0.0.0 >nul 2>nul
 echo block www.msftncsi.com
 route -p add 184.86.240.82/32 0.0.0.0 >nul 2>nul
 route -p add 184.86.240.88/32 0.0.0.0 >nul 2>nul
+
+echo.
+echo done
+echo.
+pause >nul
