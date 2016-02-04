@@ -1,0 +1,7 @@
+v1.10-
+added create restore point
+added 17 updates, 48 total
+added 27 ip blocks, 248 total
+added 1 registry key update, 14 total
+added 9 registry value updates, 24 total
+removed 25 host blocks, 163 total (bing, hotmail, msn, outlook, skype)
