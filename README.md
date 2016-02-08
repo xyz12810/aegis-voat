@@ -4,7 +4,7 @@
 
 Details:
 
-Disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, sync time to pool.ntp.org, disable/hide windows 10 download directory, uninstall/hide 48 updates (see list below), disable 31 scheduled tasks (spying elements), remove diagtrack, disable remote registry, block 163 microsoft-related hosts (248 ip's), change windows update settings to check/notify but do not download/install.
+Disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, sync time to pool.ntp.org, disable/hide windows 10 download directory, uninstall/hide 47 updates (see list below), disable 31 scheduled tasks (spying elements), remove diagtrack, disable remote registry, block 163 microsoft-related hosts (248 ip's), change windows update settings to check/notify but do not download/install.
 
 Instructions:
 
@@ -39,8 +39,6 @@ kb2976978	update for windows 8.1 and windows 8
 kb2977759	update for windows 7 rtm
 
 kb2990214	update that enables you to upgrade from windows 7 to a later version of windows
-
-kb2999226	update that enables you to run windows 10 applications on earlier versions of windows
 
 kb3012973	upgrade to windows 10
 
