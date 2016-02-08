@@ -1,3 +1,9 @@
+v1.11-
+cosmetic updates
+removed kb2999226
+removed a few questionable ocsp host blocks
+updated ip's for several host blocks
+
 v1.10-
 added create restore point
 added 17 updates, 48 total
