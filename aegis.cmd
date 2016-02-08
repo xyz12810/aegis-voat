@@ -8,7 +8,7 @@ echo.
 
 start /b /i /wait wscript.exe "%~dp0rpoint.vbs"
 
-echo [ press enter to continue ]
+echo [ press any key to continue ]
 pause >nul
 
 echo.

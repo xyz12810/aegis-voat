@@ -599,6 +599,6 @@ route delete 96.17.68.123 >nul 2>nul
 route delete 96.17.68.131 >nul 2>nul
 
 echo.
-echo done
+echo [ done - press any key to exit ]
 echo.
 pause >nul
