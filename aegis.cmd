@@ -1,14 +1,15 @@
 @echo off
 
-echo -/- aegis v1.10 by https://voat.co/u/thepower (https://tiny.cc/aegis-voat)
+echo -/- aegis v1.11 by https://voat.co/u/thepower
+echo -/- visit https://tiny.cc/aegis-voat for updates
 echo.
 
-echo * create system restore point ...
+echo * create system restore point (esc to skip) ...
 echo.
 
 start /b /i /wait wscript.exe "%~dp0rpoint.vbs"
 
-echo [ press any key to continue ]
+echo [ any key to continue ]
 pause >nul
 
 echo.

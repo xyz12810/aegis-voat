@@ -599,6 +599,6 @@ route -p add 96.17.68.123/32 0.0.0.0 >nul 2>nul
 route -p add 96.17.68.131/32 0.0.0.0 >nul 2>nul
 
 echo.
-echo [ done - press any key to exit ]
+echo [ done - any key to exit ]
 echo.
 pause >nul

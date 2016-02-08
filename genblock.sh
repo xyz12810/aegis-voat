@@ -246,6 +246,6 @@ do
     echo;
     [ ${n} -eq '25' ] && n='0' && echo 'timeout 1 >nul' && echo;
 done | tee 'block.cmd';
-echo -e 'echo.\necho [ done - press any key to exit ]\necho.\npause >nul' | tee -a 'block.cmd';
+echo -e 'echo.\necho [ done - any key to exit ]\necho.\npause >nul' | tee -a 'block.cmd';
 cp 'block.cmd' 'unblock.cmd';
 sed -i 's/echo block/echo unblock/g;s/route -p add/route delete/g;s/\/32 0\.0\.0\.0//g' 'unblock.cmd';

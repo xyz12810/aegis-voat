@@ -118,6 +118,6 @@ kb3135445	windows update client for windows 7 and windows server 2008 r2: februa
 
 kb3135449	windows update client for windows 8.1 and windows server 2012 r2: february 2016
 
-Thanks to /u/allockse, /u/elixxx, /u/eSh, /u/GGLapkizzz, /u/ilikeskittles, /u/liquidinsects, /u/Mixplate, /u/PaulDG, /u/pstein, /u/RypeDub420, /u/spexdi, /u/tor11, /u/Umrtvovacz, /u/qzxq, /u/thequestion, /u/tor11, and /u/Voluptuous_Panda.
+Thanks to @allockse, @AxiomBreak, @elixxx, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Mixplate, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, and @Voluptuous_Panda.
 
 Visit https://tiny.cc/aegis-voat for additional details and latest information

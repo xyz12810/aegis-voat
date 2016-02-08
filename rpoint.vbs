@@ -34,7 +34,7 @@ End If
 Sub CreateSRP
 	Set SRP = getobject("winmgmts:\\.\root\default:Systemrestore")
 	sDesc = "Manual Restore Point"
-	sDesc = InputBox ("Enter a description.", "Create Restore Point","Aegis v1.10")
+	sDesc = InputBox ("Enter a description.", "Create Restore Point","Aegis v1.11")
 	If Trim(sDesc) <> "" Then
 		sOut = SRP.createrestorepoint (sDesc, 0, 100)
 		If sOut <> 0 Then
