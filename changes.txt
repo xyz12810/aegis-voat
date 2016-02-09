@@ -2,7 +2,8 @@ v1.11-
 cosmetic updates
 removed kb2999226
 removed a few questionable ocsp host blocks
-updated ip's for several host blocks
+updated ip's for host blocks
+added internet explorer blocking toolkits for versions 7-11
 
 v1.10-
 added create restore point

@@ -192,11 +192,10 @@ hosts=(
 );
 
 echo;
-n='0';
+echo '@echo off' >'block.cmd';
 for host in ${hosts[@]};
 do
-    ((n++));
-    echo "echo block ${host}";
+    echo "rem block ${host}";
     dig @8.8.8.8 +short ${host} 2>/dev/null |
     sed 's/\.$//g' |
     while read line1;
@@ -244,8 +243,6 @@ do
         echo "route -p add ${line6}/32 0.0.0.0 >nul 2>nul";
     done;
     echo;
-    [ ${n} -eq '25' ] && n='0' && echo 'timeout 1 >nul' && echo;
 done | tee 'block.cmd';
-echo -e 'echo.\necho [ done - any key to exit ]\necho.\npause >nul' | tee -a 'block.cmd';
-cp 'block.cmd' 'unblock.cmd';
-sed -i 's/echo block/echo unblock/g;s/route -p add/route delete/g;s/\/32 0\.0\.0\.0//g' 'unblock.cmd';
+echo 'exit' >>'block.cmd';
+cat 'block.cmd' | sed 's/block/unblock/g;s/route -p add/route delete/g;s/\/32 0\.0\.0\.0//g' >'unblock.cmd';
