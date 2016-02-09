@@ -12,7 +12,7 @@ Download, unzip, right click on aegis.cmd, click "run as administrator", follow 
 
 Internet Explorer:
 
-Due to microsoft tying harmful components to critical security updates, certain kb updates which may also contain critical security patches for IE have been blocked. We are also blocking automated delivery of IE and related updates. Due to the obvious security risk posed by running an unpatched version of IE we strongly advise anyone using this script to completely uninstall IE. If you must continue to use IE you should probably not use this script - or do so at your own risk. You have been warned. :-)
+Due to microsoft tying harmful components to critical security updates, certain kb updates which may also contain critical security patches for IE have been blocked. We are also blocking automated delivery of IE and related updates. Due to the obvious security risk posed by running an unpatched version of IE we strongly advise anyone using this script to completely uninstall IE. If you must continue to use IE you should probably not use this script - or manually patch and do so at your own risk. You have been warned. :-)
 
 Liability:
 
