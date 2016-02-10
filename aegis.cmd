@@ -28,15 +28,15 @@ echo.
 echo * disable automatic delivery of internet explorer via windows update ...
 
 echo.
-echo  - disable ie7 delivery  (http://www.microsoft.com/en-us/download/details.aspx?id=13428)
+echo  - disable ie 7 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=13428)
 start "title" /b /wait "%~dp0disable7.cmd" . /B >>"%~dp0aegis.log" 2>&1
-echo  - disable ie8 delivery  (http://www.microsoft.com/en-us/download/details.aspx?id=14149)
+echo  - disable ie 8 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=14149)
 start "title" /b /wait "%~dp0disable8.cmd" . /B >>"%~dp0aegis.log" 2>&1
-echo  - disable ie9 delivery  (http://www.microsoft.com/en-us/download/details.aspx?id=179)
+echo  - disable ie 9 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=179)
 start "title" /b /wait "%~dp0disable9.cmd" . /B >>"%~dp0aegis.log" 2>&1
-echo  - disable ie10 delivery (https://www.microsoft.com/en-us/download/details.aspx?id=36512)
+echo  - disable ie10 auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=36512)
 start "title" /b /wait "%~dp0disable10.cmd" . /B >>"%~dp0aegis.log" 2>&1
-echo  - disable ie11 delivery (http://www.microsoft.com/en-us/download/details.aspx?id=40722)
+echo  - disable ie11 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=40722)
 start "title" /b /wait "%~dp0disable11.cmd" . /B >>"%~dp0aegis.log" 2>&1
 
 echo.
@@ -143,7 +143,7 @@ echo.
 
 echo * hide updates (this may take a while, be patient) ...
 
-start "title" /b /wait "%~dp0hide.vbs" 971033 2882822 2902907 2922324 2952664 2976978 2977759 2990214 3012973 3014460 3015249 3021917 3022345 3035583 3042058 3044374 3046480 3050265 3050267 3064683 3065987 3065988 3068708 3072318 3074677 3075249 3075851 3075853 3080149 3081437 3081454 3081954 3083324 3083325 3083710 3083711 3086255 3088195 3090045 3093983 3102810 3102812 3112343 3112336 3123862 3135445 3135449 >>"%~dp0aegis.log" 2>&1
+start "title" /b /wait cscript.exe "%~dp0hide.vbs" 971033 2882822 2902907 2922324 2952664 2976978 2977759 2990214 3012973 3014460 3015249 3021917 3022345 3035583 3042058 3044374 3046480 3050265 3050267 3064683 3065987 3065988 3068708 3072318 3074677 3075249 3075851 3075853 3080149 3081437 3081454 3081954 3083324 3083325 3083710 3083711 3086255 3088195 3090045 3093983 3102810 3102812 3112343 3112336 3123862 3135445 3135449 >>"%~dp0aegis.log" 2>&1
 
 echo.
 echo.
