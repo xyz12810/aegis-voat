@@ -4,7 +4,7 @@
 
 Details:
 
-Block 163 bad hosts (248 ip's), change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, hide/uninstall 47 kb updates (see below).
+Block 163 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, hide/uninstall 47 kb updates (see below).
 
 Instructions:
 
@@ -12,7 +12,7 @@ Download, unzip, right click on aegis.cmd, click "run as administrator", follow 
 
 Internet Explorer:
 
-Due to microsoft tying harmful components to critical security updates, certain kb updates which may also contain critical security patches for IE have been blocked. We are also blocking automated delivery of IE and related updates. Due to the obvious security risk posed by running an unpatched version of IE we strongly advise anyone using this script to completely uninstall IE. If you must continue to use IE you should probably not use this script - or manually patch and do so at your own risk. You have been warned. :-)
+Certain updates which may contain critical security patches for ie have been blocked. We also block automated delivery of ie and related updates. Due to the obvious security risk posed by running an unpatched ie we strongly advise to uninstall ie. If you continue to use ie you should probably not use this script - or manually patch and do so at your own risk.
 
 Liability:
 
