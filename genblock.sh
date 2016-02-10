@@ -1,16 +1,16 @@
 #!/bin/bash
 
 hosts=(
-'a-0001.a-msedge.net'
-'a-0002.a-msedge.net'
-'a-0003.a-msedge.net'
-'a-0004.a-msedge.net'
-'a-0005.a-msedge.net'
-'a-0006.a-msedge.net'
-'a-0007.a-msedge.net'
-'a-0008.a-msedge.net'
-'a-0009.a-msedge.net'
-'a23-218-212-69.deploy.static.akamaitechnologies.com'
+#'a-0001.a-msedge.net'
+#'a-0002.a-msedge.net'
+#'a-0003.a-msedge.net'
+#'a-0004.a-msedge.net'
+#'a-0005.a-msedge.net'
+#'a-0006.a-msedge.net'
+#'a-0007.a-msedge.net'
+#'a-0008.a-msedge.net'
+#'a-0009.a-msedge.net'
+#'a23-218-212-69.deploy.static.akamaitechnologies.com'
 'a.ads1.msn.com'
 'a.ads2.msads.net'
 'a.ads2.msn.com'
@@ -25,19 +25,16 @@ hosts=(
 'aidps.atdmt.com'
 'ajax.aspnetcdn.com'
 'aka-cdn-ns.adtech.de'
-'a-msedge.net'
-#'api.bing.com'
+#'a-msedge.net'
 'appexmapsappupdate.blob.core.windows.net'
-#'apps.skype.com'
 'a.rad.msn.com'
-'au.au-msedge.net'
+#'au.au-msedge.net'
 'auth.gfx.ms'
 'az361816.vo.msecnd.net'
 'az512334.vo.msecnd.net'
 'b.ads1.msn.com'
 'b.ads2.msads.net'
 'bingads.microsoft.com'
-#'bing.com'
 'b.rad.msn.com'
 'bs.serving-sys.com'
 'c1.microsoft.com'
@@ -65,7 +62,6 @@ hosts=(
 'displaycatalog.md.mp.microsoft.com'
 'dl.delivery.mp.microsoft.com'
 'dmd.metaservices.microsoft.com'
-#'download.microsoft.com'
 'download-ssl.msgamestudios.com'
 'ec.atdmt.com'
 'ecn.dev.virtualearth.net'
@@ -78,14 +74,11 @@ hosts=(
 'ff4a487e56259f4bd5831e9e30470e83.azr.msnetworkanalytics.testanalytics.net'
 'flex.msn.com'
 'geo-prod.do.dsp.mp.microsoft.com'
-'g.live.com'
+#'g.live.com'
 'g.msn.com'
-#'go.microsoft.com'
-#'go.skype.com'
 'h1.msn.com'
 'h2.msn.com'
 'help.bingads.microsoft.com'
-#'hotmail.com'
 'i1.services.social.microsoft.com'
 'i1.services.social.microsoft.com.nsatc.net'
 'iecvlist.microsoft.com'
@@ -98,32 +91,16 @@ hosts=(
 'live.rads.msn.com'
 'livetileedge.dsx.mp.microsoft.com'
 'logging.windows.microsoft.com'
-#'login.live.com'
-#'login.live.com.nsatc.net'
 'm.adnxs.com'
 'mediadiscovery.microsoft.com'
-#'m.hotmail.com'
-#'microsoft.com'
-'msedge.net'
+#'msedge.net'
 'msftncsi.com'
-#'msnbc.com'
 'msnbot-65-55-108-23.search.msn.com'
-#'msn.com'
 'msnportal.112.2o7.net'
 'msntest.serving-sys.com'
-#'nexus.officeapps.live.com'
 'oca.telemetry.microsoft.com'
 'oca.telemetry.microsoft.com.nsatc.net'
-#'ocsp.msocsp.com'
-#'ocsp.omniroot.com'
-#'ocsp.startssl.com'
-#'officeclient.microsoft.com'
-#'outlook.com'
-#'pipe.skype.com'
-#'platform.bing.com'
 'pre.footprintpredict.com'
-#'preview.msn.com'
-#'pricelist.skype.com'
 'r20swj13mr.microsoft.com'
 'rad.live.com'
 'rad.msn.com'
@@ -145,7 +122,6 @@ hosts=(
 'sls.update.microsoft.com.akadns.net'
 'sls.update.microsoft.com.nsatc.net'
 'sO.2mdn.net'
-#'social.answers.microsoft.com'
 'spynet2.microsoft.com'
 'spynetalt.microsoft.com'
 'sqm.df.telemetry.microsoft.com'
@@ -158,7 +134,6 @@ hosts=(
 'statsfe2.update.microsoft.com.akadns.net'
 'statsfe2.ws.microsoft.com'
 'storeedgefd.dsx.mp.microsoft.com'
-#'store-images.microsoft.com'
 'survey.watson.microsoft.com'
 't0.ssl.ak.dynamic.tiles.virtualearth.net'
 't0.ssl.ak.tiles.virtualearth.net'
@@ -169,9 +144,7 @@ hosts=(
 'telemetry.urs.microsoft.com'
 'tile-service.weather.microsoft.com'
 'tlu.dl.delivery.mp.microsoft.com'
-#'ui.skype.com'
 'urs.microsoft.com'
-#'vassg141.ocsp.omniroot.com'
 'version.hybrid.api.here.com'
 'view.atdmt.com'
 'vortex-bn2.metron.live.com.nsatc.net'
@@ -185,64 +158,62 @@ hosts=(
 'watson.telemetry.microsoft.com'
 'watson.telemetry.microsoft.com.nsatc.net'
 'wes.df.telemetry.microsoft.com'
-#'www.microsoft.com'
 'www.modern.ie'
 'www.msftncsi.com'
-#'www.msn.com'
 );
 
 echo;
-echo '@echo off' >'block.cmd';
+echo @echo off >block.cmd;
 for host in ${hosts[@]};
 do
-    echo "rem block ${host}";
-    dig @8.8.8.8 +short ${host} 2>/dev/null |
-    sed 's/\.$//g' |
+    echo rem block ${host};
+    dig @8.8.8.8 +short ${host} 2>/dev/null|
+    sed 's/\.$//g'|
     while read line1;
     do
-        echo ${hosts[@]} |
-        grep "^${line1}$" >/dev/null 2>&1 && break;
-        [[ ${line1} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line1} 2>/dev/null | sed 's/\.$//g' || echo ${line1};
-    done |
-    sort |
-    uniq |
+        echo ${hosts[@]}|
+        grep ^${line1}$ >/dev/null 2>&1 && break;
+        [[ ${line1} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line1} 2>/dev/null|sed 's/\.$//g' || echo ${line1};
+    done|
+    sort|
+    uniq|
     while read line2;
     do
-        echo ${hosts[@]} |
-        grep "^${line1}$" >/dev/null 2>&1 && break;
-        [[ ${line2} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line2} 2>/dev/null | sed 's/\.$//g' || echo ${line2};
-    done |
-    sort |
-    uniq |
+        echo ${hosts[@]}|
+        grep ^${line1}$ >/dev/null 2>&1 && break;
+        [[ ${line2} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line2} 2>/dev/null|sed 's/\.$//g' || echo ${line2};
+    done|
+    sort|
+    uniq|
     while read line3;
     do
-        echo ${hosts[@]} |
-        grep "^${line1}$" >/dev/null 2>&1 && break;
-        [[ ${line3} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line3} 2>/dev/null | sed 's/\.$//g' || echo ${line3};
-    done |
-    sort |
-    uniq |
+        echo ${hosts[@]}|
+        grep ^${line1}$ >/dev/null 2>&1 && break;
+        [[ ${line3} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line3} 2>/dev/null|sed 's/\.$//g' || echo ${line3};
+    done|
+    sort|
+    uniq|
     while read line4;
     do
-        echo ${hosts[@]} |
-        grep "^${line1}$" >/dev/null 2>&1 && break;
-        [[ ${line4} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line4} 2>/dev/null | sed 's/\.$//g' || echo ${line4};
-    done |
-    sort |
-    uniq |
+        echo ${hosts[@]}|
+        grep ^${line1}$ >/dev/null 2>&1 && break;
+        [[ ${line4} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line4} 2>/dev/null|sed 's/\.$//g' || echo ${line4};
+    done|
+    sort|
+    uniq|
     while read line5;
     do
-        echo ${hosts[@]} |
-        grep "^${line1}$" >/dev/null 2>&1 && break;
-        [[ ${line5} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line5} 2>/dev/null | sed 's/\.$//g' || echo ${line5};
-    done |
-    sort |
-    uniq |
+        echo ${hosts[@]}|
+        grep ^${line1}$ >/dev/null 2>&1 && break;
+        [[ ${line5} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line5} 2>/dev/null|sed 's/\.$//g' || echo ${line5};
+    done|
+    sort|
+    uniq|
     while read line6;
     do
-        echo "route -p add ${line6}/32 0.0.0.0 >nul 2>nul";
+        echo route -p add ${line6}/32 0.0.0.0 \>nul 2\>nul;
     done;
     echo;
-done | tee 'block.cmd';
-echo 'exit' >>'block.cmd';
-cat 'block.cmd' | sed 's/block/unblock/g;s/route -p add/route delete/g;s/\/32 0\.0\.0\.0//g' >'unblock.cmd';
+done|tee block.cmd;
+echo exit >>block.cmd;
+cat block.cmd|sed 's/block/unblock/g;s/route -p add/route delete/g;s/\/32 0\.0\.0\.0//g' >unblock.cmd;

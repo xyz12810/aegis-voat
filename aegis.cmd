@@ -30,15 +30,15 @@ echo.
    echo * disable automatic delivery of internet explorer via windows update ...
 
    echo.
-   echo  - disable ie 7 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=13428)
+   echo  - disable ie7  auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=13428)
    start "title" /b /wait "%~dp0disable7.cmd" . /B >>"%~dp0aegis.log" 2>&1
-   echo  - disable ie 8 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=14149)
+   echo  - disable ie8  auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=14149)
    start "title" /b /wait "%~dp0disable8.cmd" . /B >>"%~dp0aegis.log" 2>&1
-   echo  - disable ie 9 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=179)
+   echo  - disable ie9  auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=179)
    start "title" /b /wait "%~dp0disable9.cmd" . /B >>"%~dp0aegis.log" 2>&1
    echo  - disable ie10 auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=36512)
    start "title" /b /wait "%~dp0disable10.cmd" . /B >>"%~dp0aegis.log" 2>&1
-   echo  - disable ie11 auto delivery (http://www.microsoft.com/en-us/download/details.aspx?id=40722)
+   echo  - disable ie11 auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=40722)
    start "title" /b /wait "%~dp0disable11.cmd" . /B >>"%~dp0aegis.log" 2>&1
 
    echo.

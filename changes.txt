@@ -1,6 +1,10 @@
 v1.12-
 improved create system restore point method and error handling
 added begin/end message with timestamp to log file
+changed http links to use https
+misc code clean up
+removed several hosts that were redundant and/or causing problems
+updated ip's for host blocks
 
 v1.11-
 cosmetic updates
