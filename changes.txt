@@ -1,3 +1,7 @@
+v1.12-
+improved create system restore point method and error handling
+added begin/end message with timestamp to log file
+
 v1.11-
 cosmetic updates
 removed kb2999226
