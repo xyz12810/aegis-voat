@@ -1,4 +1,4 @@
-# aegis-voat
+# aegisvoat
 
 "Aegis" for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgrade elements
 
@@ -124,4 +124,4 @@ kb3135449	windows update client for windows 8.1 and windows server 2012 r2: febr
 
 Thanks to @allockse, @AxiomBreak, @elixxx, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Mixplate, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, and @Voluptuous_Panda.
 
-Visit https://tiny.cc/aegis-voat for additional details and latest information
+Visit https://tiny.cc/aegisvoat for additional details and latest information

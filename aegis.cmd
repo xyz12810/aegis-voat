@@ -5,7 +5,7 @@ echo. >>"%~dp0aegis.log" 2>&1
 echo.
 echo.
 echo -/- aegis v1.12 by https://voat.co/u/thepower
-echo -/- visit https://tiny.cc/aegis-voat for updates
+echo -/- visit https://tiny.cc/aegisvoat for updates
 echo.
 echo.
 
