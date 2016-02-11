@@ -1,6 +1,6 @@
 # aegisvoat
 
-"Aegis" for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgrade elements
+Aegis for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgrade elements
 
 Details:
 
