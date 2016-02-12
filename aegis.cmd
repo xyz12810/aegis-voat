@@ -100,7 +100,7 @@ echo.
    schtasks /change /disable /tn "\microsoft\windows\application experience\microsoft compatibility appraiser" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\application experience\programdataupdater" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\autochk\proxy" >>"%~dp0aegis.log" 2>&1
-   schtasks /change /disable /tn "\microsoft\windows\customer experience improvement programdp0\consolidator" >>"%~dp0aegis.log" 2>&1
+   schtasks /change /disable /tn "\microsoft\windows\customer experience improvement program\consolidator" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\customer experience improvement program\kernelceiptask" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\customer experience improvement program\usbceip" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\diskdiagnostic\microsoft-windows-diskdiagnosticdatacollector" >>"%~dp0aegis.log" 2>&1
