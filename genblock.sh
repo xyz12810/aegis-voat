@@ -1,44 +1,43 @@
-#!/bin/bash
-
-hosts=(
-#'a-0001.a-msedge.net'
-#'a-0002.a-msedge.net'
-#'a-0003.a-msedge.net'
-#'a-0004.a-msedge.net'
-#'a-0005.a-msedge.net'
-#'a-0006.a-msedge.net'
-#'a-0007.a-msedge.net'
-#'a-0008.a-msedge.net'
-#'a-0009.a-msedge.net'
-#'a23-218-212-69.deploy.static.akamaitechnologies.com'
+h=(
+'0.r.msn.com'
 'a.ads1.msn.com'
 'a.ads2.msads.net'
 'a.ads2.msn.com'
 'ac3.msn.com'
-'activation.playready.microsoft.com'
 'ad.doubleclick.net'
 'ads1.msads.net'
 'ads1.msn.com'
+'ads2.msn.com'
+'ads.eu.msn.com'
 'adsmockarc.azurewebsites.net'
 'ads.msn.com'
 'adsyndication.msn.com'
 'aidps.atdmt.com'
 'ajax.aspnetcdn.com'
 'aka-cdn-ns.adtech.de'
-#'a-msedge.net'
+'analytics.live.com'
+'analytics.microsoft.com'
+'analytics.msnbc.msn.com'
+'analytics.msn.com'
+'analytics.r.msn.com'
 'appexmapsappupdate.blob.core.windows.net'
 'a.rad.msn.com'
-#'au.au-msedge.net'
+'arc2.msn.com'
+'arc3.msn.com'
+'arc9.msn.com'
 'auth.gfx.ms'
 'az361816.vo.msecnd.net'
 'az512334.vo.msecnd.net'
 'b.ads1.msn.com'
 'b.ads2.msads.net'
+'bat.bing.com'
 'bingads.microsoft.com'
+'blu.mobileads.msn.com'
 'b.rad.msn.com'
 'bs.serving-sys.com'
 'c1.microsoft.com'
 'c.atdmt.com'
+'c.bing.com'
 'cdn.atdmt.com'
 'cdn.content.prod.cms.msn.com'
 'cdp1.public-trust.com'
@@ -48,6 +47,9 @@ hosts=(
 'c.microsoft.com'
 'c.msn.com'
 'cmsresources.windowsphone.com'
+'c.ninemsn.com.au'
+'c.no.msn.com'
+'col.mobileads.msn.com'
 'compatexchange.cloudapp.net'
 'content.windows.microsoft.com'
 'corpext.msitadfs.glbdns2.microsoft.com'
@@ -59,6 +61,7 @@ hosts=(
 'dev.virtualearth.net'
 'df.telemetry.microsoft.com'
 'diagnostics.support.microsoft.com'
+'digg.analytics.live.com'
 'displaycatalog.md.mp.microsoft.com'
 'dl.delivery.mp.microsoft.com'
 'dmd.metaservices.microsoft.com'
@@ -74,7 +77,6 @@ hosts=(
 'ff4a487e56259f4bd5831e9e30470e83.azr.msnetworkanalytics.testanalytics.net'
 'flex.msn.com'
 'geo-prod.do.dsp.mp.microsoft.com'
-#'g.live.com'
 'g.msn.com'
 'h1.msn.com'
 'h2.msn.com'
@@ -83,6 +85,7 @@ hosts=(
 'i1.services.social.microsoft.com.nsatc.net'
 'iecvlist.microsoft.com'
 'ieonline.microsoft.com'
+'images.adsyndication.msn.com'
 'img-s-msn-com.akamaized.net'
 'inference.location.live.net'
 'js.microsoft.com'
@@ -93,19 +96,23 @@ hosts=(
 'logging.windows.microsoft.com'
 'm.adnxs.com'
 'mediadiscovery.microsoft.com'
-#'msedge.net'
 'msftncsi.com'
 'msnbot-65-55-108-23.search.msn.com'
 'msnportal.112.2o7.net'
 'msntest.serving-sys.com'
 'oca.telemetry.microsoft.com'
 'oca.telemetry.microsoft.com.nsatc.net'
+'otf.msn.com'
+'popup.msn.com'
 'pre.footprintpredict.com'
 'r20swj13mr.microsoft.com'
 'rad.live.com'
 'rad.msn.com'
 'redir.metaservices.microsoft.com'
 'reports.wes.df.telemetry.microsoft.com'
+'rmads.eu.msn.com'
+'rmads.msn.com'
+'rpt.rad.msn.com'
 'sb.scorecardresearch.com'
 'schemas.microsoft.akadns.net'
 'secure.adnxs.com'
@@ -122,6 +129,7 @@ hosts=(
 'sls.update.microsoft.com.akadns.net'
 'sls.update.microsoft.com.nsatc.net'
 'sO.2mdn.net'
+'spynet.microsoft.com'
 'spynet2.microsoft.com'
 'spynetalt.microsoft.com'
 'sqm.df.telemetry.microsoft.com'
@@ -144,6 +152,7 @@ hosts=(
 'telemetry.urs.microsoft.com'
 'tile-service.weather.microsoft.com'
 'tlu.dl.delivery.mp.microsoft.com'
+'udc.msn.com'
 'urs.microsoft.com'
 'version.hybrid.api.here.com'
 'view.atdmt.com'
@@ -162,58 +171,20 @@ hosts=(
 'www.msftncsi.com'
 );
 
-echo;
-echo @echo off >block.cmd;
-for host in ${hosts[@]};
-do
-    echo rem block ${host};
-    dig @8.8.8.8 +short ${host} 2>/dev/null|
-    sed 's/\.$//g'|
-    while read line1;
-    do
-        echo ${hosts[@]}|
-        grep ^${line1}$ >/dev/null 2>&1 && break;
-        [[ ${line1} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line1} 2>/dev/null|sed 's/\.$//g' || echo ${line1};
-    done|
-    sort|
-    uniq|
-    while read line2;
-    do
-        echo ${hosts[@]}|
-        grep ^${line1}$ >/dev/null 2>&1 && break;
-        [[ ${line2} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line2} 2>/dev/null|sed 's/\.$//g' || echo ${line2};
-    done|
-    sort|
-    uniq|
-    while read line3;
-    do
-        echo ${hosts[@]}|
-        grep ^${line1}$ >/dev/null 2>&1 && break;
-        [[ ${line3} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line3} 2>/dev/null|sed 's/\.$//g' || echo ${line3};
-    done|
-    sort|
-    uniq|
-    while read line4;
-    do
-        echo ${hosts[@]}|
-        grep ^${line1}$ >/dev/null 2>&1 && break;
-        [[ ${line4} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line4} 2>/dev/null|sed 's/\.$//g' || echo ${line4};
-    done|
-    sort|
-    uniq|
-    while read line5;
-    do
-        echo ${hosts[@]}|
-        grep ^${line1}$ >/dev/null 2>&1 && break;
-        [[ ${line5} =~ [a-z]$ ]] && dig @8.8.8.8 +short ${line5} 2>/dev/null|sed 's/\.$//g' || echo ${line5};
-    done|
-    sort|
-    uniq|
-    while read line6;
-    do
-        echo route -p add ${line6}/32 0.0.0.0 \>nul 2\>nul;
-    done;
-    echo;
-done|tee block.cmd;
-echo exit >>block.cmd;
-cat block.cmd|sed 's/block/unblock/g;s/route -p add/route delete/g;s/\/32 0\.0\.0\.0//g' >unblock.cmd;
+l1=;l2=;l3=;l4=;l5=;
+bl=block.cmd;ub=unblock.cmd;
+
+d(){ dig @8.8.8.8 +short ${@} 2>/dev/null; };
+
+for l in ${h[@]}; do l1=(${l1[@]} $(d ${l}));done;
+for l in ${l1[@]};do l2=(${l2[@]} $(d ${l}));done;
+for l in ${l2[@]};do l3=(${l3[@]} $(d ${l}));done;
+for l in ${l3[@]};do l4=(${l4[@]} $(d ${l}));done;
+for l in ${l4[@]};do l5=(${l5[@]} $(d ${l}));done;
+
+l=$(printf '%s\n' ${l1[@]} ${l2[@]} ${l3[@]} ${l4[@]} ${l5[@]}|
+sed 's/\.$//g'|grep -v [a-z]$|sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n|uniq);
+
+for x in ${l[@]};do printf '%s\n' "route -p add ${x}/32 0.0.0.0 >nul 2>nul" >${bl};done;
+for x in ${l[@]};do printf '%s\n' "route del ${x} >nul 2>nul" >${ub};done;
+printf '%s\n' 'exit'|tee -a ${bl} ${ub};
