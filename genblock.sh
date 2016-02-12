@@ -122,7 +122,6 @@ h=(
 'settings-sandbox.data.microsoft.com'
 'settings-ssl.xboxlive.com'
 'settings-win.data.microsoft.com'
-'s.gateway.messenger.live.com'
 'sgmetrics.cloudapp.net'
 'shell.windows.com'
 'sls.update.microsoft.com'
@@ -185,6 +184,7 @@ for l in ${l4[@]};do l5=(${l5[@]} $(d ${l}));done;
 l=$(printf '%s\n' ${l1[@]} ${l2[@]} ${l3[@]} ${l4[@]} ${l5[@]}|
 sed 's/\.$//g'|grep -v [a-z]$|sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n|uniq);
 
-for x in ${l[@]};do printf '%s\n' "route -p add ${x}/32 0.0.0.0 >nul 2>nul" >${bl};done;
-for x in ${l[@]};do printf '%s\n' "route del ${x} >nul 2>nul" >${ub};done;
+>${bl};>${ub};
+for x in ${l[@]};do printf '%s\n' "route -p add ${x}/32 0.0.0.0 >nul 2>nul" >>${bl};done;
+for x in ${l[@]};do printf '%s\n' "route del ${x} >nul 2>nul" >>${ub};done;
 printf '%s\n' 'exit'|tee -a ${bl} ${ub};
