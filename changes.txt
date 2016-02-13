@@ -3,8 +3,13 @@ improved create system restore point method and error handling
 added begin/end message with timestamp to log file
 changed http links to use https
 misc code clean up
+rewrote genblock script to improve execution speed and quality of results
 removed several hosts that were redundant and/or causing problems
+added 70+ hosts to the block list (sources include mvps and others)
 updated ip's for host blocks
+added hosts file blocking in addition to existing route based blocking
+added comments to aegis.reg
+added sed.exe to facilitate removal of hosts file blocks
 
 v1.11-
 cosmetic updates
