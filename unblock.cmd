@@ -1,204 +1,209 @@
-route del 8.27.83.254 >nul 2>nul
-route del 8.253.31.254 >nul 2>nul
-route del 8.254.24.254 >nul 2>nul
-route del 10.7.94.223 >nul 2>nul
-route del 23.0.160.8 >nul 2>nul
-route del 23.0.160.10 >nul 2>nul
-route del 23.0.160.18 >nul 2>nul
-route del 23.0.160.19 >nul 2>nul
-route del 23.0.160.26 >nul 2>nul
-route del 23.0.160.33 >nul 2>nul
-route del 23.0.160.49 >nul 2>nul
-route del 23.0.160.59 >nul 2>nul
-route del 23.0.160.65 >nul 2>nul
-route del 23.0.160.72 >nul 2>nul
-route del 23.0.160.73 >nul 2>nul
-route del 23.0.160.74 >nul 2>nul
-route del 23.0.160.80 >nul 2>nul
-route del 23.0.160.82 >nul 2>nul
-route del 23.0.160.83 >nul 2>nul
-route del 23.37.28.79 >nul 2>nul
-route del 23.54.184.70 >nul 2>nul
-route del 23.96.212.225 >nul 2>nul
-route del 23.98.49.14 >nul 2>nul
-route del 23.99.10.11 >nul 2>nul
-route del 23.196.17.148 >nul 2>nul
-route del 23.196.28.187 >nul 2>nul
-route del 23.196.36.137 >nul 2>nul
-route del 23.196.38.186 >nul 2>nul
-route del 23.218.112.81 >nul 2>nul
-route del 23.218.119.238 >nul 2>nul
-route del 23.218.123.143 >nul 2>nul
-route del 23.218.128.11 >nul 2>nul
-route del 23.218.134.99 >nul 2>nul
-route del 23.218.134.143 >nul 2>nul
-route del 23.218.141.100 >nul 2>nul
-route del 23.218.141.237 >nul 2>nul
-route del 23.218.146.25 >nul 2>nul
-route del 31.13.69.193 >nul 2>nul
-route del 40.118.253.233 >nul 2>nul
-route del 54.243.53.207 >nul 2>nul
-route del 54.243.135.126 >nul 2>nul
-route del 63.241.108.103 >nul 2>nul
-route del 63.241.108.104 >nul 2>nul
-route del 64.4.6.100 >nul 2>nul
-route del 64.4.54.18 >nul 2>nul
-route del 64.4.54.22 >nul 2>nul
-route del 64.4.54.32 >nul 2>nul
-route del 64.4.54.36 >nul 2>nul
-route del 64.4.54.50 >nul 2>nul
-route del 64.4.54.253 >nul 2>nul
-route del 64.4.54.254 >nul 2>nul
-route del 65.52.100.7 >nul 2>nul
-route del 65.52.100.9 >nul 2>nul
-route del 65.52.100.11 >nul 2>nul
-route del 65.52.100.91 >nul 2>nul
-route del 65.52.100.92 >nul 2>nul
-route del 65.52.100.93 >nul 2>nul
-route del 65.52.100.94 >nul 2>nul
-route del 65.52.108.3 >nul 2>nul
-route del 65.52.108.29 >nul 2>nul
-route del 65.52.108.52 >nul 2>nul
-route del 65.52.108.56 >nul 2>nul
-route del 65.52.108.153 >nul 2>nul
-route del 65.52.108.163 >nul 2>nul
-route del 65.52.108.254 >nul 2>nul
-route del 65.54.192.248 >nul 2>nul
-route del 65.54.226.187 >nul 2>nul
-route del 65.55.2.2 >nul 2>nul
-route del 65.55.2.6 >nul 2>nul
-route del 65.55.29.238 >nul 2>nul
-route del 65.55.39.10 >nul 2>nul
-route del 65.55.44.54 >nul 2>nul
-route del 65.55.44.82 >nul 2>nul
-route del 65.55.44.85 >nul 2>nul
-route del 65.55.44.108 >nul 2>nul
-route del 65.55.44.109 >nul 2>nul
-route del 65.55.52.56 >nul 2>nul
-route del 65.55.57.27 >nul 2>nul
-route del 65.55.108.23 >nul 2>nul
-route del 65.55.113.11 >nul 2>nul
-route del 65.55.113.12 >nul 2>nul
-route del 65.55.113.13 >nul 2>nul
-route del 65.55.128.80 >nul 2>nul
-route del 65.55.128.81 >nul 2>nul
-route del 65.55.149.120 >nul 2>nul
-route del 65.55.252.43 >nul 2>nul
-route del 65.55.252.63 >nul 2>nul
-route del 65.55.252.71 >nul 2>nul
-route del 65.55.252.93 >nul 2>nul
-route del 65.55.252.190 >nul 2>nul
-route del 66.119.144.190 >nul 2>nul
-route del 66.119.152.205 >nul 2>nul
-route del 66.235.138.193 >nul 2>nul
-route del 66.235.138.194 >nul 2>nul
-route del 66.235.138.195 >nul 2>nul
-route del 66.235.139.17 >nul 2>nul
-route del 66.235.139.18 >nul 2>nul
-route del 66.235.139.19 >nul 2>nul
-route del 66.235.139.205 >nul 2>nul
-route del 66.235.139.206 >nul 2>nul
-route del 66.235.139.207 >nul 2>nul
-route del 68.67.152.1 >nul 2>nul
-route del 68.67.152.3 >nul 2>nul
-route del 68.67.152.5 >nul 2>nul
-route del 68.67.152.6 >nul 2>nul
-route del 68.67.152.82 >nul 2>nul
-route del 68.67.152.94 >nul 2>nul
-route del 68.67.152.97 >nul 2>nul
-route del 68.67.152.103 >nul 2>nul
-route del 68.67.152.110 >nul 2>nul
-route del 68.67.152.131 >nul 2>nul
-route del 68.67.152.132 >nul 2>nul
-route del 68.67.152.167 >nul 2>nul
-route del 68.67.152.172 >nul 2>nul
-route del 68.67.152.174 >nul 2>nul
-route del 68.67.153.37 >nul 2>nul
-route del 68.67.153.44 >nul 2>nul
-route del 68.67.153.87 >nul 2>nul
-route del 68.67.153.89 >nul 2>nul
-route del 68.67.176.40 >nul 2>nul
-route del 68.67.176.42 >nul 2>nul
-route del 68.67.176.45 >nul 2>nul
-route del 68.67.176.48 >nul 2>nul
-route del 68.67.176.49 >nul 2>nul
-route del 68.67.176.51 >nul 2>nul
-route del 68.67.176.129 >nul 2>nul
-route del 68.67.176.146 >nul 2>nul
-route del 72.21.81.200 >nul 2>nul
-route del 72.21.91.8 >nul 2>nul
-route del 93.184.215.200 >nul 2>nul
-route del 94.245.121.176 >nul 2>nul
-route del 94.245.121.177 >nul 2>nul
-route del 94.245.121.178 >nul 2>nul
-route del 94.245.121.179 >nul 2>nul
-route del 94.245.121.251 >nul 2>nul
-route del 104.43.203.255 >nul 2>nul
-route del 104.45.136.42 >nul 2>nul
-route del 104.119.140.178 >nul 2>nul
-route del 107.20.234.199 >nul 2>nul
-route del 107.21.246.114 >nul 2>nul
-route del 111.221.29.253 >nul 2>nul
-route del 111.221.29.254 >nul 2>nul
-route del 131.107.113.238 >nul 2>nul
-route del 131.107.255.255 >nul 2>nul
-route del 131.253.14.8 >nul 2>nul
-route del 131.253.14.76 >nul 2>nul
-route del 131.253.34.230 >nul 2>nul
-route del 131.253.40.44 >nul 2>nul
-route del 131.253.40.47 >nul 2>nul
-route del 131.253.40.50 >nul 2>nul
-route del 131.253.40.53 >nul 2>nul
-route del 131.253.40.55 >nul 2>nul
-route del 131.253.40.59 >nul 2>nul
-route del 131.253.40.64 >nul 2>nul
-route del 134.170.30.221 >nul 2>nul
-route del 134.170.51.190 >nul 2>nul
-route del 134.170.52.151 >nul 2>nul
-route del 134.170.53.29 >nul 2>nul
-route del 134.170.53.30 >nul 2>nul
-route del 134.170.58.121 >nul 2>nul
-route del 134.170.58.123 >nul 2>nul
-route del 134.170.58.125 >nul 2>nul
-route del 134.170.58.189 >nul 2>nul
-route del 134.170.106.96 >nul 2>nul
-route del 134.170.107.152 >nul 2>nul
-route del 134.170.115.60 >nul 2>nul
-route del 134.170.188.139 >nul 2>nul
-route del 134.170.188.248 >nul 2>nul
-route del 137.117.100.176 >nul 2>nul
-route del 157.55.129.21 >nul 2>nul
-route del 157.55.240.220 >nul 2>nul
-route del 157.56.23.91 >nul 2>nul
-route del 157.56.77.138 >nul 2>nul
-route del 157.56.96.80 >nul 2>nul
-route del 157.56.96.208 >nul 2>nul
-route del 157.56.100.83 >nul 2>nul
-route del 157.56.121.89 >nul 2>nul
-route del 168.62.11.145 >nul 2>nul
-route del 168.62.21.207 >nul 2>nul
-route del 168.62.187.13 >nul 2>nul
-route del 173.194.46.123 >nul 2>nul
-route del 173.194.46.124 >nul 2>nul
-route del 191.232.139.253 >nul 2>nul
-route del 191.232.140.76 >nul 2>nul
-route del 191.236.16.12 >nul 2>nul
-route del 191.238.241.80 >nul 2>nul
-route del 192.243.250.72 >nul 2>nul
-route del 192.243.250.88 >nul 2>nul
-route del 204.79.197.221 >nul 2>nul
-route del 204.160.124.125 >nul 2>nul
-route del 207.46.7.252 >nul 2>nul
-route del 207.46.11.152 >nul 2>nul
-route del 207.46.101.29 >nul 2>nul
-route del 207.46.113.50 >nul 2>nul
-route del 207.46.202.114 >nul 2>nul
-route del 207.46.223.94 >nul 2>nul
-route del 207.68.166.254 >nul 2>nul
-route del 216.38.162.128 >nul 2>nul
-route del 216.38.164.128 >nul 2>nul
-route del 216.58.216.198 >nul 2>nul
-route del 216.58.216.230 >nul 2>nul
+route delete 8.27.83.254
+route delete 8.253.31.254
+route delete 8.254.24.254
+route delete 10.7.94.223
+route delete 23.0.160.10
+route delete 23.0.160.19
+route delete 23.0.160.26
+route delete 23.0.160.33
+route delete 23.0.160.49
+route delete 23.0.160.59
+route delete 23.0.160.65
+route delete 23.0.160.72
+route delete 23.0.160.73
+route delete 23.0.160.82
+route delete 23.0.160.83
+route delete 23.0.160.90
+route delete 23.0.160.91
+route delete 23.0.160.98
+route delete 23.0.160.99
+route delete 23.37.28.79
+route delete 23.54.184.70
+route delete 23.96.212.225
+route delete 23.98.49.14
+route delete 23.99.10.11
+route delete 23.196.28.187
+route delete 23.203.155.156
+route delete 23.218.112.81
+route delete 23.218.118.160
+route delete 23.218.123.143
+route delete 23.218.128.11
+route delete 23.218.134.99
+route delete 23.218.134.143
+route delete 23.218.138.15
+route delete 23.218.141.100
+route delete 23.218.141.237
+route delete 23.218.146.25
+route delete 23.218.146.131
+route delete 31.13.69.193
+route delete 40.118.253.233
+route delete 54.243.53.207
+route delete 54.243.135.126
+route delete 63.241.108.103
+route delete 64.4.6.100
+route delete 64.4.54.32
+route delete 64.4.54.36
+route delete 64.4.54.50
+route delete 64.4.54.167
+route delete 64.4.54.253
+route delete 64.4.54.254
+route delete 65.52.100.7
+route delete 65.52.100.9
+route delete 65.52.100.11
+route delete 65.52.100.91
+route delete 65.52.100.92
+route delete 65.52.100.93
+route delete 65.52.100.94
+route delete 65.52.108.3
+route delete 65.52.108.56
+route delete 65.52.108.90
+route delete 65.52.108.153
+route delete 65.52.108.154
+route delete 65.52.108.254
+route delete 65.54.192.248
+route delete 65.54.226.187
+route delete 65.55.2.2
+route delete 65.55.2.6
+route delete 65.55.29.238
+route delete 65.55.39.10
+route delete 65.55.44.54
+route delete 65.55.44.82
+route delete 65.55.44.85
+route delete 65.55.44.108
+route delete 65.55.44.109
+route delete 65.55.52.56
+route delete 65.55.57.27
+route delete 65.55.108.23
+route delete 65.55.113.11
+route delete 65.55.113.12
+route delete 65.55.113.13
+route delete 65.55.128.80
+route delete 65.55.128.81
+route delete 65.55.138.111
+route delete 65.55.149.120
+route delete 65.55.227.188
+route delete 65.55.252.43
+route delete 65.55.252.63
+route delete 65.55.252.71
+route delete 65.55.252.93
+route delete 65.55.252.190
+route delete 66.119.144.190
+route delete 66.119.147.131
+route delete 66.119.152.205
+route delete 66.235.138.193
+route delete 66.235.138.194
+route delete 66.235.138.195
+route delete 66.235.139.17
+route delete 66.235.139.18
+route delete 66.235.139.19
+route delete 66.235.139.205
+route delete 66.235.139.206
+route delete 66.235.139.207
+route delete 68.67.152.1
+route delete 68.67.152.3
+route delete 68.67.152.5
+route delete 68.67.152.6
+route delete 68.67.152.7
+route delete 68.67.152.91
+route delete 68.67.152.92
+route delete 68.67.152.94
+route delete 68.67.152.97
+route delete 68.67.152.120
+route delete 68.67.152.131
+route delete 68.67.152.167
+route delete 68.67.152.172
+route delete 68.67.152.173
+route delete 68.67.152.174
+route delete 68.67.153.37
+route delete 68.67.153.40
+route delete 68.67.153.44
+route delete 68.67.153.87
+route delete 68.67.153.89
+route delete 68.67.176.41
+route delete 68.67.176.42
+route delete 68.67.176.45
+route delete 68.67.176.47
+route delete 68.67.176.145
+route delete 68.67.176.146
+route delete 72.21.81.200
+route delete 72.21.91.8
+route delete 93.184.215.200
+route delete 94.245.121.176
+route delete 94.245.121.177
+route delete 94.245.121.178
+route delete 94.245.121.179
+route delete 94.245.121.253
+route delete 104.43.203.255
+route delete 104.45.136.42
+route delete 104.119.140.178
+route delete 107.20.234.199
+route delete 107.21.246.114
+route delete 111.221.29.253
+route delete 111.221.29.254
+route delete 131.107.255.255
+route delete 131.253.14.8
+route delete 131.253.14.76
+route delete 131.253.14.121
+route delete 131.253.14.153
+route delete 131.253.14.194
+route delete 131.253.34.189
+route delete 131.253.34.230
+route delete 131.253.40.47
+route delete 131.253.40.50
+route delete 131.253.40.53
+route delete 131.253.40.55
+route delete 131.253.40.59
+route delete 131.253.40.64
+route delete 134.170.30.221
+route delete 134.170.51.190
+route delete 134.170.53.29
+route delete 134.170.53.30
+route delete 134.170.58.118
+route delete 134.170.58.121
+route delete 134.170.58.123
+route delete 134.170.58.189
+route delete 134.170.105.96
+route delete 134.170.107.176
+route delete 134.170.115.60
+route delete 134.170.170.56
+route delete 134.170.185.70
+route delete 134.170.188.139
+route delete 134.170.188.248
+route delete 137.117.100.176
+route delete 157.55.129.21
+route delete 157.55.240.220
+route delete 157.56.23.91
+route delete 157.56.57.5
+route delete 157.56.64.122
+route delete 157.56.96.58
+route delete 157.56.96.80
+route delete 157.56.96.208
+route delete 157.56.100.83
+route delete 168.62.11.145
+route delete 168.62.21.207
+route delete 168.62.187.13
+route delete 173.194.46.59
+route delete 173.194.46.60
+route delete 173.194.46.123
+route delete 173.194.46.124
+route delete 184.51.147.146
+route delete 184.51.147.153
+route delete 191.232.139.253
+route delete 191.232.140.76
+route delete 191.236.16.12
+route delete 191.238.241.80
+route delete 192.243.250.72
+route delete 192.243.250.88
+route delete 204.79.197.221
+route delete 204.160.124.125
+route delete 207.46.7.252
+route delete 207.46.101.29
+route delete 207.46.113.50
+route delete 207.46.202.114
+route delete 207.46.223.94
+route delete 207.68.166.254
+route delete 216.38.164.128
+route delete 216.38.172.128
 "%~dp0sed.exe" -i "/0.r.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/a.ads1.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/a.ads2.msads.net/d" "c:\windows\system32\drivers\etc\hosts"

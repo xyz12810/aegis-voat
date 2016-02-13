@@ -231,8 +231,21 @@ l=$(printf '%s\n' ${l1[@]} ${l2[@]} ${l3[@]} ${l4[@]} ${l5[@]}|
 sed 's/\.$//g'|grep -v [a-z]$|sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n|uniq);
 
 >${bl};>${ub};
-for x in ${l[@]};do printf '%s\n' "route -p add ${x}/32 0.0.0.0 >nul 2>nul" >>${bl};done;
-for x in ${h[@]};do printf '%s\n' "echo 0.0.0.0 ${x} >>\"c:\windows\system32\drivers\etc\hosts\"" >>${bl};done;
-for x in ${l[@]};do printf '%s\n' "route del ${x} >nul 2>nul" >>${ub};done;
-for x in ${h[@]};do printf '%s\n' "\"%~dp0sed.exe\" -i \"/${x}/d\" \"c:\windows\system32\drivers\etc\hosts\"" >>${ub};done;
+for x in ${l[@]};
+do
+  printf '%s\n' "route -p add ${x}/32 0.0.0.0" >>${bl};
+done;
+for x in ${h[@]};
+do
+  printf '%s\n' "\"%~dp0sed.exe\" -i \"/${x}/d\" \"c:\windows\system32\drivers\etc\hosts\"" >>${bl};
+  printf '%s\n' "echo 0.0.0.0 ${x} >>\"c:\windows\system32\drivers\etc\hosts\"" >>${bl};
+done;
+for x in ${l[@]};
+do
+  printf '%s\n' "route delete ${x}" >>${ub};
+done;
+for x in ${h[@]};
+do
+  printf '%s\n' "\"%~dp0sed.exe\" -i \"/${x}/d\" \"c:\windows\system32\drivers\etc\hosts\"" >>${ub};
+done;
 printf '%s\n' 'exit'|tee -a ${bl} ${ub};
