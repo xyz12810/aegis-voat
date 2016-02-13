@@ -12,15 +12,15 @@ Download, unzip, right click on aegis.cmd, click "run as administrator", follow 
 
 Internet Explorer:
 
-Certain updates which may contain critical security patches for ie have been blocked. We also block automated delivery of ie and related updates. Due to the obvious security risk posed by running an unpatched ie we strongly advise to uninstall ie. If you continue to use ie you should probably not use this script - or manually patch and do so at your own risk.
+Some updates which may contain critical security patches for ie, as well as automated delivery of ie and related updates, will be blocked. Due to the obvious security risk posed by running an unpatched browser we strongly advise to uninstall ie. If you plan to continue to use ie you should probably not run this script - or manually patch and do so at your own risk.
 
 Liability:
 
-Everything (with the exception of setacl) is provided as an open source/non-compiled format so you can look and see for yourself what it does. It has been thoroughly tested on my own systems and scanned on VirusTotal and to the best of my knowledge it does not contain any harmful or malicious elements. I assume no liability for any problems so use it at your own risk.
+All code except sed and setacl is provided as open source so you can look and see for yourself what it does. It has been thoroughly tested on my own systems and scanned on VirusTotal and to the best of my knowledge it does not contain any harmful or malicious elements. However I assume no liability for any problems so use it at your own risk.
 
 License:
 
-You are welcome to modify or share any of the code or elements and you do not have to give me credit. I do appreciate any feedback and I will give you credit if I use your ideas.
+There is no official license - you are welcome to modify and share my code and you do not have to give me credit. I do appreciate any feedback and I will give you credit if I use your ideas. This script is the product of a collaborate effort and does not belong to any one person.
 
 Windows Update:
 
