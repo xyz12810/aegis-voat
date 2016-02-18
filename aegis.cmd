@@ -1,10 +1,10 @@
 @echo off
 
-echo [ begin aegis v1.12 %date% %time% ] >"%~dp0aegis.log" 2>&1
+echo [ begin aegis v1.13 %date% %time% ] >"%~dp0aegis.log" 2>&1
 echo. >>"%~dp0aegis.log" 2>&1
 echo.
 echo.
-echo -/- aegis v1.12 by https://voat.co/u/thepower
+echo -/- aegis v1.13 by https://voat.co/u/thepower
 echo -/- visit https://tiny.cc/aegisvoat for updates
 echo.
 echo.
@@ -106,7 +106,7 @@ echo.
    schtasks /change /disable /tn "\microsoft\windows\diskdiagnostic\microsoft-windows-diskdiagnosticdatacollector" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\maintenance\winsat" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\activatewindowssearch" >>"%~dp0aegis.log" 2>&1
-   schtasks /change /disable /tn "\microsoft\windows\media center\configureinternettimeservice" >>"%~dp0aegis.log" 2>&1
+   schtasks /change /disable /tn "\microsoft\windows\media center\configureinternetimeservice" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\dispatchrecoverytasks" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\ehdrminit" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\installplayready" >>"%~dp0aegis.log" 2>&1
@@ -160,7 +160,21 @@ echo.
 
    echo * sync time to pool.ntp.org ...
 
-   w32tm /config /syncfromflags:manual /manualpeerlist:"pool.ntp.org" /update /reliable:yes >>"%~dp0aegis.log" 2>&1
+   net stop w32time >>"%~dp0aegis.log" 2>&1
+   w32tm /unregister >>"%~dp0aegis.log" 2>&1
+   w32tm /unregister >>"%~dp0aegis.log" 2>&1
+   reg delete hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f >>"%~dp0aegis.log" 2>&1
+   reg delete hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient /f /v specialpolltimeremaining >>"%~dp0aegis.log" 2>&1
+   w32tm /register >>"%~dp0aegis.log" 2>&1
+   w32tm /config /syncfromflags:manual /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org" >>"%~dp0aegis.log" 2>&1
+   reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /t reg_sz /d 0 >>"%~dp0aegis.log" 2>&1
+   reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /v 0 /t reg_sz /d 0.pool.ntp.org >>"%~dp0aegis.log" 2>&1
+   reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /v 1 /t reg_sz /d 1.pool.ntp.org >>"%~dp0aegis.log" 2>&1
+   reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /v 2 /t reg_sz /d 2.pool.ntp.org >>"%~dp0aegis.log" 2>&1
+   reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /v 3 /t reg_sz /d 3.pool.ntp.org >>"%~dp0aegis.log" 2>&1
+   reg add hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient /f /v specialpollinterval /t reg_dword /d 00003840 >>"%~dp0aegis.log" 2>&1
+   sc config w32time start= auto >>"%~dp0aegis.log" 2>&1
+   net start w32time >>"%~dp0aegis.log" 2>&1
    w32tm /resync >>"%~dp0aegis.log" 2>&1
 
    echo.
@@ -268,14 +282,14 @@ echo.
    echo.
 
    echo. >>"%~dp0aegis.log" 2>&1
-   echo [ end aegis v1.12 %date% %time% ] >>"%~dp0aegis.log" 2>&1
+   echo [ end aegis v1.13 %date% %time% ] >>"%~dp0aegis.log" 2>&1
    echo [ done - any key to exit ]
    echo.
    pause >nul
    exit
 
 :rpoint
-   wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.12", 100, 12 >>"%~dp0aegis.log" 2>&1
+   wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.13", 100, 12 >>"%~dp0aegis.log" 2>&1
    if %errorlevel% == 0 goto main
    echo.
    set /p yesno=" failed to create system restore point. continue? (y/n):  "

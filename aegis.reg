@@ -5,11 +5,6 @@ Windows Registry Editor Version 5.00
 "wifisensecredshared"=dword:00000000
 "wifisenseopen"=dword:00000000
 
-;set system time source to pool.ntp.org
-[hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers]
-@="1"
-"1"="pool.ntp.org"
-
 ;set windows update to check for new updates and notify but do not automatically download or install
 [hkey_local_machine\software\microsoft\windows\currentversion\windowsupdate\auto update]
 "auoptions"=dword:00000002
@@ -56,13 +51,3 @@ Windows Registry Editor Version 5.00
 ;disable windows 10 upgrade
 [hkey_local_machine\software\policies\microsoft\windows\windowsupdate]
 "disableosupgrade"=dword:00000001
-
-;set system time source to pool.ntp.org
-[hkey_local_machine\system\currentcontrolset\services\w32time\parameters]
-"ntpserver"="pool.ntp.org"
-
-;set system time source to pool.ntp.org
-[hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient]
-"specialpollinterval"=dword:00000e10
-"specialpolltimeremaining"=hex(7):70,00,6f,00,6f,00,6c,00,2e,00,6e,00,74,00,70,\
-  00,2e,00,6f,00,72,00,67,00,00,00,00,00
