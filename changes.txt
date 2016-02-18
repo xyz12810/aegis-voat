@@ -1,7 +1,7 @@
 v1.13-
 fix genblock to prevent adding duplicate entries to hosts file in block.cmd
 fix genblock to properly delete routes in unblock.cmd
-fix time confi/sync issues
+fix time config/sync issues
 
 v1.12-
 improved create system restore point method and error handling

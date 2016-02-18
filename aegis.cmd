@@ -106,7 +106,7 @@ echo.
    schtasks /change /disable /tn "\microsoft\windows\diskdiagnostic\microsoft-windows-diskdiagnosticdatacollector" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\maintenance\winsat" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\activatewindowssearch" >>"%~dp0aegis.log" 2>&1
-   schtasks /change /disable /tn "\microsoft\windows\media center\configureinternetimeservice" >>"%~dp0aegis.log" 2>&1
+   schtasks /change /disable /tn "\microsoft\windows\media center\configureinternettimeservice" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\dispatchrecoverytasks" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\ehdrminit" >>"%~dp0aegis.log" 2>&1
    schtasks /change /disable /tn "\microsoft\windows\media center\installplayready" >>"%~dp0aegis.log" 2>&1
