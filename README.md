@@ -4,7 +4,7 @@ Aegis for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgra
 
 Details:
 
-Block 215 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time with ntp.org, hide/uninstall 47 kb updates (see below).
+Block 215 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 47 kb updates (see below).
 
 Instructions:
 
