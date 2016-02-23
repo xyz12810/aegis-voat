@@ -1,10 +1,10 @@
 @echo off
 
-echo [ begin aegis v1.13 %date% %time% ] >"%~dp0aegis.log" 2>&1
+echo [ begin aegis v1.14 %date% %time% ] >"%~dp0aegis.log" 2>&1
 echo. >>"%~dp0aegis.log" 2>&1
 echo.
 echo.
-echo -/- aegis v1.13 by https://voat.co/u/thepower
+echo -/- aegis v1.14 by https://voat.co/u/thepower
 echo -/- visit https://tiny.cc/aegisvoat for updates
 echo.
 echo.
@@ -282,14 +282,14 @@ echo.
    echo.
 
    echo. >>"%~dp0aegis.log" 2>&1
-   echo [ end aegis v1.13 %date% %time% ] >>"%~dp0aegis.log" 2>&1
+   echo [ end aegis v1.14 %date% %time% ] >>"%~dp0aegis.log" 2>&1
    echo [ done - any key to exit ]
    echo.
    pause >nul
    exit
 
 :rpoint
-   wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.13", 100, 12 >>"%~dp0aegis.log" 2>&1
+   wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.14", 100, 12 >>"%~dp0aegis.log" 2>&1
    if %errorlevel% == 0 goto main
    echo.
    set /p yesno=" failed to create system restore point. continue? (y/n):  "
