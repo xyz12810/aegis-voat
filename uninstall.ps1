@@ -18,5 +18,5 @@ foreach ($kbnumber in $kbnumbers) {
   }
 }
 if ($x -eq 0) {
-  " - no updates needed to be uninstalled"
+  " - no actions necessary"
 }

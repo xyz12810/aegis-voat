@@ -35,5 +35,5 @@ try {
 catch {
 }
 if ($x -eq 0) {
-  " - no updates needed to be hidden"
+  " - no actions necessary"
 }
