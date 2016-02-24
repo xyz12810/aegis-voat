@@ -1,4 +1,6 @@
 v1.14-
+rewrote hide/uninstall code to permanently resolve problems with updates not being reliably hidden
+updated ip's for host blocks
 
 v1.13-
 fix genblock to prevent adding duplicate entries to hosts file in block.cmd

@@ -30,15 +30,15 @@ echo.
    echo * disable automatic delivery of internet explorer via windows update ...
 
    echo.
-   echo  - disable ie7  auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=13428)
+   echo  - disable ie7 auto delivery
    start "title" /b /wait "%~dp0disable7.cmd" . /B >>"%~dp0aegis.log" 2>&1
-   echo  - disable ie8  auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=14149)
+   echo  - disable ie8 auto delivery
    start "title" /b /wait "%~dp0disable8.cmd" . /B >>"%~dp0aegis.log" 2>&1
-   echo  - disable ie9  auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=179)
+   echo  - disable ie9 auto delivery
    start "title" /b /wait "%~dp0disable9.cmd" . /B >>"%~dp0aegis.log" 2>&1
-   echo  - disable ie10 auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=36512)
+   echo  - disable ie10 auto delivery
    start "title" /b /wait "%~dp0disable10.cmd" . /B >>"%~dp0aegis.log" 2>&1
-   echo  - disable ie11 auto delivery (https://www.microsoft.com/en-us/download/details.aspx?id=40722)
+   echo  - disable ie11 auto delivery
    start "title" /b /wait "%~dp0disable11.cmd" . /B >>"%~dp0aegis.log" 2>&1
 
    echo.
@@ -173,110 +173,17 @@ echo.
    echo.
    echo.
 
-   echo * uninstall updates ...
+   powershell -executionpolicy bypass -file "%~dp0uninstall.ps1"
+   net stop wuauserv >>"%~dp0aegis.log" 2>&1
+   net stop bits >>"%~dp0aegis.log" 2>&1
+   net start bits >>"%~dp0aegis.log" 2>&1
+   net start wuauserv >>"%~dp0aegis.log" 2>&1
 
-   echo.
-   echo  - uninstall kb971033  (https://support.microsoft.com/en-us/kb/971033)
-   start /w wusa /kb:971033 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb2882822 (https://support.microsoft.com/en-us/kb/2882822)
-   start /w wusa /kb:2882822 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb2902907 (https://support.microsoft.com/en-us/kb/2902907)
-   start /w wusa /kb:2902907 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb2922324 (https://support.microsoft.com/en-us/kb/2922324)
-   start /w wusa /kb:2922324 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb2952664 (https://support.microsoft.com/en-us/kb/2952664)
-   start /w wusa /kb:2952664 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb2976978 (https://support.microsoft.com/en-us/kb/2976978)
-   start /w wusa /kb:2976978 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb2977759 (https://support.microsoft.com/en-us/kb/2977759)
-   start /w wusa /kb:2977759 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb2990214 (https://support.microsoft.com/en-us/kb/2990214)
-   start /w wusa /kb:2990214 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3012973 (https://support.microsoft.com/en-us/kb/3012973)
-   start /w wusa /kb:3012973 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3014460 (https://support.microsoft.com/en-us/kb/3014460)
-   start /w wusa /kb:3014460 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3015249 (https://support.microsoft.com/en-us/kb/3015249)
-   start /w wusa /kb:3015249 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3021917 (https://support.microsoft.com/en-us/kb/3021917)
-   start /w wusa /kb:3021917 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3022345 (https://support.microsoft.com/en-us/kb/3022345)
-   start /w wusa /kb:3022345 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3035583 (https://support.microsoft.com/en-us/kb/3035583)
-   start /w wusa /kb:3035583 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3042058 (https://support.microsoft.com/en-us/kb/3042058)
-   start /w wusa /kb:3042058 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3044374 (https://support.microsoft.com/en-us/kb/3044374)
-   start /w wusa /kb:3044374 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3046480 (https://support.microsoft.com/en-us/kb/3046480)
-   start /w wusa /kb:3046480 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3050265 (https://support.microsoft.com/en-us/kb/3050265)
-   start /w wusa /kb:3050265 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3050267 (https://support.microsoft.com/en-us/kb/3050267)
-   start /w wusa /kb:3050267 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3064683 (https://support.microsoft.com/en-us/kb/3064683)
-   start /w wusa /kb:3064683 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3065987 (https://support.microsoft.com/en-us/kb/3065987)
-   start /w wusa /kb:3065987 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3065988 (https://support.microsoft.com/en-us/kb/3065988)
-   start /w wusa /kb:3065988 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3068708 (https://support.microsoft.com/en-us/kb/3068708)
-   start /w wusa /kb:3068708 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3072318 (https://support.microsoft.com/en-us/kb/3072318)
-   start /w wusa /kb:3072318 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3074677 (https://support.microsoft.com/en-us/kb/3074677)
-   start /w wusa /kb:3074677 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3075249 (https://support.microsoft.com/en-us/kb/3075249)
-   start /w wusa /kb:3075249 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3075851 (https://support.microsoft.com/en-us/kb/3075851)
-   start /w wusa /kb:3075851 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3075853 (https://support.microsoft.com/en-us/kb/3075853)
-   start /w wusa /kb:3075853 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3080149 (https://support.microsoft.com/en-us/kb/3080149)
-   start /w wusa /kb:3080149 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3081437 (https://support.microsoft.com/en-us/kb/3081437)
-   start /w wusa /kb:3081437 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3081454 (https://support.microsoft.com/en-us/kb/3081454)
-   start /w wusa /kb:3081454 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3081954 (https://support.microsoft.com/en-us/kb/3081954)
-   start /w wusa /kb:3081954 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3083324 (https://support.microsoft.com/en-us/kb/3083324)
-   start /w wusa /kb:3083324 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3083325 (https://support.microsoft.com/en-us/kb/3083325)
-   start /w wusa /kb:3083325 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3083710 (https://support.microsoft.com/en-us/kb/3083710)
-   start /w wusa /kb:3083710 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3083711 (https://support.microsoft.com/en-us/kb/3083711)
-   start /w wusa /kb:3083711 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3086255 (https://support.microsoft.com/en-us/kb/3086255)
-   start /w wusa /kb:3086255 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3088195 (https://support.microsoft.com/en-us/kb/3088195)
-   start /w wusa /kb:3088195 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3090045 (https://support.microsoft.com/en-us/kb/3090045)
-   start /w wusa /kb:3090045 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3093983 (https://support.microsoft.com/en-us/kb/3093983)
-   start /w wusa /kb:3093983 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3102810 (https://support.microsoft.com/en-us/kb/3102810)
-   start /w wusa /kb:3102810 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3102812 (https://support.microsoft.com/en-us/kb/3102812)
-   start /w wusa /kb:3102812 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3112343 (https://support.microsoft.com/en-us/kb/3112343)
-   start /w wusa /kb:3112343 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3112336 (https://support.microsoft.com/en-us/kb/3112336)
-   start /w wusa /kb:3112336 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3123862 (https://support.microsoft.com/en-us/kb/3123862)
-   start /w wusa /kb:3123862 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3135445 (https://support.microsoft.com/en-us/kb/3135445)
-   start /w wusa /kb:3135445 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-   echo  - uninstall kb3135449 (https://support.microsoft.com/en-us/kb/3135449)
-   start /w wusa /kb:3135449 /norestart /quiet /uninstall >>"%~dp0aegis.log" 2>&1
-
-   echo.
-   echo.
-
-   echo * hide updates (this may take a while, be patient) ...
-
-   start "title" /b /wait cscript.exe "%~dp0hide.vbs" 971033 2882822 2902907 2922324 2952664 2976978 2977759 2990214 3012973 3014460 3015249 3021917 3022345 3035583 3042058 3044374 3046480 3050265 3050267 3064683 3065987 3065988 3068708 3072318 3074677 3075249 3075851 3075853 3080149 3081437 3081454 3081954 3083324 3083325 3083710 3083711 3086255 3088195 3090045 3093983 3102810 3102812 3112343 3112336 3123862 3135445 3135449 >>"%~dp0aegis.log" 2>&1
+   powershell -executionpolicy bypass -file "%~dp0hide.ps1"
+   net stop wuauserv >>"%~dp0aegis.log" 2>&1
+   net stop bits >>"%~dp0aegis.log" 2>&1
+   net start bits >>"%~dp0aegis.log" 2>&1
+   net start wuauserv >>"%~dp0aegis.log" 2>&1
 
    echo.
    echo.
