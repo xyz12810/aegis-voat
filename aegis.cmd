@@ -165,7 +165,7 @@ echo.
    reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /v 1 /t reg_sz /d 1.pool.ntp.org >>"%~dp0aegis.log" 2>&1
    reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /v 2 /t reg_sz /d 2.pool.ntp.org >>"%~dp0aegis.log" 2>&1
    reg add hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers /f /v 3 /t reg_sz /d 3.pool.ntp.org >>"%~dp0aegis.log" 2>&1
-   reg add hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient /f /v specialpollinterval /t reg_dword /d 00003840 >>"%~dp0aegis.log" 2>&1
+   reg add hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient /f /v specialpollinterval /t reg_dword /d 14400 >>"%~dp0aegis.log" 2>&1
    sc config w32time start= auto >>"%~dp0aegis.log" 2>&1
    net start w32time >>"%~dp0aegis.log" 2>&1
    w32tm /resync >>"%~dp0aegis.log" 2>&1

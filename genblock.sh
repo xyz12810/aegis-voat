@@ -221,11 +221,11 @@ bl=block.cmd;ub=unblock.cmd;
 
 d(){ dig @8.8.8.8 +short ${@} 2>/dev/null; };
 
-for l in ${h[@]}; do l1=(${l1[@]} $(d ${l}));done;
-for l in ${l1[@]};do l2=(${l2[@]} $(d ${l}));done;
-for l in ${l2[@]};do l3=(${l3[@]} $(d ${l}));done;
-for l in ${l3[@]};do l4=(${l4[@]} $(d ${l}));done;
-for l in ${l4[@]};do l5=(${l5[@]} $(d ${l}));done;
+for l in ${h[@]}; do l1=(${l1[@]} $(d ${l}|grep -v akamai));done;
+for l in ${l1[@]};do l2=(${l2[@]} $(d ${l}|grep -v akamai));done;
+for l in ${l2[@]};do l3=(${l3[@]} $(d ${l}|grep -v akamai));done;
+for l in ${l3[@]};do l4=(${l4[@]} $(d ${l}|grep -v akamai));done;
+for l in ${l4[@]};do l5=(${l5[@]} $(d ${l}|grep -v akamai));done;
 
 l=$(printf '%s\n' ${l1[@]} ${l2[@]} ${l3[@]} ${l4[@]} ${l5[@]}|
 sed 's/\.$//g'|grep -v [a-z]$|sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n|uniq);
