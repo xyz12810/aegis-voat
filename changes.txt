@@ -1,6 +1,7 @@
 v1.15-
 fix inadvertent blocking of akamai hosts (should prevent blocking of hotmail/outlook)
 fix specialpollinginterval (hex value was used instead of decimal)
+update host blocks
 
 v1.14-
 rewrote hide/uninstall code to permanently resolve problems with updates not being reliably hidden
