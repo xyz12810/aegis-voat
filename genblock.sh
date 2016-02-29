@@ -56,7 +56,7 @@ h=(
 'c.msn.com.nsatc.net'
 'c.ninemsn.com.au'
 'c.no.msn.com'
-'c.s-microsoft.com'
+#'c.s-microsoft.com'
 'c1.microsoft.com'
 'cdn.atdmt.com'
 'cdn.content.prod.cms.msn.com'
