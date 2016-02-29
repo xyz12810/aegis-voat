@@ -1,32 +1,29 @@
-route -p add 2.17.197.141/32 0.0.0.0
 route -p add 2.21.30.10/32 0.0.0.0
 route -p add 4.27.253.126/32 0.0.0.0
-route -p add 4.27.253.253/32 0.0.0.0
 route -p add 4.27.254.254/32 0.0.0.0
 route -p add 8.12.223.254/32 0.0.0.0
 route -p add 8.26.207.126/32 0.0.0.0
 route -p add 8.26.207.254/32 0.0.0.0
 route -p add 8.26.209.126/32 0.0.0.0
-route -p add 8.254.56.254/32 0.0.0.0
 route -p add 8.254.58.254/32 0.0.0.0
 route -p add 8.254.233.126/32 0.0.0.0
 route -p add 8.254.240.126/32 0.0.0.0
-route -p add 23.47.87.76/32 0.0.0.0
+route -p add 23.7.136.70/32 0.0.0.0
 route -p add 23.52.88.70/32 0.0.0.0
 route -p add 23.96.212.225/32 0.0.0.0
 route -p add 23.98.49.14/32 0.0.0.0
+route -p add 23.198.227.115/32 0.0.0.0
+route -p add 23.211.123.156/32 0.0.0.0
 route -p add 23.213.179.166/32 0.0.0.0
 route -p add 31.13.73.2/32 0.0.0.0
-route -p add 40.114.54.223/32 0.0.0.0
 route -p add 40.117.230.39/32 0.0.0.0
 route -p add 54.243.53.207/32 0.0.0.0
 route -p add 54.243.135.126/32 0.0.0.0
+route -p add 63.241.108.111/32 0.0.0.0
 route -p add 63.241.108.124/32 0.0.0.0
-route -p add 63.243.241.25/32 0.0.0.0
-route -p add 63.243.241.26/32 0.0.0.0
 route -p add 64.4.6.100/32 0.0.0.0
-route -p add 64.4.11.42/32 0.0.0.0
 route -p add 64.4.54.32/32 0.0.0.0
+route -p add 64.4.54.116/32 0.0.0.0
 route -p add 64.4.54.165/32 0.0.0.0
 route -p add 64.4.54.167/32 0.0.0.0
 route -p add 64.4.54.253/32 0.0.0.0
@@ -44,13 +41,12 @@ route -p add 65.52.108.27/32 0.0.0.0
 route -p add 65.52.108.29/32 0.0.0.0
 route -p add 65.52.108.33/32 0.0.0.0
 route -p add 65.52.108.52/32 0.0.0.0
+route -p add 65.52.108.56/32 0.0.0.0
 route -p add 65.52.108.59/32 0.0.0.0
 route -p add 65.52.108.90/32 0.0.0.0
 route -p add 65.52.108.92/32 0.0.0.0
-route -p add 65.52.108.136/32 0.0.0.0
 route -p add 65.52.108.153/32 0.0.0.0
 route -p add 65.52.108.154/32 0.0.0.0
-route -p add 65.52.108.163/32 0.0.0.0
 route -p add 65.52.108.251/32 0.0.0.0
 route -p add 65.52.108.254/32 0.0.0.0
 route -p add 65.54.192.248/32 0.0.0.0
@@ -58,11 +54,12 @@ route -p add 65.54.226.187/32 0.0.0.0
 route -p add 65.55.2.2/32 0.0.0.0
 route -p add 65.55.29.238/32 0.0.0.0
 route -p add 65.55.39.10/32 0.0.0.0
-route -p add 65.55.44.54/32 0.0.0.0
 route -p add 65.55.44.82/32 0.0.0.0
+route -p add 65.55.44.85/32 0.0.0.0
 route -p add 65.55.44.108/32 0.0.0.0
 route -p add 65.55.44.109/32 0.0.0.0
-route -p add 65.55.52.56/32 0.0.0.0
+route -p add 65.55.52.23/32 0.0.0.0
+route -p add 65.55.57.27/32 0.0.0.0
 route -p add 65.55.108.23/32 0.0.0.0
 route -p add 65.55.113.11/32 0.0.0.0
 route -p add 65.55.113.12/32 0.0.0.0
@@ -71,6 +68,7 @@ route -p add 65.55.128.80/32 0.0.0.0
 route -p add 65.55.128.81/32 0.0.0.0
 route -p add 65.55.138.110/32 0.0.0.0
 route -p add 65.55.149.120/32 0.0.0.0
+route -p add 65.55.163.221/32 0.0.0.0
 route -p add 65.55.163.222/32 0.0.0.0
 route -p add 65.55.227.188/32 0.0.0.0
 route -p add 65.55.252.43/32 0.0.0.0
@@ -90,11 +88,11 @@ route -p add 66.235.139.205/32 0.0.0.0
 route -p add 66.235.139.206/32 0.0.0.0
 route -p add 66.235.139.207/32 0.0.0.0
 route -p add 68.67.152.1/32 0.0.0.0
-route -p add 68.67.152.3/32 0.0.0.0
 route -p add 68.67.152.4/32 0.0.0.0
+route -p add 68.67.152.5/32 0.0.0.0
 route -p add 68.67.152.6/32 0.0.0.0
 route -p add 68.67.152.7/32 0.0.0.0
-route -p add 68.67.152.90/32 0.0.0.0
+route -p add 68.67.152.91/32 0.0.0.0
 route -p add 68.67.152.92/32 0.0.0.0
 route -p add 68.67.152.94/32 0.0.0.0
 route -p add 68.67.152.97/32 0.0.0.0
@@ -103,7 +101,6 @@ route -p add 68.67.152.110/32 0.0.0.0
 route -p add 68.67.152.120/32 0.0.0.0
 route -p add 68.67.152.131/32 0.0.0.0
 route -p add 68.67.152.132/32 0.0.0.0
-route -p add 68.67.152.167/32 0.0.0.0
 route -p add 68.67.152.172/32 0.0.0.0
 route -p add 68.67.152.173/32 0.0.0.0
 route -p add 68.67.152.174/32 0.0.0.0
@@ -112,36 +109,35 @@ route -p add 68.67.153.40/32 0.0.0.0
 route -p add 68.67.153.44/32 0.0.0.0
 route -p add 68.67.153.87/32 0.0.0.0
 route -p add 68.67.153.89/32 0.0.0.0
+route -p add 68.67.176.40/32 0.0.0.0
 route -p add 68.67.176.41/32 0.0.0.0
-route -p add 68.67.176.43/32 0.0.0.0
+route -p add 68.67.176.42/32 0.0.0.0
 route -p add 68.67.176.44/32 0.0.0.0
 route -p add 68.67.176.45/32 0.0.0.0
 route -p add 68.67.176.46/32 0.0.0.0
-route -p add 68.67.176.47/32 0.0.0.0
 route -p add 68.67.176.48/32 0.0.0.0
 route -p add 68.67.176.49/32 0.0.0.0
-route -p add 68.67.176.50/32 0.0.0.0
 route -p add 68.67.176.51/32 0.0.0.0
 route -p add 68.67.176.52/32 0.0.0.0
-route -p add 68.67.176.128/32 0.0.0.0
 route -p add 68.67.176.129/32 0.0.0.0
 route -p add 68.67.176.145/32 0.0.0.0
 route -p add 68.67.176.146/32 0.0.0.0
-route -p add 72.21.81.200/32 0.0.0.0
 route -p add 72.21.91.8/32 0.0.0.0
-route -p add 72.246.121.209/32 0.0.0.0
-route -p add 81.22.37.128/32 0.0.0.0
+route -p add 92.123.54.120/32 0.0.0.0
+route -p add 92.123.55.223/32 0.0.0.0
 route -p add 93.184.215.200/32 0.0.0.0
 route -p add 94.245.121.176/32 0.0.0.0
 route -p add 94.245.121.177/32 0.0.0.0
 route -p add 94.245.121.178/32 0.0.0.0
 route -p add 94.245.121.179/32 0.0.0.0
+route -p add 94.245.121.253/32 0.0.0.0
 route -p add 96.6.61.146/32 0.0.0.0
+route -p add 96.16.144.23/32 0.0.0.0
 route -p add 96.16.151.81/32 0.0.0.0
-route -p add 96.17.68.106/32 0.0.0.0
-route -p add 96.17.68.120/32 0.0.0.0
 route -p add 96.17.68.121/32 0.0.0.0
+route -p add 96.17.68.123/32 0.0.0.0
 route -p add 96.17.68.131/32 0.0.0.0
+route -p add 96.17.70.243/32 0.0.0.0
 route -p add 104.43.203.255/32 0.0.0.0
 route -p add 104.45.136.42/32 0.0.0.0
 route -p add 104.70.210.203/32 0.0.0.0
@@ -149,8 +145,8 @@ route -p add 104.93.174.145/32 0.0.0.0
 route -p add 104.93.176.29/32 0.0.0.0
 route -p add 104.93.196.53/32 0.0.0.0
 route -p add 104.106.242.88/32 0.0.0.0
-route -p add 104.107.24.34/32 0.0.0.0
-route -p add 104.107.31.115/32 0.0.0.0
+route -p add 104.107.27.94/32 0.0.0.0
+route -p add 104.107.39.56/32 0.0.0.0
 route -p add 104.107.50.124/32 0.0.0.0
 route -p add 107.14.45.49/32 0.0.0.0
 route -p add 107.14.45.58/32 0.0.0.0
@@ -162,36 +158,36 @@ route -p add 111.221.29.253/32 0.0.0.0
 route -p add 111.221.29.254/32 0.0.0.0
 route -p add 131.107.255.255/32 0.0.0.0
 route -p add 131.253.14.76/32 0.0.0.0
+route -p add 131.253.14.121/32 0.0.0.0
+route -p add 131.253.14.153/32 0.0.0.0
 route -p add 131.253.14.194/32 0.0.0.0
 route -p add 131.253.34.230/32 0.0.0.0
 route -p add 131.253.40.44/32 0.0.0.0
 route -p add 131.253.40.47/32 0.0.0.0
 route -p add 131.253.40.53/32 0.0.0.0
 route -p add 131.253.40.64/32 0.0.0.0
-route -p add 131.253.40.109/32 0.0.0.0
+route -p add 134.170.3.200/32 0.0.0.0
 route -p add 134.170.30.221/32 0.0.0.0
 route -p add 134.170.58.190/32 0.0.0.0
-route -p add 134.170.104.216/32 0.0.0.0
-route -p add 134.170.107.152/32 0.0.0.0
+route -p add 134.170.107.200/32 0.0.0.0
+route -p add 134.170.109.48/32 0.0.0.0
 route -p add 134.170.115.60/32 0.0.0.0
 route -p add 134.170.115.62/32 0.0.0.0
 route -p add 134.170.119.140/32 0.0.0.0
-route -p add 134.170.170.55/32 0.0.0.0
 route -p add 134.170.185.126/32 0.0.0.0
 route -p add 134.170.188.140/32 0.0.0.0
 route -p add 134.170.188.248/32 0.0.0.0
 route -p add 137.117.100.176/32 0.0.0.0
 route -p add 157.55.129.21/32 0.0.0.0
-route -p add 157.55.240.220/32 0.0.0.0
+route -p add 157.55.133.204/32 0.0.0.0
 route -p add 157.56.23.91/32 0.0.0.0
 route -p add 157.56.57.5/32 0.0.0.0
-route -p add 157.56.77.138/32 0.0.0.0
 route -p add 157.56.96.54/32 0.0.0.0
+route -p add 157.56.96.58/32 0.0.0.0
 route -p add 157.56.96.80/32 0.0.0.0
 route -p add 157.56.96.123/32 0.0.0.0
 route -p add 157.56.96.208/32 0.0.0.0
 route -p add 157.56.100.83/32 0.0.0.0
-route -p add 157.56.144.215/32 0.0.0.0
 route -p add 168.62.11.145/32 0.0.0.0
 route -p add 168.62.21.207/32 0.0.0.0
 route -p add 168.62.187.13/32 0.0.0.0
@@ -213,18 +209,16 @@ route -p add 173.194.123.59/32 0.0.0.0
 route -p add 173.194.123.60/32 0.0.0.0
 route -p add 173.194.123.91/32 0.0.0.0
 route -p add 173.194.123.92/32 0.0.0.0
-route -p add 184.26.143.168/32 0.0.0.0
-route -p add 184.26.143.171/32 0.0.0.0
 route -p add 184.26.143.177/32 0.0.0.0
-route -p add 184.26.143.192/32 0.0.0.0
 route -p add 184.26.143.194/32 0.0.0.0
-route -p add 184.26.143.202/32 0.0.0.0
 route -p add 184.84.136.165/32 0.0.0.0
 route -p add 184.84.139.153/32 0.0.0.0
 route -p add 184.84.141.92/32 0.0.0.0
 route -p add 184.84.141.139/32 0.0.0.0
 route -p add 184.84.170.70/32 0.0.0.0
+route -p add 184.84.170.239/32 0.0.0.0
 route -p add 191.232.80.60/32 0.0.0.0
+route -p add 191.232.139.211/32 0.0.0.0
 route -p add 191.232.139.253/32 0.0.0.0
 route -p add 191.232.140.76/32 0.0.0.0
 route -p add 191.234.72.190/32 0.0.0.0
@@ -234,16 +228,14 @@ route -p add 192.243.250.72/32 0.0.0.0
 route -p add 192.243.250.88/32 0.0.0.0
 route -p add 204.79.197.221/32 0.0.0.0
 route -p add 207.46.7.252/32 0.0.0.0
-route -p add 207.46.101.29/32 0.0.0.0
 route -p add 207.46.202.114/32 0.0.0.0
 route -p add 207.46.223.94/32 0.0.0.0
 route -p add 207.68.166.254/32 0.0.0.0
+route -p add 216.38.170.128/32 0.0.0.0
 "%~dp0sed.exe" -i "/0.r.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 0.r.msn.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/a.ads1.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 a.ads1.msn.com >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/a.ads2.msads.net/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 a.ads2.msads.net >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/a.ads2.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 a.ads2.msn.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/a.rad.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
@@ -302,14 +294,8 @@ echo 0.0.0.0 arc9.msn.com >>"c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 atlas.c10r.facebook.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/auth.gfx.ms/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 auth.gfx.ms >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/az361816.vo.msecnd.net/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 az361816.vo.msecnd.net >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/az512334.vo.msecnd.net/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 az512334.vo.msecnd.net >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/b.ads1.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 b.ads1.msn.com >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/b.ads2.msads.net/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 b.ads2.msads.net >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/b.rad.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 b.rad.msn.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/bat.bing.com/d" "c:\windows\system32\drivers\etc\hosts"
@@ -406,8 +392,6 @@ echo 0.0.0.0 dmd.metaservices.microsoft.com >>"c:\windows\system32\drivers\etc\h
 echo 0.0.0.0 dns.msftncsi.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/download-ssl.msgamestudios.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 download-ssl.msgamestudios.com >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/ec.atdmt.com/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 ec.atdmt.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/ecn.dev.virtualearth.net/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 ecn.dev.virtualearth.net >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/en-us.appex-rf.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
@@ -450,10 +434,6 @@ echo 0.0.0.0 help.bingads.microsoft.com >>"c:\windows\system32\drivers\etc\hosts
 echo 0.0.0.0 i1.services.social.microsoft.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/i1.services.social.microsoft.com.nsatc.net/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 i1.services.social.microsoft.com.nsatc.net >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/iecvlist.microsoft.com/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 iecvlist.microsoft.com >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/images.adsyndication.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 images.adsyndication.msn.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/inference.location.live.net/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 inference.location.live.net >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/js.microsoft.com/d" "c:\windows\system32\drivers\etc\hosts"
@@ -502,8 +482,6 @@ echo 0.0.0.0 otf.msn.com >>"c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 popup.msn.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/pre.footprintpredict.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 pre.footprintpredict.com >>"c:\windows\system32\drivers\etc\hosts"
-"%~dp0sed.exe" -i "/r20swj13mr.microsoft.com/d" "c:\windows\system32\drivers\etc\hosts"
-echo 0.0.0.0 r20swj13mr.microsoft.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/rad.live.com/d" "c:\windows\system32\drivers\etc\hosts"
 echo 0.0.0.0 rad.live.com >>"c:\windows\system32\drivers\etc\hosts"
 "%~dp0sed.exe" -i "/rad.msn.com/d" "c:\windows\system32\drivers\etc\hosts"
