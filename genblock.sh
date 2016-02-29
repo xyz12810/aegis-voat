@@ -109,7 +109,6 @@ h=(
 'i1.services.social.microsoft.com.nsatc.net'
 'iecvlist.microsoft.com'
 'images.adsyndication.msn.com'
-'img-s-msn-com.akamaized.net'
 'inference.location.live.net'
 'js.microsoft.com'
 'lb1.www.ms.akadns.net'
