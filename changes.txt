@@ -1,3 +1,6 @@
+v1.16-
+updated host blocks (minor tweaks to unblock hotmail/microsoft web sites)
+
 v1.15-
 fix inadvertent blocking of akamai hosts (should prevent blocking of hotmail/outlook)
 fix specialpollinginterval (hex value was used instead of decimal)

@@ -19,7 +19,7 @@ h=(
 'adsyndication.msn.com'
 'aidps.atdmt.com'
 'aidps.msn.com.nsatc.net'
-'ajax.aspnetcdn.com'
+#'ajax.aspnetcdn.com'
 'aka-cdn-ns.adtech.de'
 'analytics.live.com'
 'analytics.microsoft.com'
