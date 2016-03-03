@@ -4,7 +4,7 @@ Aegis for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgra
 
 Details:
 
-Block 204 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 47 kb updates (see below).
+Block 203 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 49 kb updates (see below).
 
 Instructions:
 
@@ -122,6 +122,10 @@ kb3135445	windows update client for windows 7 and windows server 2008 r2: februa
 
 kb3135449	windows update client for windows 8.1 and windows server 2012 r2: february 2016
 
-Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
+kb3138612	windows update client for windows 7 and windows server 2008 r2: march 2016
+
+kb3138615	windows update client for windows 8.1 and windows server 2012 r2: march 2016
+
+Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @mythias, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
 
 Visit https://tiny.cc/aegisvoat for additional details and latest information

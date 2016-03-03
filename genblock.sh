@@ -60,7 +60,7 @@ h=(
 'c1.microsoft.com'
 'cdn.atdmt.com'
 'cdn.content.prod.cms.msn.com'
-'cdp1.public-trust.com'
+#'cdp1.public-trust.com'
 'cds26.ams9.msecn.net'
 'choice.microsoft.com'
 'choice.microsoft.com.nsatc.net'
