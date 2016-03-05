@@ -126,6 +126,6 @@ kb3138612	windows update client for windows 7 and windows server 2008 r2: march 
 
 kb3138615	windows update client for windows 8.1 and windows server 2012 r2: march 2016
 
-Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @mythias, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
+Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @erskine, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @mythias, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
 
 Visit https://tiny.cc/aegisvoat for additional details and latest information

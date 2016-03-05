@@ -2,6 +2,10 @@ v1.16-
 update host blocks (unblock hotmail/microsoft/loudwire web sites)
 add kb3138612 windows update client for windows 7 and windows server 2008 r2: march 2016
 add kb3138615 windows update client for windows 8.1 and windows server 2012 r2: march 2016
+add privilege check to verify running as administrator
+add 64-bit version of setacl.exe
+detect os architecture and run 32 or 64-bit setacl accordingly (should help prevent errors when manipulating permissions)
+add begin/end functions, other small changes to streamline code
 
 v1.15-
 fix inadvertent blocking of akamai hosts (should prevent blocking of hotmail/outlook)
