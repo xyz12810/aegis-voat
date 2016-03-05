@@ -1,22 +1,36 @@
 @echo off
 
-echo [ begin aegis v1.16 %date% %time% ] >"%~dp0aegis.log" 2>&1
-echo. >>"%~dp0aegis.log" 2>&1
-echo.
-echo.
-echo -/- aegis v1.16 by https://voat.co/u/thepower
-echo -/- visit https://tiny.cc/aegisvoat for updates
-echo.
-echo.
-
-:prompt
-   set /p yesno=* create system restore point? (y/n):  
-   if /i "%yesno:~,1%" equ "y" goto rpoint
-   if /i "%yesno:~,1%" equ "n" goto main
+:begin
+   echo [ begin aegis v1.16 %date% %time% ] >"%~dp0aegis.log" 2>&1
+   echo. >>"%~dp0aegis.log" 2>&1
    echo.
-   goto prompt
+   echo.
+   echo -/- aegis v1.16 by https://voat.co/u/thepower
+   echo -/- visit https://tiny.cc/aegisvoat for updates
+   echo.
+   echo.
+
+   net session >nul 2>&1
+   if %errorlevel% neq 0 (
+      echo ! error - this script must be run as an administrator, press any key to exit ...
+      goto end
+   ) else (
+      goto prompt
+   )
+
+:end
+   echo.
+   echo.
+   echo. >>"%~dp0aegis.log" 2>&1
+   echo [ end aegis v1.16 %date% %time% ] >>"%~dp0aegis.log" 2>&1
+   echo [ done - any key to exit ]
+   echo.
+   pause >nul
+   exit
 
 :main
+   wmic os get osarchitecture|find "64-bit" >>"%~dp0aegis.log" 2>&1 && set setacl=setacl-64.exe || set setacl=setacl-32.exe
+   
    echo.
    echo.
 
@@ -48,36 +62,36 @@ echo.
 
    taskkill /f /im gwx.exe /t >>"%~dp0aegis.log" 2>&1
 
-   "%~dp0setacl.exe" -on "hkey_current_user\software\policies\microsoft\office\15.0\osm" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_current_user\software\policies\microsoft\office\15.0\osm" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_current_user\software\policies\microsoft\office\16.0\osm" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_current_user\software\policies\microsoft\office\16.0\osm" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\wcmsvc\wifinetworkmanager" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\wcmsvc\wifinetworkmanager" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\windows\currentversion\windowsupdate\auto update" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\windows\currentversion\windowsupdate\auto update" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\windows defender\spynet" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\microsoft\windows defender\spynet" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\sqmclient\windows" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\sqmclient\windows" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\datacollection" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\datacollection" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\gwx" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\gwx" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\scripteddiagnosticsprovider\policy" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\scripteddiagnosticsprovider\policy" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\skydrive" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\skydrive" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\windowsupdate" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\software\policies\microsoft\windows\windowsupdate" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\system\currentcontrolset\control\wmi\autologger\autoLogger-diagtrack-listener" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\system\currentcontrolset\control\wmi\autologger\autoLogger-diagtrack-listener" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\system\currentcontrolset\services\w32time\parameters" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\system\currentcontrolset\services\w32time\parameters" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_current_user\software\policies\microsoft\office\15.0\osm" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_current_user\software\policies\microsoft\office\15.0\osm" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_current_user\software\policies\microsoft\office\16.0\osm" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_current_user\software\policies\microsoft\office\16.0\osm" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\wcmsvc\wifinetworkmanager" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\wcmsvc\wifinetworkmanager" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\windows\currentversion\windowsupdate\auto update" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\windows\currentversion\windowsupdate\auto update" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\windows defender\spynet" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\microsoft\windows defender\spynet" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\sqmclient\windows" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\sqmclient\windows" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\datacollection" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\datacollection" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\gwx" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\gwx" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\scripteddiagnosticsprovider\policy" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\scripteddiagnosticsprovider\policy" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\skydrive" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\skydrive" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\windowsupdate" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\software\policies\microsoft\windows\windowsupdate" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\system\currentcontrolset\control\wmi\autologger\autoLogger-diagtrack-listener" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\system\currentcontrolset\control\wmi\autologger\autoLogger-diagtrack-listener" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\system\currentcontrolset\services\w32time\parameters" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\system\currentcontrolset\services\w32time\parameters" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient" -ot reg -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient" -ot reg -actn ace -ace "n:administrators;p:full" >>"%~dp0aegis.log" 2>&1
 
    reg delete "hkey_local_machine\system\currentcontrolset\control\wmi\autologger\autoLogger-diagtrack-listener" /f >>"%~dp0aegis.log" 2>&1
 
@@ -134,11 +148,11 @@ echo.
 
    echo * disable windows 10 download directory ...
 
-   "%~dp0setacl.exe" -on "%systemdrive%\$windows.~bt" -ot file -actn setprot -op dacl:np;sacl:nc -rec cont_obj -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "%systemdrive%\$windows.~bt" -ot file -actn setprot -op dacl:np;sacl:nc -rec cont_obj -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
    rmdir /q /s "%systemdrive%\$windows.~bt" >>"%~dp0aegis.log" 2>&1
    mkdir "%systemdrive%\$windows.~bt" >>"%~dp0aegis.log" 2>&1
    attrib +h "%systemdrive%\$windows.~bt" >>"%~dp0aegis.log" 2>&1
-   "%~dp0setacl.exe" -on "%systemdrive%\$windows.~bt" -ot file -actn setprot -op dacl:p_nc;sacl:p_nc -rec cont_obj -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
+   "%~dp0%setacl%" -on "%systemdrive%\$windows.~bt" -ot file -actn setprot -op dacl:p_nc;sacl:p_nc -rec cont_obj -actn setowner -ownr n:administrators >>"%~dp0aegis.log" 2>&1
 
    echo.
    echo.
@@ -185,28 +199,19 @@ echo.
    net start bits >>"%~dp0aegis.log" 2>&1
    net start wuauserv >>"%~dp0aegis.log" 2>&1
 
-   echo.
-   echo.
+   goto end
 
-   echo. >>"%~dp0aegis.log" 2>&1
-   echo [ end aegis v1.16 %date% %time% ] >>"%~dp0aegis.log" 2>&1
-   echo [ done - any key to exit ]
+:prompt
+   set /p yesno="* create system restore point? (y/n):  "
+   if /i "%yesno:~,1%" equ "y" goto rpoint
+   if /i "%yesno:~,1%" equ "n" goto main
    echo.
-   pause >nul
-   exit
+   goto prompt
 
 :rpoint
    wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.16", 100, 12 >>"%~dp0aegis.log" 2>&1
    if %errorlevel% == 0 goto main
    echo.
-   set /p yesno=" failed to create system restore point. continue? (y/n):  "
+   set /p yesno=" ! error - failed to create system restore point. continue? (y/n):  "
    if /i "%yesno:~,1%" equ "y" goto main
-   if /i "%yesno:~,1%" equ "n" (
-      echo.
-      echo [ done - any key to exit ]
-      echo.
-      pause >nul
-      exit
-   )
-
-goto prompt
+   if /i "%yesno:~,1%" equ "n" goto end
