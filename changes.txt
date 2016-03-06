@@ -6,6 +6,8 @@ add privilege check to verify running as administrator
 add 64-bit version of setacl.exe
 detect os architecture and run 32 or 64-bit setacl accordingly (should help prevent errors when manipulating permissions)
 add begin/end functions, other small changes to streamline code
+add taskkil for gwxux.exe
+change log name to "%~dpn0.log"
 
 v1.15-
 fix inadvertent blocking of akamai hosts (should prevent blocking of hotmail/outlook)
