@@ -1,5 +1,9 @@
 Windows Registry Editor Version 5.00
 
+;disable ceip - thanks to erskine for fixing this
+[hkey_local_machine\software\microsoft\sqmclient\windows]
+"ceipenable"=dword:00000000
+
 ;disable wifisense
 [hkey_local_machine\software\microsoft\wcmsvc\wifinetworkmanager]
 "wifisensecredshared"=dword:00000000
@@ -27,10 +31,6 @@ Windows Registry Editor Version 5.00
 "enablelogging"=dword:00000000
 "enablefileobfuscation"=dword:00000001
 "enableupload"=dword:00000000
-
-;disable ceip
-[hkey_local_machine\software\policies\microsoft\sqmclient\windows]
-"ceipenable"=dword:00000000
 
 ;disable telemetry
 [hkey_local_machine\software\policies\microsoft\windows\datacollection]
