@@ -9,6 +9,8 @@ add begin/end functions, other small changes to streamline code
 add taskkil for gwxux.exe
 change log name to "%~dpn0.log"
 fix incorrect key for ceip disable
+add kb3139929 security update for internet explorer: march 8, 2016
+add kb3146449 updated internet explorer 11 capabilities to upgrade windows 8.1 and windows 7
 
 v1.15-
 fix inadvertent blocking of akamai hosts (should prevent blocking of hotmail/outlook)
