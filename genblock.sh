@@ -31,7 +31,7 @@ h=(
 'arc3.msn.com'
 'arc9.msn.com'
 'atlas.c10r.facebook.com'
-'auth.gfx.ms'
+#'auth.gfx.ms'
 #'az361816.vo.msecnd.net'
 #'az512334.vo.msecnd.net'
 'b.ads1.msn.com'

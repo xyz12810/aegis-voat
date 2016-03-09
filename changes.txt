@@ -1,3 +1,6 @@
+v1.17-
+update genblock to address outlook blocking issues
+
 v1.16- (thanks to erskine for many of the improvements in v1.16)
 update host blocks (unblock hotmail/microsoft/loudwire web sites)
 add kb3138612 windows update client for windows 7 and windows server 2008 r2: march 2016
