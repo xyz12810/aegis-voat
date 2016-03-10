@@ -1,5 +1,11 @@
 v1.17-
 update genblock to address outlook blocking issues
+update genblock to add documentation and improve error checking/logging output
+update host blocks
+replace find with findstr
+replace regedit /s with reg import
+improved error checking throughout main script, this reduces unnecessary operations and errors
+add notify message if reboot is required to complete some operations
 
 v1.16- (thanks to erskine for many of the improvements in v1.16)
 update host blocks (unblock hotmail/microsoft/loudwire web sites)

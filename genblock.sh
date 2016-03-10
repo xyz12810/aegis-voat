@@ -1,7 +1,9 @@
+#!/bin/bash
+
+# store list of hosts to block in array h
 h=(
 '0.r.msn.com'
 'a.ads1.msn.com'
-#'a.ads2.msads.net'
 'a.ads2.msn.com'
 'a.rad.msn.com'
 'ac3.msn.com'
@@ -19,7 +21,6 @@ h=(
 'adsyndication.msn.com'
 'aidps.atdmt.com'
 'aidps.msn.com.nsatc.net'
-#'ajax.aspnetcdn.com'
 'aka-cdn-ns.adtech.de'
 'analytics.live.com'
 'analytics.microsoft.com'
@@ -31,11 +32,7 @@ h=(
 'arc3.msn.com'
 'arc9.msn.com'
 'atlas.c10r.facebook.com'
-#'auth.gfx.ms'
-#'az361816.vo.msecnd.net'
-#'az512334.vo.msecnd.net'
 'b.ads1.msn.com'
-#'b.ads2.msads.net'
 'b.rad.msn.com'
 'bat.bing.com'
 'bingads.microsoft.com'
@@ -56,11 +53,9 @@ h=(
 'c.msn.com.nsatc.net'
 'c.ninemsn.com.au'
 'c.no.msn.com'
-#'c.s-microsoft.com'
 'c1.microsoft.com'
 'cdn.atdmt.com'
 'cdn.content.prod.cms.msn.com'
-#'cdp1.public-trust.com'
 'cds26.ams9.msecn.net'
 'choice.microsoft.com'
 'choice.microsoft.com.nsatc.net'
@@ -85,7 +80,6 @@ h=(
 'dmd.metaservices.microsoft.com'
 'dns.msftncsi.com'
 'download-ssl.msgamestudios.com'
-#'ec.atdmt.com'
 'ecn.dev.virtualearth.net'
 'en-us.appex-rf.msn.com'
 'fe2.update.microsoft.com.akadns.net'
@@ -107,8 +101,6 @@ h=(
 'help.bingads.microsoft.com'
 'i1.services.social.microsoft.com'
 'i1.services.social.microsoft.com.nsatc.net'
-#'iecvlist.microsoft.com'
-#'images.adsyndication.msn.com'
 'inference.location.live.net'
 'js.microsoft.com'
 'lb1.www.ms.akadns.net'
@@ -133,7 +125,6 @@ h=(
 'otf.msn.com'
 'popup.msn.com'
 'pre.footprintpredict.com'
-#'r20swj13mr.microsoft.com'
 'rad.live.com'
 'rad.msn.com'
 'rad.msn.com.nsatc.net'
@@ -218,33 +209,83 @@ h=(
 l1=;l2=;l3=;l4=;l5=;
 bl=block.cmd;ub=unblock.cmd;
 
+# dig with shortened output, get results from google public dns
 d(){ dig @8.8.8.8 +short ${@} 2>/dev/null; };
 
+# recursively resolve all hosts and children from array h up to 5 levels deep
+# resolve hosts in array h and store results in array l1
 for l in ${h[@]}; do l1=(${l1[@]} $(d ${l}|grep -v akamai));done;
+# resolve hosts in array l1 and store results in array l2
 for l in ${l1[@]};do l2=(${l2[@]} $(d ${l}|grep -v akamai));done;
+# resolve hosts in array l2 and store results in array l3
 for l in ${l2[@]};do l3=(${l3[@]} $(d ${l}|grep -v akamai));done;
+# resolve hosts in array l3 and store results in array l4
 for l in ${l3[@]};do l4=(${l4[@]} $(d ${l}|grep -v akamai));done;
+# resolve hosts in array l4 and store results in array l5
 for l in ${l4[@]};do l5=(${l5[@]} $(d ${l}|grep -v akamai));done;
 
+# combine results from arrays l1 - l5, sort/dedupe, store in array l
 l=$(printf '%s\n' ${l1[@]} ${l2[@]} ${l3[@]} ${l4[@]} ${l5[@]}|
 sed 's/\.$//g'|grep -v [a-z]$|sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n|uniq);
 
->${bl};>${ub};
+# init block/unblock files
+printf '%s\n' "@echo off" >${bl};
+printf '%s\n' "@echo off" >${ub};
+
+# write ip blocks to block file
+# get existing routes and write to temp file
+printf '%s\n' "route print 2>nul >routes.tmp" >>${bl};
 for x in ${l[@]};
 do
-  printf '%s\n' "route -p add ${x}/32 0.0.0.0" >>${bl};
+  # check existing routes for ip
+  printf '%s\n' "findstr ${x} routes.tmp >nul 2>&1" >>${bl};
+  # if ip not found block it
+  printf '%s\n' "if %errorlevel% neq 0 (" >>${bl};
+  printf '%s\n' "  route -p add ${x}/32 0.0.0.0 >nul 2>&1" >>${bl};
+  printf '%s\n' "  echo blocked ${x}" >>${bl};
+  printf '%s\n' ")" >>${bl};
 done;
+# delete temp file
+printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${bl};
+
+# write host blocks to block file
 for x in ${h[@]};
 do
-  printf '%s\n' "\"%~dp0sed.exe\" -i \"/${x}/d\" \"c:\windows\system32\drivers\etc\hosts\"" >>${bl};
-  printf '%s\n' "echo 0.0.0.0 ${x} >>\"c:\windows\system32\drivers\etc\hosts\"" >>${bl};
+  # check existing host blocks for host
+  printf '%s\n' "findstr \" ${x}\" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1" >>${bl};
+  # if host not found block it
+  printf '%s\n' "if %errorlevel% neq 0 (" >>${bl};
+  printf '%s\n' "  echo 0.0.0.0 ${x} >>%systemdrive%\windows\system32\drivers\etc\hosts" >>${bl};
+  printf '%s\n' "  echo blocked ${x}" >>${bl};
+  printf '%s\n' ")" >>${bl};
 done;
+
+# write ip unblocks to unblock file
+# get existing routes and write to temp file
+printf '%s\n' "route print 2>nul >routes.tmp" >>${ub};
 for x in ${l[@]};
 do
-  printf '%s\n' "route delete ${x}" >>${ub};
+  # check existing routes for ip
+  printf '%s\n' "findstr ${x} routes.tmp >nul 2>&1" >>${ub};
+  # if ip is found unblock it
+  printf '%s\n' "if %errorlevel% equ 0 (" >>${ub};
+  printf '%s\n' "  route delete ${x} >nul 2>&1" >>${ub};
+  printf '%s\n' "  echo unblocked ${x}" >>${ub};
+  printf '%s\n' ")" >>${ub};
 done;
+# delete temp file
+printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${ub};
+
+# unblock hosts
 for x in ${h[@]};
 do
-  printf '%s\n' "\"%~dp0sed.exe\" -i \"/${x}/d\" \"c:\windows\system32\drivers\etc\hosts\"" >>${ub};
+  # check existing host blocks for host
+  printf '%s\n' "findstr \" ${x}\" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1" >>${ub};
+  # if host is found unblock it
+  printf '%s\n' "if %errorlevel% equ 0 (" >>${ub};
+  printf '%s\n' "  \"%~dp0sed.exe\" -i \"/${x}/d\" \"%systemdrive%\windows\system32\drivers\etc\hosts\" >nul 2>&1" >>${ub};
+  printf '%s\n' "  echo unblocked ${x}" >>${ub};
+  printf '%s\n' ")" >>${ub};
 done;
-printf '%s\n' 'exit'|tee -a ${bl} ${ub};
+
+printf '%s' 'exit'|tee -a ${bl} ${ub};

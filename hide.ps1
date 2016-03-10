@@ -31,6 +31,9 @@ try {
   }
   $objautoupdatesettings = (new-object -comobject "microsoft.update.autoupdate").settings
   $objsysinfo = new-object -comobject "microsoft.update.systeminfo"
+  if ($objSysInfo.RebootRequired) {
+    " - a reboot is required to complete some operations"
+  }
 }
 catch {
 }

@@ -130,6 +130,6 @@ kb3139929	security update for internet explorer: march 8, 2016
 
 kb3146449	updated internet explorer 11 capabilities to upgrade windows 8.1 and windows 7
 
-Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @erskine, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @mythias, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
+Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @erskine, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @mythias, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @tr3bg0d, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
 
 Visit https://tiny.cc/aegisvoat for additional details and latest information
