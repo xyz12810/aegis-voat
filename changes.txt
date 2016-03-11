@@ -4,10 +4,10 @@ update genblock to add documentation and improve error checking/logging output
 update host blocks
 replace find with findstr
 replace regedit /s with reg import
-improved error checking/handling to reduce unnecessary operations and errors
+improve error checking/handling to reduce unnecessary operations and errors
 add notify message if reboot is required to complete some operations
 add kb3058168 activate windows 10 from windows 8 or windows 8.1, and windows server 2012 or windows server 2012 r2 kms hosts
-improved logging
+improve logging
 
 v1.16- (thanks to erskine for many of the improvements in v1.16)
 update host blocks (unblock hotmail/microsoft/loudwire web sites)
