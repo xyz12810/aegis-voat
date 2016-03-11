@@ -229,12 +229,10 @@ l=$(printf '%s\n' ${l1[@]} ${l2[@]} ${l3[@]} ${l4[@]} ${l5[@]}|
 sed 's/\.$//g'|grep -v [a-z]$|sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n|uniq);
 
 # init block/unblock files
-printf '%s\n' "@echo off" >${bl};
-printf '%s\n' "@echo off" >${ub};
+printf '%s\n%s\n' "@echo off" "route print 2>nul >routes.tmp"|tee ${bl} ${ub} >/dev/null 2>&1;
 
 # write ip blocks to block file
 # get existing routes and write to temp file
-printf '%s\n' "route print 2>nul >routes.tmp" >>${bl};
 for x in ${l[@]};
 do
   # check existing routes for ip
@@ -242,11 +240,9 @@ do
   # if ip not found block it
   printf '%s\n' "if %errorlevel% neq 0 (" >>${bl};
   printf '%s\n' "  route -p add ${x}/32 0.0.0.0 >nul 2>&1" >>${bl};
-  printf '%s\n' "  echo blocked ${x}" >>${bl};
+  printf '%s\n' "  echo  - blocked ${x}" >>${bl};
   printf '%s\n' ")" >>${bl};
 done;
-# delete temp file
-printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${bl};
 
 # write host blocks to block file
 for x in ${h[@]};
@@ -256,13 +252,15 @@ do
   # if host not found block it
   printf '%s\n' "if %errorlevel% neq 0 (" >>${bl};
   printf '%s\n' "  echo 0.0.0.0 ${x} >>%systemdrive%\windows\system32\drivers\etc\hosts" >>${bl};
-  printf '%s\n' "  echo blocked ${x}" >>${bl};
+  printf '%s\n' "  echo  - blocked ${x}" >>${bl};
   printf '%s\n' ")" >>${bl};
 done;
 
+# delete temp files
+printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${bl};
+
 # write ip unblocks to unblock file
 # get existing routes and write to temp file
-printf '%s\n' "route print 2>nul >routes.tmp" >>${ub};
 for x in ${l[@]};
 do
   # check existing routes for ip
@@ -270,11 +268,9 @@ do
   # if ip is found unblock it
   printf '%s\n' "if %errorlevel% equ 0 (" >>${ub};
   printf '%s\n' "  route delete ${x} >nul 2>&1" >>${ub};
-  printf '%s\n' "  echo unblocked ${x}" >>${ub};
+  printf '%s\n' "  echo  - unblocked ${x}" >>${ub};
   printf '%s\n' ")" >>${ub};
 done;
-# delete temp file
-printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${ub};
 
 # unblock hosts
 for x in ${h[@]};
@@ -284,8 +280,11 @@ do
   # if host is found unblock it
   printf '%s\n' "if %errorlevel% equ 0 (" >>${ub};
   printf '%s\n' "  \"%~dp0sed.exe\" -i \"/${x}/d\" \"%systemdrive%\windows\system32\drivers\etc\hosts\" >nul 2>&1" >>${ub};
-  printf '%s\n' "  echo unblocked ${x}" >>${ub};
+  printf '%s\n' "  echo  - unblocked ${x}" >>${ub};
   printf '%s\n' ")" >>${ub};
 done;
 
-printf '%s' 'exit'|tee -a ${bl} ${ub};
+# delete temp files
+printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${ub};
+
+printf '%s' 'exit'|tee -a ${bl} ${ub} >/dev/null 2>&1;
