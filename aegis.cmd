@@ -11,7 +11,7 @@ goto begin
    echo -/- visit https://tiny.cc/aegisvoat for updates %log%
    echo. %log%
 
-   net session >nul 2>%~dpn0.log 
+   net session >nul 2>>%~dpn0.log 
    if %errorlevel% neq 0 (
       echo ! error - this script must be run as an administrator, press any key to exit ... %log%
       goto end
