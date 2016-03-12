@@ -20,7 +20,6 @@ goto begin
    )
 
 :end
-   echo. %log%
    echo [ see aegis.log for details - any key to exit ] %log%
    echo. %log%
    pause >nul
@@ -30,7 +29,6 @@ goto begin
 
 :main
    wmic os get osarchitecture 2>&1|findstr /i 64-bit >nul 2>&1 && set setacl=setacl-64.exe || set setacl=setacl-32.exe
-   echo. %log%
 
    echo * block hosts ... %log%
    start "title" /b /wait "%~dp0block.cmd" %log%
