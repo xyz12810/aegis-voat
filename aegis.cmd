@@ -13,15 +13,16 @@ goto begin
 
    net session >nul 2>>%~dpn0.log 
    if %errorlevel% neq 0 (
-      echo ! error - this script must be run as an administrator, press any key to exit ... %log%
+      echo !! error, this script must be run as an administrator. press any key to exit ... %log%
+      echo. %log%
       goto end
-   ) else (
+   )  else (
       goto prompt
    )
 
 :end
-   echo [ see aegis.log for details - any key to exit ] %log%
-   echo. %log%
+   echo [ see aegis.log for details - any key to exit ]
+   echo.
    pause >nul
    echo [ end aegis v1.17 %date% %time% ] %logs%
    del /f /q "%~dp0_" >nul 2>&1
@@ -37,12 +38,16 @@ goto begin
    echo * disable automatic delivery of internet explorer via windows update ... %log%
    echo  - disable ie7 auto delivery %log%
    start "title" /b /wait "%~dp0disable7.cmd" . /B %logs%
+   echo. %logs%
    echo  - disable ie8 auto delivery %log%
    start "title" /b /wait "%~dp0disable8.cmd" . /B %logs%
+   echo. %logs%
    echo  - disable ie9 auto delivery %log%
    start "title" /b /wait "%~dp0disable9.cmd" . /B %logs%
+   echo. %logs%
    echo  - disable ie10 auto delivery %log%
    start "title" /b /wait "%~dp0disable10.cmd" . /B %logs%
+   echo. %logs%
    echo  - disable ie11 auto delivery %log%
    start "title" /b /wait "%~dp0disable11.cmd" . /B %logs%
    echo. %log%
@@ -204,13 +209,10 @@ goto begin
 
    echo * sync time to pool.ntp.org ... %log%
    sc query w32time 2>&1 | findstr /i running >nul 2>&1 && net stop w32time %logs%
-   w32tm /unregister >nul 2>&1
-   w32tm /unregister >nul 2>&1
    set key=hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers
    reg query "%key%" >nul 2>&1 && reg delete "%key%" /f %logs%
    set key=hkey_local_machine\system\currentcontrolset\services\w32time\timeproviders\ntpclient
    reg query "%key%" >nul 2>&1 && reg delete "%key%" /f /v specialpolltimeremaining %logs%
-   w32tm /register %logs%
    w32tm /config /syncfromflags:manual /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org" %logs%
    set key=hkey_local_machine\software\microsoft\windows\currentversion\datetime\servers
    reg add "%key%" /f /t reg_sz /d 0 %logs%
@@ -230,24 +232,26 @@ goto begin
    sc query bits 2>&1 | findstr /i running >nul 2>&1 && net stop bits %logs%
    net start bits %logs%
    net start wuauserv %logs%
+   echo.
    powershell -executionpolicy bypass -file "%~dp0hide.ps1" %log%
    sc query wuauserv 2>&1 | findstr /i running >nul 2>&1 && net stop wuauserv %logs%
    sc query bits 2>&1 | findstr /i running >nul 2>&1 && net stop bits %logs%
    net start bits %logs%
    net start wuauserv %logs%
-   goto end %logs%
+   echo.
+   goto end
 
 :prompt
    set /p yesno="* create system restore point? (y/n):  "
+   echo.
    if /i "%yesno:~,1%" equ "y" goto rpoint
    if /i "%yesno:~,1%" equ "n" goto main
-   echo. %log%
    goto prompt
 
 :rpoint
    wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.17", 100, 12 %logs%
    if %errorlevel% equ 0 goto main
+   set /p yesno=" !! error, failed to create system restore point. continue? (y/n):  "
    echo. %log%
-   set /p yesno=" ! error - failed to create system restore point. continue? (y/n):  "
    if /i "%yesno:~,1%" equ "y" goto main
    if /i "%yesno:~,1%" equ "n" goto end
