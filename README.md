@@ -4,7 +4,7 @@ Aegis for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgra
 
 Details:
 
-Block 202 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 52 kb updates (see below).
+Block 201 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 52 kb updates (see below).
 
 Instructions:
 
@@ -24,7 +24,7 @@ There is no official license - you are welcome to modify and share my code and y
 
 Windows Update:
 
-This script will not block Windows Update, however it will change your Windows Update settings to check/notify but do not download/install. If you have any problems getting Windows Update to work properly after running the script (this may happen in rare cases after uninstalling some updates) you may need to run the Windows Update Troubleshooter or the System Update Readiness Tool (this can take a while to run, be patient). If you have recently installed updates and have not yet rebooted you may need to run the script again after you reboot.
+This script will not block Windows Update however it will change your Windows Update settings to 'check/notify but do not download/install'. If you have problems getting Windows Update to work properly after running the script you may need to run the Windows Update Troubleshooter or the System Update Readiness Tool. If you have recently installed updates and have not yet rebooted you should reboot before running the script. If you are on a fresh install you may want to install all updates before running Aegis for the first time, otherwise it may take a long time to update.
 
 kb update	description
 

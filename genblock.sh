@@ -113,7 +113,6 @@ h=(
 'mediadiscovery.microsoft.com'
 'microsoft-hohm.com'
 'msftncsi.com'
-'msnbot-65-55-108-23.search.msn.com'
 'msnportal.112.2o7.net'
 'msntest.serving-sys.com'
 'oca.telemetry.microsoft.com'
@@ -206,6 +205,7 @@ h=(
 'www.msftncsi.com'
 );
 
+# init variables
 l1=;l2=;l3=;l4=;l5=;
 bl=block.cmd;ub=unblock.cmd;
 
@@ -232,7 +232,7 @@ sed 's/\.$//g'|grep -v [a-z]$|sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n|uniq);
 printf '%s\n%s\n' "@echo off" "route print 2>nul >routes.tmp"|tee ${bl} ${ub} >/dev/null 2>&1;
 
 # write ip blocks to block file
-# get existing routes and write to temp file
+# get existing routes and write to temp file for faster processing
 for x in ${l[@]};
 do
   # check existing routes for ip
@@ -260,7 +260,7 @@ done;
 printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${bl};
 
 # write ip unblocks to unblock file
-# get existing routes and write to temp file
+# get existing routes and write to temp file for faster processing
 for x in ${l[@]};
 do
   # check existing routes for ip
@@ -284,7 +284,6 @@ do
   printf '%s\n' ")" >>${ub};
 done;
 
-# delete temp files
+# delete temp files and exit
 printf '%s\n' "del /f /q routes.tmp >nul 2>&1" >>${ub};
-
 printf '%s' 'exit'|tee -a ${bl} ${ub} >/dev/null 2>&1;

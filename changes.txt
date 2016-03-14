@@ -8,6 +8,7 @@ improve error checking/handling to reduce unnecessary operations and errors
 add notify message if reboot is required to complete some operations
 add kb3058168 activate windows 10 from windows 8 or windows 8.1, and windows server 2012 or windows server 2012 r2 kms hosts
 improve logging
+add repairtimeservice.cmd (run to reregister windows time service if not working)
 
 v1.16- (thanks to erskine for many of the improvements in v1.16)
 update host blocks (unblock hotmail/microsoft/loudwire web sites)
