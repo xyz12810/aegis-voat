@@ -6,9 +6,12 @@ replace find with findstr
 replace regedit /s with reg import
 improve error checking/handling to reduce unnecessary operations and errors
 add notify message if reboot is required to complete some operations
-add kb3058168 activate windows 10 from windows 8 or windows 8.1, and windows server 2012 or windows server 2012 r2 kms hosts
-improve logging
-add repairtimeservice.cmd (run to reregister windows time service if not working)
+add kb3058168 (activate windows 10 from windows 8 or windows 8.1, and windows server 2012 or windows server 2012 r2 kms hosts)
+improve logging functionality and readability
+add repairtimeservice.cmd (run to resolve issues w/ windows time service)
+remove aegis.reg (merged all registry operations into main script)
+remove kb3050265 & kb3050267 (install to resolve issues w/ windows update)
+add repairwindowsupdate.cmd (run to resolve issues w/ windows update)
 
 v1.16- (thanks to erskine for many of the improvements in v1.16)
 update host blocks (unblock hotmail/microsoft/loudwire web sites)

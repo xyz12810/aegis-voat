@@ -4,7 +4,7 @@ Aegis for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgra
 
 Details:
 
-Block 201 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 52 kb updates (see below).
+Block 201 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 51 kb updates (see below).
 
 Instructions:
 
@@ -61,10 +61,6 @@ kb3042058	update for cipher suite priority order (contains winlogon spying eleme
 kb3044374	update that enables you to upgrade from windows 8.1 to windows 10
 
 kb3046480	update for migrating .net when upgrading to later version of windows
-
-kb3050265	update for windows update client for windows 7 june 2015
-
-kb3050267	update for windows update client for windows 8.1 june 2015
 
 kb3058168	update activate windows 10 from windows 8 or windows 8.1, and windows server 2012 or windows server 2012 r2 kms hosts
 
