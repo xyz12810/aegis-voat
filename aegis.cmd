@@ -1,6 +1,6 @@
 @echo off
-set log=^> ^%~dp0_ ^&^& type ^%~dp0_ ^&^& type ^%~dp0_ ^>^>^%~dpn0.log 2^>^&1
-set logs=^>^>^%~dpn0.log 2^>^&1
+set log=^> "%~dp0_" ^&^& type "%~dp0_" ^&^& type "%~dp0_" ^>^>"%~dpn0.log" 2^>^&1
+set logs=^>^>"%~dpn0.log" 2^>^&1
 
 goto begin
 
