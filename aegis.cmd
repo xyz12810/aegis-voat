@@ -5,9 +5,9 @@ set logs=^>^>"%~dpn0.log" 2^>^&1
 goto begin
 
 :begin
-  echo [ begin aegis v1.17 %date% %time% ] >"%~dpn0.log" 2>&1
+  echo [ begin aegis v1.18 %date% %time% ] >"%~dpn0.log" 2>&1
   echo. %log%
-  echo -/- aegis v1.17 by https://voat.co/u/thepower %log%
+  echo -/- aegis v1.18 by https://voat.co/u/thepower %log%
   echo -/- visit https://tiny.cc/aegisvoat for updates %log%
   echo. %log%
 
@@ -24,7 +24,7 @@ goto begin
   echo [ see aegis.log for details - any key to exit ]
   echo.
   pause >nul
-  echo [ end aegis v1.17 %date% %time% ] %logs%
+  echo [ end aegis v1.18 %date% %time% ] %logs%
   del /f /q "%~dp0_" >nul 2>&1
   exit
 
@@ -90,19 +90,14 @@ goto begin
   echo. %log%
 
   echo * disable automated delivery of internet explorer ... %log%
-  echo  - ie7 %log%
   start "title" /b /wait "%~dp0disable7.cmd" . /B %logs%
   echo. %logs%
-  echo  - ie8 %log%
   start "title" /b /wait "%~dp0disable8.cmd" . /B %logs%
   echo. %logs%
-  echo  - ie9 %log%
   start "title" /b /wait "%~dp0disable9.cmd" . /B %logs%
   echo. %logs%
-  echo  - ie10 %log%
   start "title" /b /wait "%~dp0disable10.cmd" . /B %logs%
   echo. %logs%
-  echo  - ie11 %log%
   start "title" /b /wait "%~dp0disable11.cmd" . /B %logs%
   echo. %log%
 
@@ -278,7 +273,7 @@ goto begin
   goto prompt
 
 :rpoint
-  wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.17", 100, 12 %logs%
+  wmic.exe /namespace:\\root\default path systemrestore call createrestorepoint "aegis v1.18", 100, 12 %logs%
   if %errorlevel% equ 0 goto main
   set /p yesno=" !! error, failed to create system restore point. continue? (y/n):  "
   echo. %log%

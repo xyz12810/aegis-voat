@@ -1,3 +1,5 @@
+v1.18-
+
 v1.17- (once again thanks to erskine for many ideas/improvements in v1.17)
 update genblock to address outlook blocking issues
 update genblock to add documentation and improve error checking/logging output
