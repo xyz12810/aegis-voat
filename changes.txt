@@ -1,4 +1,6 @@
 v1.18-
+remove msftncsi (this is used to test for network connectivity and is harmless)
+update host blocks
 
 v1.17- (once again thanks to erskine for many ideas/improvements in v1.17)
 update genblock to address outlook blocking issues

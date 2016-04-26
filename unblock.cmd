@@ -1,9 +1,44 @@
 @echo off
 route print 2>nul >routes.tmp
-findstr 2.21.30.10 routes.tmp >nul 2>&1
+findstr 2.21.16.151 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 2.21.30.10 >nul 2>&1
-  echo  - unblocked 2.21.30.10
+  route delete 2.21.16.151 >nul 2>&1
+  echo  - unblocked 2.21.16.151
+)
+findstr 2.21.236.193 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 2.21.236.193 >nul 2>&1
+  echo  - unblocked 2.21.236.193
+)
+findstr 2.22.70.61 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 2.22.70.61 >nul 2>&1
+  echo  - unblocked 2.22.70.61
+)
+findstr 2.22.71.158 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 2.22.71.158 >nul 2>&1
+  echo  - unblocked 2.22.71.158
+)
+findstr 2.22.75.120 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 2.22.75.120 >nul 2>&1
+  echo  - unblocked 2.22.75.120
+)
+findstr 2.22.77.127 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 2.22.77.127 >nul 2>&1
+  echo  - unblocked 2.22.77.127
+)
+findstr 2.22.87.71 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 2.22.87.71 >nul 2>&1
+  echo  - unblocked 2.22.87.71
+)
+findstr 2.22.245.247 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 2.22.245.247 >nul 2>&1
+  echo  - unblocked 2.22.245.247
 )
 findstr 4.27.253.126 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -14,6 +49,16 @@ findstr 4.27.253.253 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 4.27.253.253 >nul 2>&1
   echo  - unblocked 4.27.253.253
+)
+findstr 4.27.254.254 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 4.27.254.254 >nul 2>&1
+  echo  - unblocked 4.27.254.254
+)
+findstr 8.12.223.125 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 8.12.223.125 >nul 2>&1
+  echo  - unblocked 8.12.223.125
 )
 findstr 8.12.223.254 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -30,11 +75,6 @@ if %errorlevel% equ 0 (
   route delete 8.26.207.126 >nul 2>&1
   echo  - unblocked 8.26.207.126
 )
-findstr 8.26.207.254 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 8.26.207.254 >nul 2>&1
-  echo  - unblocked 8.26.207.254
-)
 findstr 8.26.209.126 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 8.26.209.126 >nul 2>&1
@@ -50,6 +90,11 @@ if %errorlevel% equ 0 (
   route delete 8.254.56.254 >nul 2>&1
   echo  - unblocked 8.254.56.254
 )
+findstr 8.254.233.126 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 8.254.233.126 >nul 2>&1
+  echo  - unblocked 8.254.233.126
+)
 findstr 8.254.240.126 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 8.254.240.126 >nul 2>&1
@@ -60,20 +105,60 @@ if %errorlevel% equ 0 (
   route delete 8.254.248.254 >nul 2>&1
   echo  - unblocked 8.254.248.254
 )
-findstr 23.6.136.82 routes.tmp >nul 2>&1
+findstr 13.107.4.50 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 23.6.136.82 >nul 2>&1
-  echo  - unblocked 23.6.136.82
+  route delete 13.107.4.50 >nul 2>&1
+  echo  - unblocked 13.107.4.50
 )
-findstr 23.6.145.103 routes.tmp >nul 2>&1
+findstr 23.2.16.8 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 23.6.145.103 >nul 2>&1
-  echo  - unblocked 23.6.145.103
+  route delete 23.2.16.8 >nul 2>&1
+  echo  - unblocked 23.2.16.8
 )
-findstr 23.47.87.76 routes.tmp >nul 2>&1
+findstr 23.2.16.10 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 23.47.87.76 >nul 2>&1
-  echo  - unblocked 23.47.87.76
+  route delete 23.2.16.10 >nul 2>&1
+  echo  - unblocked 23.2.16.10
+)
+findstr 23.3.59.68 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.3.59.68 >nul 2>&1
+  echo  - unblocked 23.3.59.68
+)
+findstr 23.3.59.213 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.3.59.213 >nul 2>&1
+  echo  - unblocked 23.3.59.213
+)
+findstr 23.33.25.34 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.33.25.34 >nul 2>&1
+  echo  - unblocked 23.33.25.34
+)
+findstr 23.33.31.59 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.33.31.59 >nul 2>&1
+  echo  - unblocked 23.33.31.59
+)
+findstr 23.33.106.110 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.33.106.110 >nul 2>&1
+  echo  - unblocked 23.33.106.110
+)
+findstr 23.46.18.40 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.46.18.40 >nul 2>&1
+  echo  - unblocked 23.46.18.40
+)
+findstr 23.46.19.158 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.46.19.158 >nul 2>&1
+  echo  - unblocked 23.46.19.158
+)
+findstr 23.73.138.65 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.73.138.65 >nul 2>&1
+  echo  - unblocked 23.73.138.65
 )
 findstr 23.96.212.225 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -85,95 +170,125 @@ if %errorlevel% equ 0 (
   route delete 23.98.49.14 >nul 2>&1
   echo  - unblocked 23.98.49.14
 )
-findstr 23.103.189.125 routes.tmp >nul 2>&1
+findstr 23.202.16.64 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 23.103.189.125 >nul 2>&1
-  echo  - unblocked 23.103.189.125
+  route delete 23.202.16.64 >nul 2>&1
+  echo  - unblocked 23.202.16.64
 )
-findstr 31.13.73.2 routes.tmp >nul 2>&1
+findstr 23.202.21.236 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 31.13.73.2 >nul 2>&1
-  echo  - unblocked 31.13.73.2
+  route delete 23.202.21.236 >nul 2>&1
+  echo  - unblocked 23.202.21.236
+)
+findstr 23.202.58.89 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.202.58.89 >nul 2>&1
+  echo  - unblocked 23.202.58.89
+)
+findstr 23.202.61.139 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 23.202.61.139 >nul 2>&1
+  echo  - unblocked 23.202.61.139
+)
+findstr 31.13.65.2 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 31.13.65.2 >nul 2>&1
+  echo  - unblocked 31.13.65.2
+)
+findstr 31.13.69.193 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 31.13.69.193 >nul 2>&1
+  echo  - unblocked 31.13.69.193
 )
 findstr 40.114.54.223 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 40.114.54.223 >nul 2>&1
   echo  - unblocked 40.114.54.223
 )
-findstr 40.117.230.39 routes.tmp >nul 2>&1
+findstr 40.117.88.112 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 40.117.230.39 >nul 2>&1
-  echo  - unblocked 40.117.230.39
+  route delete 40.117.88.112 >nul 2>&1
+  echo  - unblocked 40.117.88.112
 )
-findstr 54.243.53.207 routes.tmp >nul 2>&1
+findstr 46.33.76.33 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 54.243.53.207 >nul 2>&1
-  echo  - unblocked 54.243.53.207
+  route delete 46.33.76.33 >nul 2>&1
+  echo  - unblocked 46.33.76.33
+)
+findstr 46.33.76.57 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 46.33.76.57 >nul 2>&1
+  echo  - unblocked 46.33.76.57
 )
 findstr 54.243.135.126 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 54.243.135.126 >nul 2>&1
   echo  - unblocked 54.243.135.126
 )
-findstr 63.146.14.8 routes.tmp >nul 2>&1
+findstr 63.148.207.70 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.146.14.8 >nul 2>&1
-  echo  - unblocked 63.146.14.8
+  route delete 63.148.207.70 >nul 2>&1
+  echo  - unblocked 63.148.207.70
 )
-findstr 63.146.14.9 routes.tmp >nul 2>&1
+findstr 63.148.207.80 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.146.14.9 >nul 2>&1
-  echo  - unblocked 63.146.14.9
+  route delete 63.148.207.80 >nul 2>&1
+  echo  - unblocked 63.148.207.80
 )
-findstr 63.146.14.10 routes.tmp >nul 2>&1
+findstr 63.148.207.88 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.146.14.10 >nul 2>&1
-  echo  - unblocked 63.146.14.10
+  route delete 63.148.207.88 >nul 2>&1
+  echo  - unblocked 63.148.207.88
 )
-findstr 63.146.14.11 routes.tmp >nul 2>&1
+findstr 63.148.207.95 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.146.14.11 >nul 2>&1
-  echo  - unblocked 63.146.14.11
+  route delete 63.148.207.95 >nul 2>&1
+  echo  - unblocked 63.148.207.95
 )
-findstr 63.146.14.16 routes.tmp >nul 2>&1
+findstr 63.148.207.97 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.146.14.16 >nul 2>&1
-  echo  - unblocked 63.146.14.16
+  route delete 63.148.207.97 >nul 2>&1
+  echo  - unblocked 63.148.207.97
 )
-findstr 63.146.14.17 routes.tmp >nul 2>&1
+findstr 63.148.207.151 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.146.14.17 >nul 2>&1
-  echo  - unblocked 63.146.14.17
-)
-findstr 63.146.14.18 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 63.146.14.18 >nul 2>&1
-  echo  - unblocked 63.146.14.18
-)
-findstr 63.146.14.19 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 63.146.14.19 >nul 2>&1
-  echo  - unblocked 63.146.14.19
+  route delete 63.148.207.151 >nul 2>&1
+  echo  - unblocked 63.148.207.151
 )
 findstr 63.241.108.111 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 63.241.108.111 >nul 2>&1
   echo  - unblocked 63.241.108.111
 )
-findstr 63.243.241.18 routes.tmp >nul 2>&1
+findstr 63.241.108.124 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.243.241.18 >nul 2>&1
-  echo  - unblocked 63.243.241.18
+  route delete 63.241.108.124 >nul 2>&1
+  echo  - unblocked 63.241.108.124
 )
-findstr 63.243.241.25 routes.tmp >nul 2>&1
+findstr 63.243.243.34 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 63.243.241.25 >nul 2>&1
-  echo  - unblocked 63.243.241.25
+  route delete 63.243.243.34 >nul 2>&1
+  echo  - unblocked 63.243.243.34
+)
+findstr 63.243.243.35 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 63.243.243.35 >nul 2>&1
+  echo  - unblocked 63.243.243.35
+)
+findstr 63.243.243.48 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 63.243.243.48 >nul 2>&1
+  echo  - unblocked 63.243.243.48
 )
 findstr 63.243.243.49 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 63.243.243.49 >nul 2>&1
   echo  - unblocked 63.243.243.49
+)
+findstr 63.243.243.58 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 63.243.243.58 >nul 2>&1
+  echo  - unblocked 63.243.243.58
 )
 findstr 63.243.243.67 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -200,10 +315,10 @@ if %errorlevel% equ 0 (
   route delete 64.4.54.32 >nul 2>&1
   echo  - unblocked 64.4.54.32
 )
-findstr 64.4.54.117 routes.tmp >nul 2>&1
+findstr 64.4.54.98 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 64.4.54.117 >nul 2>&1
-  echo  - unblocked 64.4.54.117
+  route delete 64.4.54.98 >nul 2>&1
+  echo  - unblocked 64.4.54.98
 )
 findstr 64.4.54.153 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -215,20 +330,15 @@ if %errorlevel% equ 0 (
   route delete 64.4.54.165 >nul 2>&1
   echo  - unblocked 64.4.54.165
 )
-findstr 64.4.54.167 routes.tmp >nul 2>&1
+findstr 64.233.185.148 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 64.4.54.167 >nul 2>&1
-  echo  - unblocked 64.4.54.167
+  route delete 64.233.185.148 >nul 2>&1
+  echo  - unblocked 64.233.185.148
 )
-findstr 64.4.54.253 routes.tmp >nul 2>&1
+findstr 64.233.185.149 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 64.4.54.253 >nul 2>&1
-  echo  - unblocked 64.4.54.253
-)
-findstr 64.4.54.254 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 64.4.54.254 >nul 2>&1
-  echo  - unblocked 64.4.54.254
+  route delete 64.233.185.149 >nul 2>&1
+  echo  - unblocked 64.233.185.149
 )
 findstr 65.52.100.7 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -310,15 +420,15 @@ if %errorlevel% equ 0 (
   route delete 65.52.108.92 >nul 2>&1
   echo  - unblocked 65.52.108.92
 )
-findstr 65.52.108.103 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 65.52.108.103 >nul 2>&1
-  echo  - unblocked 65.52.108.103
-)
 findstr 65.52.108.153 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 65.52.108.153 >nul 2>&1
   echo  - unblocked 65.52.108.153
+)
+findstr 65.52.108.154 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 65.52.108.154 >nul 2>&1
+  echo  - unblocked 65.52.108.154
 )
 findstr 65.52.108.163 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -335,25 +445,35 @@ if %errorlevel% equ 0 (
   route delete 65.52.108.254 >nul 2>&1
   echo  - unblocked 65.52.108.254
 )
+findstr 65.52.161.64 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 65.52.161.64 >nul 2>&1
+  echo  - unblocked 65.52.161.64
+)
 findstr 65.54.192.248 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 65.54.192.248 >nul 2>&1
   echo  - unblocked 65.54.192.248
+)
+findstr 65.54.225.167 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 65.54.225.167 >nul 2>&1
+  echo  - unblocked 65.54.225.167
 )
 findstr 65.54.226.187 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 65.54.226.187 >nul 2>&1
   echo  - unblocked 65.54.226.187
 )
+findstr 65.55.2.2 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 65.55.2.2 >nul 2>&1
+  echo  - unblocked 65.55.2.2
+)
 findstr 65.55.29.238 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 65.55.29.238 >nul 2>&1
   echo  - unblocked 65.55.29.238
-)
-findstr 65.55.32.30 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 65.55.32.30 >nul 2>&1
-  echo  - unblocked 65.55.32.30
 )
 findstr 65.55.39.10 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -380,15 +500,10 @@ if %errorlevel% equ 0 (
   route delete 65.55.44.109 >nul 2>&1
   echo  - unblocked 65.55.44.109
 )
-findstr 65.55.52.56 routes.tmp >nul 2>&1
+findstr 65.55.52.23 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 65.55.52.56 >nul 2>&1
-  echo  - unblocked 65.55.52.56
-)
-findstr 65.55.108.23 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 65.55.108.23 >nul 2>&1
-  echo  - unblocked 65.55.108.23
+  route delete 65.55.52.23 >nul 2>&1
+  echo  - unblocked 65.55.52.23
 )
 findstr 65.55.113.11 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -430,16 +545,6 @@ if %errorlevel% equ 0 (
   route delete 65.55.149.120 >nul 2>&1
   echo  - unblocked 65.55.149.120
 )
-findstr 65.55.163.221 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 65.55.163.221 >nul 2>&1
-  echo  - unblocked 65.55.163.221
-)
-findstr 65.55.163.222 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 65.55.163.222 >nul 2>&1
-  echo  - unblocked 65.55.163.222
-)
 findstr 65.55.227.188 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 65.55.227.188 >nul 2>&1
@@ -470,20 +575,20 @@ if %errorlevel% equ 0 (
   route delete 65.55.252.190 >nul 2>&1
   echo  - unblocked 65.55.252.190
 )
-findstr 66.119.144.157 routes.tmp >nul 2>&1
+findstr 66.119.144.189 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 66.119.144.157 >nul 2>&1
-  echo  - unblocked 66.119.144.157
+  route delete 66.119.144.189 >nul 2>&1
+  echo  - unblocked 66.119.144.189
 )
-findstr 66.119.144.158 routes.tmp >nul 2>&1
+findstr 66.119.147.131 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 66.119.144.158 >nul 2>&1
-  echo  - unblocked 66.119.144.158
+  route delete 66.119.147.131 >nul 2>&1
+  echo  - unblocked 66.119.147.131
 )
-findstr 66.119.152.204 routes.tmp >nul 2>&1
+findstr 66.119.152.205 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 66.119.152.204 >nul 2>&1
-  echo  - unblocked 66.119.152.204
+  route delete 66.119.152.205 >nul 2>&1
+  echo  - unblocked 66.119.152.205
 )
 findstr 66.235.138.193 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -530,50 +635,20 @@ if %errorlevel% equ 0 (
   route delete 66.235.139.207 >nul 2>&1
   echo  - unblocked 66.235.139.207
 )
-findstr 68.67.152.1 routes.tmp >nul 2>&1
+findstr 68.67.152.56 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.152.1 >nul 2>&1
-  echo  - unblocked 68.67.152.1
+  route delete 68.67.152.56 >nul 2>&1
+  echo  - unblocked 68.67.152.56
 )
-findstr 68.67.152.3 routes.tmp >nul 2>&1
+findstr 68.67.152.58 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.152.3 >nul 2>&1
-  echo  - unblocked 68.67.152.3
+  route delete 68.67.152.58 >nul 2>&1
+  echo  - unblocked 68.67.152.58
 )
-findstr 68.67.152.4 routes.tmp >nul 2>&1
+findstr 68.67.152.61 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.152.4 >nul 2>&1
-  echo  - unblocked 68.67.152.4
-)
-findstr 68.67.152.5 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.152.5 >nul 2>&1
-  echo  - unblocked 68.67.152.5
-)
-findstr 68.67.152.6 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.152.6 >nul 2>&1
-  echo  - unblocked 68.67.152.6
-)
-findstr 68.67.152.7 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.152.7 >nul 2>&1
-  echo  - unblocked 68.67.152.7
-)
-findstr 68.67.152.8 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.152.8 >nul 2>&1
-  echo  - unblocked 68.67.152.8
-)
-findstr 68.67.152.82 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.152.82 >nul 2>&1
-  echo  - unblocked 68.67.152.82
-)
-findstr 68.67.152.91 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.152.91 >nul 2>&1
-  echo  - unblocked 68.67.152.91
+  route delete 68.67.152.61 >nul 2>&1
+  echo  - unblocked 68.67.152.61
 )
 findstr 68.67.152.92 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -595,15 +670,40 @@ if %errorlevel% equ 0 (
   route delete 68.67.152.103 >nul 2>&1
   echo  - unblocked 68.67.152.103
 )
+findstr 68.67.152.109 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.109 >nul 2>&1
+  echo  - unblocked 68.67.152.109
+)
 findstr 68.67.152.110 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.152.110 >nul 2>&1
   echo  - unblocked 68.67.152.110
 )
+findstr 68.67.152.111 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.111 >nul 2>&1
+  echo  - unblocked 68.67.152.111
+)
+findstr 68.67.152.112 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.112 >nul 2>&1
+  echo  - unblocked 68.67.152.112
+)
+findstr 68.67.152.113 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.113 >nul 2>&1
+  echo  - unblocked 68.67.152.113
+)
 findstr 68.67.152.120 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.152.120 >nul 2>&1
   echo  - unblocked 68.67.152.120
+)
+findstr 68.67.152.129 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.129 >nul 2>&1
+  echo  - unblocked 68.67.152.129
 )
 findstr 68.67.152.131 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -614,11 +714,6 @@ findstr 68.67.152.132 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.152.132 >nul 2>&1
   echo  - unblocked 68.67.152.132
-)
-findstr 68.67.152.167 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.152.167 >nul 2>&1
-  echo  - unblocked 68.67.152.167
 )
 findstr 68.67.152.172 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -635,20 +730,60 @@ if %errorlevel% equ 0 (
   route delete 68.67.152.174 >nul 2>&1
   echo  - unblocked 68.67.152.174
 )
+findstr 68.67.152.215 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.215 >nul 2>&1
+  echo  - unblocked 68.67.152.215
+)
+findstr 68.67.152.218 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.218 >nul 2>&1
+  echo  - unblocked 68.67.152.218
+)
+findstr 68.67.152.235 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.235 >nul 2>&1
+  echo  - unblocked 68.67.152.235
+)
+findstr 68.67.152.236 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.236 >nul 2>&1
+  echo  - unblocked 68.67.152.236
+)
+findstr 68.67.152.254 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.152.254 >nul 2>&1
+  echo  - unblocked 68.67.152.254
+)
 findstr 68.67.153.37 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.153.37 >nul 2>&1
   echo  - unblocked 68.67.153.37
+)
+findstr 68.67.153.39 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.39 >nul 2>&1
+  echo  - unblocked 68.67.153.39
 )
 findstr 68.67.153.40 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.153.40 >nul 2>&1
   echo  - unblocked 68.67.153.40
 )
+findstr 68.67.153.41 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.41 >nul 2>&1
+  echo  - unblocked 68.67.153.41
+)
 findstr 68.67.153.44 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.153.44 >nul 2>&1
   echo  - unblocked 68.67.153.44
+)
+findstr 68.67.153.56 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.56 >nul 2>&1
+  echo  - unblocked 68.67.153.56
 )
 findstr 68.67.153.87 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -660,45 +795,70 @@ if %errorlevel% equ 0 (
   route delete 68.67.153.89 >nul 2>&1
   echo  - unblocked 68.67.153.89
 )
-findstr 68.67.176.41 routes.tmp >nul 2>&1
+findstr 68.67.153.148 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.41 >nul 2>&1
-  echo  - unblocked 68.67.176.41
+  route delete 68.67.153.148 >nul 2>&1
+  echo  - unblocked 68.67.153.148
 )
-findstr 68.67.176.42 routes.tmp >nul 2>&1
+findstr 68.67.153.173 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.42 >nul 2>&1
-  echo  - unblocked 68.67.176.42
+  route delete 68.67.153.173 >nul 2>&1
+  echo  - unblocked 68.67.153.173
 )
-findstr 68.67.176.43 routes.tmp >nul 2>&1
+findstr 68.67.153.180 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.43 >nul 2>&1
-  echo  - unblocked 68.67.176.43
+  route delete 68.67.153.180 >nul 2>&1
+  echo  - unblocked 68.67.153.180
 )
-findstr 68.67.176.44 routes.tmp >nul 2>&1
+findstr 68.67.153.183 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.44 >nul 2>&1
-  echo  - unblocked 68.67.176.44
+  route delete 68.67.153.183 >nul 2>&1
+  echo  - unblocked 68.67.153.183
 )
-findstr 68.67.176.45 routes.tmp >nul 2>&1
+findstr 68.67.153.188 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.45 >nul 2>&1
-  echo  - unblocked 68.67.176.45
+  route delete 68.67.153.188 >nul 2>&1
+  echo  - unblocked 68.67.153.188
 )
-findstr 68.67.176.46 routes.tmp >nul 2>&1
+findstr 68.67.153.208 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.46 >nul 2>&1
-  echo  - unblocked 68.67.176.46
+  route delete 68.67.153.208 >nul 2>&1
+  echo  - unblocked 68.67.153.208
+)
+findstr 68.67.153.209 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.209 >nul 2>&1
+  echo  - unblocked 68.67.153.209
+)
+findstr 68.67.153.244 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.244 >nul 2>&1
+  echo  - unblocked 68.67.153.244
+)
+findstr 68.67.153.248 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.248 >nul 2>&1
+  echo  - unblocked 68.67.153.248
+)
+findstr 68.67.153.251 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.251 >nul 2>&1
+  echo  - unblocked 68.67.153.251
+)
+findstr 68.67.153.253 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.153.253 >nul 2>&1
+  echo  - unblocked 68.67.153.253
+)
+findstr 68.67.176.16 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.176.16 >nul 2>&1
+  echo  - unblocked 68.67.176.16
 )
 findstr 68.67.176.47 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.176.47 >nul 2>&1
   echo  - unblocked 68.67.176.47
-)
-findstr 68.67.176.49 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 68.67.176.49 >nul 2>&1
-  echo  - unblocked 68.67.176.49
 )
 findstr 68.67.176.50 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -710,50 +870,95 @@ if %errorlevel% equ 0 (
   route delete 68.67.176.51 >nul 2>&1
   echo  - unblocked 68.67.176.51
 )
-findstr 68.67.176.52 routes.tmp >nul 2>&1
+findstr 68.67.176.63 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.52 >nul 2>&1
-  echo  - unblocked 68.67.176.52
+  route delete 68.67.176.63 >nul 2>&1
+  echo  - unblocked 68.67.176.63
 )
-findstr 68.67.176.128 routes.tmp >nul 2>&1
+findstr 68.67.176.68 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.128 >nul 2>&1
-  echo  - unblocked 68.67.176.128
+  route delete 68.67.176.68 >nul 2>&1
+  echo  - unblocked 68.67.176.68
+)
+findstr 68.67.176.126 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.176.126 >nul 2>&1
+  echo  - unblocked 68.67.176.126
 )
 findstr 68.67.176.129 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.176.129 >nul 2>&1
   echo  - unblocked 68.67.176.129
 )
+findstr 68.67.176.132 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 68.67.176.132 >nul 2>&1
+  echo  - unblocked 68.67.176.132
+)
 findstr 68.67.176.145 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 68.67.176.145 >nul 2>&1
   echo  - unblocked 68.67.176.145
 )
-findstr 68.67.176.146 routes.tmp >nul 2>&1
+findstr 68.67.176.152 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 68.67.176.146 >nul 2>&1
-  echo  - unblocked 68.67.176.146
+  route delete 68.67.176.152 >nul 2>&1
+  echo  - unblocked 68.67.176.152
 )
-findstr 72.246.56.10 routes.tmp >nul 2>&1
+findstr 72.246.43.9 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 72.246.56.10 >nul 2>&1
-  echo  - unblocked 72.246.56.10
+  route delete 72.246.43.9 >nul 2>&1
+  echo  - unblocked 72.246.43.9
 )
-findstr 72.246.56.26 routes.tmp >nul 2>&1
+findstr 72.246.43.10 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 72.246.56.26 >nul 2>&1
-  echo  - unblocked 72.246.56.26
+  route delete 72.246.43.10 >nul 2>&1
+  echo  - unblocked 72.246.43.10
 )
-findstr 72.246.56.35 routes.tmp >nul 2>&1
+findstr 72.246.43.16 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 72.246.56.35 >nul 2>&1
-  echo  - unblocked 72.246.56.35
+  route delete 72.246.43.16 >nul 2>&1
+  echo  - unblocked 72.246.43.16
 )
-findstr 72.246.56.50 routes.tmp >nul 2>&1
+findstr 72.246.43.25 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 72.246.56.50 >nul 2>&1
-  echo  - unblocked 72.246.56.50
+  route delete 72.246.43.25 >nul 2>&1
+  echo  - unblocked 72.246.43.25
+)
+findstr 72.246.43.26 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 72.246.43.26 >nul 2>&1
+  echo  - unblocked 72.246.43.26
+)
+findstr 72.246.43.33 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 72.246.43.33 >nul 2>&1
+  echo  - unblocked 72.246.43.33
+)
+findstr 72.246.43.34 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 72.246.43.34 >nul 2>&1
+  echo  - unblocked 72.246.43.34
+)
+findstr 72.246.43.40 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 72.246.43.40 >nul 2>&1
+  echo  - unblocked 72.246.43.40
+)
+findstr 72.246.43.48 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 72.246.43.48 >nul 2>&1
+  echo  - unblocked 72.246.43.48
+)
+findstr 72.246.43.56 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 72.246.43.56 >nul 2>&1
+  echo  - unblocked 72.246.43.56
+)
+findstr 72.246.43.128 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 72.246.43.128 >nul 2>&1
+  echo  - unblocked 72.246.43.128
 )
 findstr 74.125.21.148 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -790,85 +995,80 @@ if %errorlevel% equ 0 (
   route delete 94.245.121.179 >nul 2>&1
   echo  - unblocked 94.245.121.179
 )
-findstr 94.245.121.253 routes.tmp >nul 2>&1
+findstr 95.101.128.137 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 94.245.121.253 >nul 2>&1
-  echo  - unblocked 94.245.121.253
+  route delete 95.101.128.137 >nul 2>&1
+  echo  - unblocked 95.101.128.137
 )
-findstr 96.6.30.29 routes.tmp >nul 2>&1
+findstr 95.101.128.195 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 96.6.30.29 >nul 2>&1
-  echo  - unblocked 96.6.30.29
+  route delete 95.101.128.195 >nul 2>&1
+  echo  - unblocked 95.101.128.195
 )
-findstr 96.16.144.23 routes.tmp >nul 2>&1
+findstr 96.17.204.25 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 96.16.144.23 >nul 2>&1
-  echo  - unblocked 96.16.144.23
+  route delete 96.17.204.25 >nul 2>&1
+  echo  - unblocked 96.17.204.25
 )
-findstr 96.16.151.81 routes.tmp >nul 2>&1
+findstr 96.17.204.167 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 96.16.151.81 >nul 2>&1
-  echo  - unblocked 96.16.151.81
-)
-findstr 104.43.203.255 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 104.43.203.255 >nul 2>&1
-  echo  - unblocked 104.43.203.255
+  route delete 96.17.204.167 >nul 2>&1
+  echo  - unblocked 96.17.204.167
 )
 findstr 104.45.136.42 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 104.45.136.42 >nul 2>&1
   echo  - unblocked 104.45.136.42
 )
-findstr 104.99.32.193 routes.tmp >nul 2>&1
+findstr 104.69.113.196 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 104.99.32.193 >nul 2>&1
-  echo  - unblocked 104.99.32.193
+  route delete 104.69.113.196 >nul 2>&1
+  echo  - unblocked 104.69.113.196
 )
-findstr 104.105.90.71 routes.tmp >nul 2>&1
+findstr 104.69.140.179 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 104.105.90.71 >nul 2>&1
-  echo  - unblocked 104.105.90.71
+  route delete 104.69.140.179 >nul 2>&1
+  echo  - unblocked 104.69.140.179
 )
-findstr 104.106.242.88 routes.tmp >nul 2>&1
+findstr 104.69.140.181 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 104.106.242.88 >nul 2>&1
-  echo  - unblocked 104.106.242.88
+  route delete 104.69.140.181 >nul 2>&1
+  echo  - unblocked 104.69.140.181
 )
-findstr 104.107.27.94 routes.tmp >nul 2>&1
+findstr 104.70.210.203 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 104.107.27.94 >nul 2>&1
-  echo  - unblocked 104.107.27.94
+  route delete 104.70.210.203 >nul 2>&1
+  echo  - unblocked 104.70.210.203
 )
-findstr 104.107.31.115 routes.tmp >nul 2>&1
+findstr 104.73.211.105 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 104.107.31.115 >nul 2>&1
-  echo  - unblocked 104.107.31.115
+  route delete 104.73.211.105 >nul 2>&1
+  echo  - unblocked 104.73.211.105
 )
-findstr 104.107.50.124 routes.tmp >nul 2>&1
+findstr 104.73.211.159 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 104.107.50.124 >nul 2>&1
-  echo  - unblocked 104.107.50.124
+  route delete 104.73.211.159 >nul 2>&1
+  echo  - unblocked 104.73.211.159
 )
-findstr 107.14.45.49 routes.tmp >nul 2>&1
+findstr 104.73.215.154 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 107.14.45.49 >nul 2>&1
-  echo  - unblocked 107.14.45.49
+  route delete 104.73.215.154 >nul 2>&1
+  echo  - unblocked 104.73.215.154
 )
-findstr 107.14.45.57 routes.tmp >nul 2>&1
+findstr 104.73.217.91 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 107.14.45.57 >nul 2>&1
-  echo  - unblocked 107.14.45.57
+  route delete 104.73.217.91 >nul 2>&1
+  echo  - unblocked 104.73.217.91
 )
-findstr 107.14.45.58 routes.tmp >nul 2>&1
+findstr 104.73.220.170 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 107.14.45.58 >nul 2>&1
-  echo  - unblocked 107.14.45.58
+  route delete 104.73.220.170 >nul 2>&1
+  echo  - unblocked 104.73.220.170
 )
-findstr 107.14.45.67 routes.tmp >nul 2>&1
+findstr 104.107.13.214 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 107.14.45.67 >nul 2>&1
-  echo  - unblocked 107.14.45.67
+  route delete 104.107.13.214 >nul 2>&1
+  echo  - unblocked 104.107.13.214
 )
 findstr 107.20.234.199 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -880,20 +1080,10 @@ if %errorlevel% equ 0 (
   route delete 107.21.246.114 >nul 2>&1
   echo  - unblocked 107.21.246.114
 )
-findstr 111.221.29.253 routes.tmp >nul 2>&1
+findstr 131.107.113.238 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 111.221.29.253 >nul 2>&1
-  echo  - unblocked 111.221.29.253
-)
-findstr 111.221.29.254 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 111.221.29.254 >nul 2>&1
-  echo  - unblocked 111.221.29.254
-)
-findstr 131.107.255.255 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 131.107.255.255 >nul 2>&1
-  echo  - unblocked 131.107.255.255
+  route delete 131.107.113.238 >nul 2>&1
+  echo  - unblocked 131.107.113.238
 )
 findstr 131.253.14.76 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -905,15 +1095,15 @@ if %errorlevel% equ 0 (
   route delete 131.253.14.121 >nul 2>&1
   echo  - unblocked 131.253.14.121
 )
+findstr 131.253.14.194 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 131.253.14.194 >nul 2>&1
+  echo  - unblocked 131.253.14.194
+)
 findstr 131.253.34.230 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 131.253.34.230 >nul 2>&1
   echo  - unblocked 131.253.34.230
-)
-findstr 131.253.40.44 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 131.253.40.44 >nul 2>&1
-  echo  - unblocked 131.253.40.44
 )
 findstr 131.253.40.47 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -930,30 +1120,65 @@ if %errorlevel% equ 0 (
   route delete 131.253.40.64 >nul 2>&1
   echo  - unblocked 131.253.40.64
 )
+findstr 131.253.40.109 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 131.253.40.109 >nul 2>&1
+  echo  - unblocked 131.253.40.109
+)
 findstr 134.170.30.221 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 134.170.30.221 >nul 2>&1
   echo  - unblocked 134.170.30.221
 )
-findstr 134.170.104.232 routes.tmp >nul 2>&1
+findstr 134.170.51.248 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 134.170.104.232 >nul 2>&1
-  echo  - unblocked 134.170.104.232
+  route delete 134.170.51.248 >nul 2>&1
+  echo  - unblocked 134.170.51.248
 )
-findstr 134.170.107.152 routes.tmp >nul 2>&1
+findstr 134.170.52.151 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 134.170.107.152 >nul 2>&1
-  echo  - unblocked 134.170.107.152
+  route delete 134.170.52.151 >nul 2>&1
+  echo  - unblocked 134.170.52.151
 )
-findstr 134.170.115.60 routes.tmp >nul 2>&1
+findstr 134.170.53.29 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 134.170.115.60 >nul 2>&1
-  echo  - unblocked 134.170.115.60
+  route delete 134.170.53.29 >nul 2>&1
+  echo  - unblocked 134.170.53.29
 )
-findstr 134.170.115.62 routes.tmp >nul 2>&1
+findstr 134.170.53.30 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 134.170.115.62 >nul 2>&1
-  echo  - unblocked 134.170.115.62
+  route delete 134.170.53.30 >nul 2>&1
+  echo  - unblocked 134.170.53.30
+)
+findstr 134.170.58.121 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 134.170.58.121 >nul 2>&1
+  echo  - unblocked 134.170.58.121
+)
+findstr 134.170.58.123 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 134.170.58.123 >nul 2>&1
+  echo  - unblocked 134.170.58.123
+)
+findstr 134.170.58.125 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 134.170.58.125 >nul 2>&1
+  echo  - unblocked 134.170.58.125
+)
+findstr 134.170.58.189 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 134.170.58.189 >nul 2>&1
+  echo  - unblocked 134.170.58.189
+)
+findstr 134.170.107.176 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 134.170.107.176 >nul 2>&1
+  echo  - unblocked 134.170.107.176
+)
+findstr 134.170.109.200 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 134.170.109.200 >nul 2>&1
+  echo  - unblocked 134.170.109.200
 )
 findstr 134.170.119.140 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -965,10 +1190,15 @@ if %errorlevel% equ 0 (
   route delete 134.170.184.133 >nul 2>&1
   echo  - unblocked 134.170.184.133
 )
-findstr 134.170.188.140 routes.tmp >nul 2>&1
+findstr 134.170.185.125 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 134.170.188.140 >nul 2>&1
-  echo  - unblocked 134.170.188.140
+  route delete 134.170.185.125 >nul 2>&1
+  echo  - unblocked 134.170.185.125
+)
+findstr 134.170.188.139 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 134.170.188.139 >nul 2>&1
+  echo  - unblocked 134.170.188.139
 )
 findstr 134.170.188.248 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -990,20 +1220,15 @@ if %errorlevel% equ 0 (
   route delete 157.56.23.91 >nul 2>&1
   echo  - unblocked 157.56.23.91
 )
-findstr 157.56.57.5 routes.tmp >nul 2>&1
+findstr 157.56.77.139 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 157.56.57.5 >nul 2>&1
-  echo  - unblocked 157.56.57.5
+  route delete 157.56.77.139 >nul 2>&1
+  echo  - unblocked 157.56.77.139
 )
 findstr 157.56.96.54 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 157.56.96.54 >nul 2>&1
   echo  - unblocked 157.56.96.54
-)
-findstr 157.56.96.58 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 157.56.96.58 >nul 2>&1
-  echo  - unblocked 157.56.96.58
 )
 findstr 157.56.96.80 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -1020,6 +1245,26 @@ if %errorlevel% equ 0 (
   route delete 157.56.100.83 >nul 2>&1
   echo  - unblocked 157.56.100.83
 )
+findstr 157.56.106.189 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 157.56.106.189 >nul 2>&1
+  echo  - unblocked 157.56.106.189
+)
+findstr 165.254.114.10 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 165.254.114.10 >nul 2>&1
+  echo  - unblocked 165.254.114.10
+)
+findstr 165.254.114.34 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 165.254.114.34 >nul 2>&1
+  echo  - unblocked 165.254.114.34
+)
+findstr 168.61.24.141 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 168.61.24.141 >nul 2>&1
+  echo  - unblocked 168.61.24.141
+)
 findstr 168.62.11.145 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 168.62.11.145 >nul 2>&1
@@ -1030,80 +1275,45 @@ if %errorlevel% equ 0 (
   route delete 168.62.21.207 >nul 2>&1
   echo  - unblocked 168.62.21.207
 )
-findstr 168.62.187.13 routes.tmp >nul 2>&1
+findstr 174.129.244.227 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 168.62.187.13 >nul 2>&1
-  echo  - unblocked 168.62.187.13
+  route delete 174.129.244.227 >nul 2>&1
+  echo  - unblocked 174.129.244.227
 )
-findstr 172.232.50.209 routes.tmp >nul 2>&1
+findstr 184.28.167.143 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 172.232.50.209 >nul 2>&1
-  echo  - unblocked 172.232.50.209
+  route delete 184.28.167.143 >nul 2>&1
+  echo  - unblocked 184.28.167.143
 )
-findstr 172.232.53.80 routes.tmp >nul 2>&1
+findstr 184.29.134.49 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 172.232.53.80 >nul 2>&1
-  echo  - unblocked 172.232.53.80
+  route delete 184.29.134.49 >nul 2>&1
+  echo  - unblocked 184.29.134.49
 )
-findstr 172.232.70.71 routes.tmp >nul 2>&1
+findstr 184.29.137.155 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 172.232.70.71 >nul 2>&1
-  echo  - unblocked 172.232.70.71
+  route delete 184.29.137.155 >nul 2>&1
+  echo  - unblocked 184.29.137.155
 )
-findstr 172.232.80.115 routes.tmp >nul 2>&1
+findstr 184.30.37.150 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 172.232.80.115 >nul 2>&1
-  echo  - unblocked 172.232.80.115
+  route delete 184.30.37.150 >nul 2>&1
+  echo  - unblocked 184.30.37.150
 )
-findstr 172.232.221.65 routes.tmp >nul 2>&1
+findstr 184.31.242.141 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 172.232.221.65 >nul 2>&1
-  echo  - unblocked 172.232.221.65
+  route delete 184.31.242.141 >nul 2>&1
+  echo  - unblocked 184.31.242.141
 )
-findstr 184.84.139.153 routes.tmp >nul 2>&1
+findstr 191.232.139.210 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 184.84.139.153 >nul 2>&1
-  echo  - unblocked 184.84.139.153
-)
-findstr 184.84.141.92 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 184.84.141.92 >nul 2>&1
-  echo  - unblocked 184.84.141.92
-)
-findstr 184.84.141.139 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 184.84.141.139 >nul 2>&1
-  echo  - unblocked 184.84.141.139
-)
-findstr 184.84.170.70 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 184.84.170.70 >nul 2>&1
-  echo  - unblocked 184.84.170.70
-)
-findstr 184.84.170.239 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 184.84.170.239 >nul 2>&1
-  echo  - unblocked 184.84.170.239
-)
-findstr 191.232.80.60 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 191.232.80.60 >nul 2>&1
-  echo  - unblocked 191.232.80.60
-)
-findstr 191.232.139.253 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 191.232.139.253 >nul 2>&1
-  echo  - unblocked 191.232.139.253
+  route delete 191.232.139.210 >nul 2>&1
+  echo  - unblocked 191.232.139.210
 )
 findstr 191.232.140.76 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 191.232.140.76 >nul 2>&1
   echo  - unblocked 191.232.140.76
-)
-findstr 191.234.72.190 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 191.234.72.190 >nul 2>&1
-  echo  - unblocked 191.234.72.190
 )
 findstr 191.236.16.12 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -1114,6 +1324,11 @@ findstr 191.238.241.80 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 191.238.241.80 >nul 2>&1
   echo  - unblocked 191.238.241.80
+)
+findstr 192.229.163.249 routes.tmp >nul 2>&1
+if %errorlevel% equ 0 (
+  route delete 192.229.163.249 >nul 2>&1
+  echo  - unblocked 192.229.163.249
 )
 findstr 192.243.250.72 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -1129,11 +1344,6 @@ findstr 198.78.206.253 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
   route delete 198.78.206.253 >nul 2>&1
   echo  - unblocked 198.78.206.253
-)
-findstr 204.79.197.221 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 204.79.197.221 >nul 2>&1
-  echo  - unblocked 204.79.197.221
 )
 findstr 207.46.7.252 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
@@ -1155,15 +1365,10 @@ if %errorlevel% equ 0 (
   route delete 207.68.166.254 >nul 2>&1
   echo  - unblocked 207.68.166.254
 )
-findstr 216.38.164.128 routes.tmp >nul 2>&1
+findstr 216.38.170.128 routes.tmp >nul 2>&1
 if %errorlevel% equ 0 (
-  route delete 216.38.164.128 >nul 2>&1
-  echo  - unblocked 216.38.164.128
-)
-findstr 216.58.193.134 routes.tmp >nul 2>&1
-if %errorlevel% equ 0 (
-  route delete 216.58.193.134 >nul 2>&1
-  echo  - unblocked 216.58.193.134
+  route delete 216.38.170.128 >nul 2>&1
+  echo  - unblocked 216.38.170.128
 )
 findstr " 0.r.msn.com" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1
 if %errorlevel% equ 0 (
@@ -1545,11 +1750,6 @@ if %errorlevel% equ 0 (
   "%~dp0sed.exe" -i "/dmd.metaservices.microsoft.com/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
   echo  - unblocked dmd.metaservices.microsoft.com
 )
-findstr " dns.msftncsi.com" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1
-if %errorlevel% equ 0 (
-  "%~dp0sed.exe" -i "/dns.msftncsi.com/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
-  echo  - unblocked dns.msftncsi.com
-)
 findstr " download-ssl.msgamestudios.com" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1
 if %errorlevel% equ 0 (
   "%~dp0sed.exe" -i "/download-ssl.msgamestudios.com/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
@@ -1714,16 +1914,6 @@ findstr " microsoft-hohm.com" %systemdrive%\windows\system32\drivers\etc\hosts >
 if %errorlevel% equ 0 (
   "%~dp0sed.exe" -i "/microsoft-hohm.com/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
   echo  - unblocked microsoft-hohm.com
-)
-findstr " msftncsi.com" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1
-if %errorlevel% equ 0 (
-  "%~dp0sed.exe" -i "/msftncsi.com/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
-  echo  - unblocked msftncsi.com
-)
-findstr " msnbot-65-55-108-23.search.msn.com" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1
-if %errorlevel% equ 0 (
-  "%~dp0sed.exe" -i "/msnbot-65-55-108-23.search.msn.com/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
-  echo  - unblocked msnbot-65-55-108-23.search.msn.com
 )
 findstr " msnportal.112.2o7.net" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1
 if %errorlevel% equ 0 (
@@ -2169,11 +2359,6 @@ findstr " www.modern.ie" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2
 if %errorlevel% equ 0 (
   "%~dp0sed.exe" -i "/www.modern.ie/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
   echo  - unblocked www.modern.ie
-)
-findstr " www.msftncsi.com" %systemdrive%\windows\system32\drivers\etc\hosts >nul 2>&1
-if %errorlevel% equ 0 (
-  "%~dp0sed.exe" -i "/www.msftncsi.com/d" "%systemdrive%\windows\system32\drivers\etc\hosts" >nul 2>&1
-  echo  - unblocked www.msftncsi.com
 )
 del /f /q routes.tmp >nul 2>&1
 exit
