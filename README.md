@@ -4,7 +4,7 @@ Aegis for Windows 7/8.x - Blocks all known Microsoft spying and Windows 10 upgra
 
 Details:
 
-Block 201 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 50 kb updates (see below).
+Block 201 bad hosts, change windows update to check/notify (do not download/install), disable automatic delivery of internet explorer via windows update, disable ceip/gwx/skydrive(aka onedrive)/spynet/telemetry/wifisense, disable remote registry, disable 31 scheduled tasks, disable windows 10 download directory, remove diagtrack, sync time to ntp.org, hide/uninstall 51 kb updates (see below).
 
 Instructions:
 
@@ -128,6 +128,8 @@ kb3139929	security update for internet explorer: march 8, 2016
 
 kb3146449	updated internet explorer 11 capabilities to upgrade windows 8.1 and windows 7
 
-Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @erskine, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @mythias, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @tr3bg0d, @Umrtvovacz, @qzxq, @thequestion, @tor11, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
+kb3150513	may 2016 compatibility update for windows
+
+Thanks to @alexzerg11, @allockse, @AxiomBreak, @elixxx, @erskine, @eSh, @GGLapkizzz, @ilikeskittles, @liquidinsects, @Magoo204, @Mixplate, @mythias, @PaulDG, @pstein, @RypeDub420, @spexdi, @tor11, @Umrtvovacz, @qzxq, @thequestion, @tor11, @tr3bg0d, @Umrtvovacz, @Voluptuous_Panda, and @Zaphain.
 
 Visit https://tiny.cc/aegisvoat for additional details and latest information
