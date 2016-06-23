@@ -78,7 +78,7 @@ h=(
 'displaycatalog.md.mp.microsoft.com'
 'dl.delivery.mp.microsoft.com'
 'dmd.metaservices.microsoft.com'
-'dns.msftncsi.com'
+#'dns.msftncsi.com'
 'download-ssl.msgamestudios.com'
 'ecn.dev.virtualearth.net'
 'en-us.appex-rf.msn.com'
@@ -112,7 +112,7 @@ h=(
 'm.anycast.adnxs.com'
 'mediadiscovery.microsoft.com'
 'microsoft-hohm.com'
-'msftncsi.com'
+#'msftncsi.com'
 'msnportal.112.2o7.net'
 'msntest.serving-sys.com'
 'oca.telemetry.microsoft.com'
@@ -202,7 +202,7 @@ h=(
 'wes.df.telemetry.microsoft.com'
 'win10.ipv6.microsoft.com.nsatc.net'
 'www.modern.ie'
-'www.msftncsi.com'
+#'www.msftncsi.com'
 );
 
 # init variables

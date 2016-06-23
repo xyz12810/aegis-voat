@@ -1,4 +1,7 @@
 v1.18-
+add kb3150513 - may 2016 compatibility update for windows
+remove msftncsi from blocks - harmless, only used to test for network connectivity
+update host blocks
 
 v1.17- (once again thanks to erskine for many ideas/improvements in v1.17)
 update genblock to address outlook blocking issues
@@ -8,7 +11,7 @@ replace find with findstr
 replace regedit /s with reg import
 improve error checking/handling to reduce unnecessary operations and errors
 add notify message if reboot is required to complete some operations
-add kb3058168 (activate windows 10 from windows 8 or windows 8.1, and windows server 2012 or windows server 2012 r2 kms hosts)
+add kb3058168 - activate windows 10 from windows 8 or windows 8.1, and windows server 2012 or windows server 2012 r2 kms hosts
 improve logging functionality and readability
 add repairtimeservice.cmd (run to resolve issues w/ windows time service)
 remove aegis.reg (merged all registry operations into main script)
@@ -17,8 +20,8 @@ add repairwindowsupdate.cmd (run to resolve issues w/ windows update)
 
 v1.16- (thanks to erskine for many of the improvements in v1.16)
 update host blocks (unblock hotmail/microsoft/loudwire web sites)
-add kb3138612 windows update client for windows 7 and windows server 2008 r2: march 2016
-add kb3138615 windows update client for windows 8.1 and windows server 2012 r2: march 2016
+add kb3138612 - windows update client for windows 7 and windows server 2008 r2: march 2016
+add kb3138615 - windows update client for windows 8.1 and windows server 2012 r2: march 2016
 add privilege check to verify running as administrator
 add 64-bit version of setacl.exe
 detect os architecture and run 32 or 64-bit setacl accordingly (should help prevent errors when manipulating permissions)
@@ -26,8 +29,8 @@ add begin/end functions, other small changes to streamline code
 add taskkil for gwxux.exe
 change log name to "%~dpn0.log"
 fix incorrect key for ceip disable
-add kb3139929 security update for internet explorer: march 8, 2016
-add kb3146449 updated internet explorer 11 capabilities to upgrade windows 8.1 and windows 7
+add kb3139929 - security update for internet explorer: march 8, 2016
+add kb3146449 - updated internet explorer 11 capabilities to upgrade windows 8.1 and windows 7
 
 v1.15-
 fix inadvertent blocking of akamai hosts (should prevent blocking of hotmail/outlook)
